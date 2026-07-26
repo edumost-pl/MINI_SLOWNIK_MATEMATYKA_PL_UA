@@ -1,0 +1,613 @@
+﻿page,title,q_num,question,option_a,option_b,option_c,correct_letter,correct_text
+01,Liczby naturalne,1,"Jak nazywamy liczby do liczenia: 1, 2, 3, 4…?",liczby ujemne,liczby naturalne,ułamki,B,liczby naturalne
+01,Liczby naturalne,2,Ile jest cyfr od 0 do 9?,10,100,9,A,10
+01,Liczby naturalne,3,Cyfra to…,jednostka długości,wynik dodawania,„klocek” do budowania liczb,C,„klocek” do budowania liczb
+01,Liczby naturalne,4,W liczbie 347 cyfra 3 oznacza…,3 jednostki,3 setki,3 dziesiątki,B,3 setki
+01,Liczby naturalne,5,"Pierwszy, drugi, trzeci — to…",liczby porządkowe,ułamki,liczby parzyste,A,liczby porządkowe
+01,Liczby naturalne,6,Zero oznacza…,sto,dziesięć,nic / pusto,C,nic / pusto
+01,Liczby naturalne,7,Liczba 8 jest…,nieparzysta,parzysta,ujemna,B,parzysta
+01,Liczby naturalne,8,Który zapis jest prawdziwy?,3 < 7,3 = 7,3 > 7,A,3 < 7
+01,Liczby naturalne,9,Poprzednik liczby 9 to…,19,10,8,C,8
+01,Liczby naturalne,10,Zaokrąglenie 47 do dziesiątek to…,40,50,47,B,50
+02,Liczby rzymskie,1,Ile jest podstawowych znaków rzymskich?,5,7,10,B,7
+02,Liczby rzymskie,2,V = ?,5,1,10,A,5
+02,Liczby rzymskie,3,X = ?,50,5,10,C,10
+02,Liczby rzymskie,4,IV = ?,6,4,14,B,4
+02,Liczby rzymskie,5,VI = ?,6,16,4,A,6
+02,Liczby rzymskie,6,"Gdy mniejszy znak stoi po lewej, to…",mnożymy,dodajemy,odejmujemy,C,odejmujemy
+02,Liczby rzymskie,7,"Gdy mniejszy znak stoi po prawej, to…",odejmujemy,dodajemy,dzielimy,B,dodajemy
+02,Liczby rzymskie,8,LXIV = ?,64,104,46,A,64
+02,Liczby rzymskie,9,Gdzie spotykamy liczby rzymskie?,tylko w ułamkach,tylko w sklepie,"zegary, rozdziały, filmy",C,"zegary, rozdziały, filmy"
+02,Liczby rzymskie,10,C = ?,50,100,500,B,100
+03,Liczby całkowite,1,Na lewo od zera na osi są…,liczby dodatnie,liczby ujemne,tylko ułamki,B,liczby ujemne
+03,Liczby całkowite,2,Na prawo od zera są…,liczby dodatnie,tylko zera,liczby ujemne,A,liczby dodatnie
+03,Liczby całkowite,3,|−5| = ?,0,−5,5,C,5
+03,Liczby całkowite,4,Która liczba jest mniejsza?,−2,−7,0,B,−7
+03,Liczby całkowite,5,a − b = ?,a + (−b),a : b,a · b,A,a + (−b)
+03,Liczby całkowite,6,Liczba przeciwna do 7 to…,1/7,7,−7,C,−7
+03,Liczby całkowite,7,Zero jest…,dodatnie,"ani dodatnie, ani ujemne",ujemne,B,"ani dodatnie, ani ujemne"
+03,Liczby całkowite,8,Przykład użycia liczb całkowitych:,"temperatura, dług, piętra",tylko litery,tylko kolory,A,"temperatura, dług, piętra"
+03,Liczby całkowite,9,Które jest większe?,−20,−8,−1,C,−1
+03,Liczby całkowite,10,|0| = ?,1,0,−1,B,0
+04,Dodawanie i odejmowanie,1,Dodawanie odpowiada na pytanie…,ile zostało?,ile razem?,ile razy?,B,ile razem?
+04,Dodawanie i odejmowanie,2,Odejmowanie odpowiada na pytanie…,ile zostało?,który z kolei?,ile razem?,A,ile zostało?
+04,Dodawanie i odejmowanie,3,Wynik dodawania to…,iloczyn,różnica,suma,C,suma
+04,Dodawanie i odejmowanie,4,Wynik odejmowania to…,suma,różnica,iloraz,B,różnica
+04,Dodawanie i odejmowanie,5,W 8 − 3 = 5 odjemna to…,8,5,3,A,8
+04,Dodawanie i odejmowanie,6,W 8 − 3 = 5 odjemnik to…,5,8,3,C,3
+04,Dodawanie i odejmowanie,7,3 + 5 = 5 + 3 — to…,dzielenie,przemienność,potęgowanie,B,przemienność
+04,Dodawanie i odejmowanie,8,Jak sprawdzić odejmowanie?,dodać różnicę i odjemnik,podzielić przez 2,pomnożyć,A,dodać różnicę i odjemnik
+04,Dodawanie i odejmowanie,9,3 + 2 na palcach = ?,1,6,5,C,5
+04,Dodawanie i odejmowanie,10,a − 0 = ?,0,a,1,B,a
+05,Tabliczka mnożenia,1,Mnożenie to skrót…,odejmowania,dodawania tej samej liczby,dzielenia,B,dodawania tej samej liczby
+05,Tabliczka mnożenia,2,4 × 3 = ?,12,1,7,A,12
+05,Tabliczka mnożenia,3,"4 × 3 = 4+4+4. To pokazuje, że…",mnożenie = ułamek,mnożenie = odejmowanie,mnożenie = wielokrotne +,C,mnożenie = wielokrotne +
+05,Tabliczka mnożenia,4,Wynik mnożenia to…,suma,iloczyn,różnica,B,iloczyn
+05,Tabliczka mnożenia,5,"Liczby, które mnożymy, to…",czynniki,odjemniki,dzielniki,A,czynniki
+05,Tabliczka mnożenia,6,3 × 4 = 4 × 3 — to…,pierwiastek,dzielenie z resztą,przemienność,C,przemienność
+05,Tabliczka mnożenia,7,a × 0 = ?,a,0,1,B,0
+05,Tabliczka mnożenia,8,a × 1 = ?,a,1,0,A,a
+05,Tabliczka mnożenia,9,7 × 8 = ?,78,15,56,C,56
+05,Tabliczka mnożenia,10,5 × 5 = ?,10,25,55,B,25
+06,Dzielenie,1,Dzielenie w kl. 1–3 to często…,mnożenie,sprawiedliwe rozdawanie,zaokrąglanie,B,sprawiedliwe rozdawanie
+06,Dzielenie,2,Wynik dzielenia to…,iloraz,iloczyn,suma,A,iloraz
+06,Dzielenie,3,W 12 : 3 = 4 dzielna to…,4,3,12,C,12
+06,Dzielenie,4,W 12 : 3 = 4 dzielnik to…,12,3,4,B,3
+06,Dzielenie,5,17 : 5 = ?,3 r. 2,5 r. 0,2 r. 3,A,3 r. 2
+06,Dzielenie,6,Jak sprawdzić dzielenie?,zaokrągleniem,odejmowaniem,mnożeniem,C,mnożeniem
+06,Dzielenie,7,Czy wolno dzielić przez 0?,tak,nie,tylko w kl. 8,B,nie
+06,Dzielenie,8,a : 1 = ?,a,0,1,A,a
+06,Dzielenie,9,12 cukierków : 3 dzieci = po…,12,3,4,C,4
+06,Dzielenie,10,a : a = ? (a ≠ 0),0,1,a,B,1
+07,Kolejność działań,1,Co liczymy najpierw?,dodawanie,nawiasy,odejmowanie,B,nawiasy
+07,Kolejność działań,2,Co po nawiasach?,potęgi,porównanie,dodawanie,A,potęgi
+07,Kolejność działań,3,Co przed + i −?,tylko −,tylko +,× i :,C,× i :
+07,Kolejność działań,4,2 + 3 × 4 = ?,20,14,9,B,14
+07,Kolejność działań,5,(2 + 3) × 4 = ?,20,9,14,A,20
+07,Kolejność działań,6,Przy × i : na tym samym poziomie idziemy…,tylko w górę,od prawej do lewej,od lewej do prawej,C,od lewej do prawej
+07,Kolejność działań,7,2 + 3² = ?,25,11,5,B,11
+07,Kolejność działań,8,Kolejność działań (skrót):,() → potęgi → ×: → +−,× → + → (),+− → ×: → (),A,() → potęgi → ×: → +−
+07,Kolejność działań,9,24 : 6 × 2 = ?,12,2,8,C,8
+07,Kolejność działań,10,Najpierw zawsze…,procenty,nawiasy,pierwiastek,B,nawiasy
+08,Podzielność,1,Cecha podzielności przez 2?,suma cyfr ÷ 3,ostatnia cyfra parzysta,końcówka 5,B,ostatnia cyfra parzysta
+08,Podzielność,2,Cecha przez 3?,suma cyfr ÷ 3,dwie ostatnie cyfry,ostatnia cyfra 0,A,suma cyfr ÷ 3
+08,Podzielność,3,Cecha przez 5?,pierwsza cyfra 5,suma cyfr ÷ 5,końcówka 0 lub 5,C,końcówka 0 lub 5
+08,Podzielność,4,Cecha przez 10?,końcówka 5,końcówka 0,suma cyfr ÷ 10,B,końcówka 0
+08,Podzielność,5,Cecha przez 9?,suma cyfr ÷ 9,dwie pierwsze cyfry,ostatnia cyfra 9,A,suma cyfr ÷ 9
+08,Podzielność,6,Cecha przez 4?,tylko końcówka 4,suma cyfr ÷ 4,2 ostatnie cyfry ÷ 4,C,2 ostatnie cyfry ÷ 4
+08,Podzielność,7,Liczba pierwsza ma…,tylko dzielnik 1,dokładnie 2 dzielniki: 1 i siebie,nieskończenie wiele dzielników,B,dokładnie 2 dzielniki: 1 i siebie
+08,Podzielność,8,Czy 1 jest liczbą pierwszą?,nie,tylko w kl. 1,tak,A,nie
+08,Podzielność,9,Czy 15 dzieli się przez 3?,tylko przez 5,nie,tak,C,tak
+08,Podzielność,10,Czy 20 dzieli się przez 10?,nie,tak,tylko przez 3,B,tak
+09,Ułamki zwykłe (1),1,W ułamku a/b litera a to…,mianownik,licznik,suma,B,licznik
+09,Ułamki zwykłe (1),2,W ułamku a/b litera b to…,mianownik,iloczyn,licznik,A,mianownik
+09,Ułamki zwykłe (1),3,Licznik mówi…,ile wynosi suma,na ile części podzielono,ile części bierzemy,C,ile części bierzemy
+09,Ułamki zwykłe (1),4,Mianownik mówi…,ile części bierzemy,na ile równych części podzielono,która to cyfra,B,na ile równych części podzielono
+09,Ułamki zwykłe (1),5,Czy mianownik może być 0?,nie,tylko ujemny,tak,A,nie
+09,Ułamki zwykłe (1),6,Ułamek właściwy: licznik jest…,równy zero zawsze,większy od mianownika,mniejszy od mianownika,C,mniejszy od mianownika
+09,Ułamki zwykłe (1),7,1 3/4 jako ułamek niewłaściwy = ?,4/7,7/4,1/4,B,7/4
+09,Ułamki zwykłe (1),8,1/2 = 2/4 — to ułamki…,równe,ujemne,różne,A,równe
+09,Ułamki zwykłe (1),9,W 3/4 liczba 3 to…,całość,mianownik,licznik,C,licznik
+09,Ułamki zwykłe (1),10,W 3/4 liczba 4 to…,licznik,mianownik,procent,B,mianownik
+10,Ułamki zwykłe (2),1,Skracanie ułamka: licznik i mianownik…,dodajemy 1,dzielimy tą samą liczbą ≠ 0,mnożymy przez 0,B,dzielimy tą samą liczbą ≠ 0
+10,Ułamki zwykłe (2),2,Rozszerzanie ułamka: licznik i mianownik…,mnożymy tą samą liczbą ≠ 0,dzielimy przez 0,odejmujemy 1,A,mnożymy tą samą liczbą ≠ 0
+10,Ułamki zwykłe (2),3,4/6 po skróceniu = ?,6/4,4/3,2/3,C,2/3
+10,Ułamki zwykłe (2),4,Czy skracanie zmienia wartość ułamka?,"tak, zawsze",nie,tylko w kl. 8,B,nie
+10,Ułamki zwykłe (2),5,Do +/− ułamków często potrzebny jest…,wspólny mianownik,procent,pierwiastek,A,wspólny mianownik
+10,Ułamki zwykłe (2),6,2/5 ? 3/5 (ten sam mianownik),2/5 = 3/5,2/5 > 3/5,2/5 < 3/5,C,2/5 < 3/5
+10,Ułamki zwykłe (2),7,3/4 = 3 : 4 — ułamek to też…,odejmowanie,dzielenie,kąt,B,dzielenie
+10,Ułamki zwykłe (2),8,Ułamek nieskracalny ma NWD = ?,1,mianownik,0,A,1
+10,Ułamki zwykłe (2),9,2/3 = 4/6 — to…,potęga,odejmowanie,rozszerzanie / równość,C,rozszerzanie / równość
+10,Ułamki zwykłe (2),10,Skracanie i rozszerzanie…,zawsze zwiększają wartość,nie zmieniają wartości,zawsze zmniejszają,B,nie zmieniają wartości
+11,Ułamki dziesiętne,1,Przecinek w ułamku dziesiętnym oddziela…,licznik od mianownika,część całkowitą od ułamkowej,metry od centymetrów,B,część całkowitą od ułamkowej
+11,Ułamki dziesiętne,2,"0,5 jako ułamek zwykły = ?",1/2,0/5,5/1,A,1/2
+11,Ułamki dziesiętne,3,"0,5 = ? %","0,5%",5%,50%,C,50%
+11,Ułamki dziesiętne,4,Pierwsze miejsce po przecinku to…,setne,dziesiąte,tysięczne,B,dziesiąte
+11,Ułamki dziesiętne,5,Drugie miejsce po przecinku to…,setne,jedności,dziesiąte,A,setne
+11,Ułamki dziesiętne,6,"Czy 0,5 = 0,50?",tylko w pieniądzach,nie,tak,C,tak
+11,Ułamki dziesiętne,7,"Zaokrąglij 1,47 do 1 miejsca po przecinku.","1,4","1,5","1,0",B,"1,5"
+11,Ułamki dziesiętne,8,"Które większe: 1,25 czy 1,3?","1,3",są równe,"1,25",A,"1,3"
+11,Ułamki dziesiętne,9,"0,25 = ?",2/5,1/2,1/4,C,1/4
+11,Ułamki dziesiętne,10,"W 12,50 zł po przecinku są…",złote,grosze / setne,kilometry,B,grosze / setne
+12,Działania na ułamkach,1,Przy +/− ułamków najpierw…,mnożenie,wspólny mianownik,pierwiastek,B,wspólny mianownik
+12,Działania na ułamkach,2,1/4 + 2/4 = ?,3/4,1/2,3/8,A,3/4
+12,Działania na ułamkach,3,Jak mnożymy ułamki?,na krzyż zawsze,tylko mianowniki,"licznik×licznik, mianownik×mianownik",C,"licznik×licznik, mianownik×mianownik"
+12,Działania na ułamkach,4,Dzielenie ułamków = …,odejmowanie mianowników,mnożenie przez odwrotność,dodawanie liczników,B,mnożenie przez odwrotność
+12,Działania na ułamkach,5,Odwrotność 2/3 to…,3/2,3/5,2/3,A,3/2
+12,Działania na ułamkach,6,a/b : c/d = ?,a/c × b/d,a/b × c/d,a/b × d/c,C,a/b × d/c
+12,Działania na ułamkach,7,1/2 × 1/3 = ?,1/5,1/6,2/3,B,1/6
+12,Działania na ułamkach,8,Po co skracać przed ×?,żeby liczyć na mniejszych liczbach,żeby dodać zero,żeby zmienić wynik,A,żeby liczyć na mniejszych liczbach
+12,Działania na ułamkach,9,1/2 + 1/3 wymaga…,procentu,pierwiastka,wspólnego mianownika,C,wspólnego mianownika
+12,Działania na ułamkach,10,Odwrotność 5 to…,5,1/5,0,B,1/5
+13,Potęgi,1,W aⁿ litera a to…,wykładnik,podstawa,suma,B,podstawa
+13,Potęgi,2,W aⁿ litera n to…,wykładnik,mianownik,podstawa,A,wykładnik
+13,Potęgi,3,2³ = ?,9,6,8,C,8
+13,Potęgi,4,a² oznacza…,a + 2,a · a,2 · a,B,a · a
+13,Potęgi,5,a³ oznacza…,a · a · a,3 · a,a + 3,A,a · a · a
+13,Potęgi,6,a¹ = ?,0,1,a,C,a
+13,Potęgi,7,a⁰ = ? (a ≠ 0),0,1,a,B,1
+13,Potęgi,8,Przy mnożeniu potęg o tej samej podstawie wykładniki…,dodajemy,odejmujemy od 100,mnożymy zawsze przez 0,A,dodajemy
+13,Potęgi,9,10² = ?,1000,20,100,C,100
+13,Potęgi,10,2⁴ = ?,8,16,6,B,16
+14,Pierwiastki,1,√9 = ?,9,3,"4,5",B,3
+14,Pierwiastki,2,√ oznacza…,pierwiastek kwadratowy,kąt,procent,A,pierwiastek kwadratowy
+14,Pierwiastki,3,"Jeśli √a = b, to…",b = a : 2,b = a + 2,b² = a,C,b² = a
+14,Pierwiastki,4,√16 = ?,8,4,2,B,4
+14,Pierwiastki,5,√25 = ?,5,15,"12,5",A,5
+14,Pierwiastki,6,Czy √2 jest liczbą całkowitą?,tylko ujemną,tak,nie,C,nie
+14,Pierwiastki,7,√1 = ?,0,1,2,B,1
+14,Pierwiastki,8,√0 = ?,0,10,1,A,0
+14,Pierwiastki,9,√49 = ?,9,14,7,C,7
+14,Pierwiastki,10,√a · √a = ? (a ≥ 0),2a,a,√2a,B,a
+15,Procenty,1,1% = ?,1/10,1/100,100,B,1/100
+15,Procenty,2,50% = ?,1/2,50,1/5,A,1/2
+15,Procenty,3,25% = ?,2/5,1/5,1/4,C,1/4
+15,Procenty,4,Jak policzyć p% z liczby?,liczba + p,liczba × p/100,liczba : p,B,liczba × p/100
+15,Procenty,5,10% z 200 = ?,20,200,10,A,20
+15,Procenty,6,Zwiększenie o 20%: mnożymy przez…,20,"0,20","1,20",C,"1,20"
+15,Procenty,7,Zmniejszenie o 20%: mnożymy przez…,"1,20","0,80",20,B,"0,80"
+15,Procenty,8,"0,25 = ? %",25%,"2,5%","0,25%",A,25%
+15,Procenty,9,100% z liczby to…,połowa,zero,cała liczba,C,cała liczba
+15,Procenty,10,1% z 100 = ?,100,1,10,B,1
+16,Proporcjonalność,1,"Proporcjonalność prosta: gdy x rośnie 2×, y…",maleje 2×,też 2×,zostaje 0,B,też 2×
+16,Proporcjonalność,2,W y = kx współczynnik k jest…,stały,zawsze ujemny,zawsze 0,A,stały
+16,Proporcjonalność,3,Wykres y = kx to…,parabola zawsze,okrąg,"prosta przez (0,0)",C,"prosta przez (0,0)"
+16,Proporcjonalność,4,"Jeśli 2 kg kosztują 10 zł, 1 kg kosztuje…",20 zł,5 zł,2 zł,B,5 zł
+16,Proporcjonalność,5,Proporcja a:b = c:d oznacza…,a/b = c/d,a · b = c,a + b = c + d,A,a/b = c/d
+16,Proporcjonalność,6,W tabeli przy proporcji prostej y/x jest…,zawsze 100,losowy,stały,C,stały
+16,Proporcjonalność,7,"Jeśli 3 zeszyty = 12 zł, 5 zeszytów = ?",15 zł,20 zł,60 zł,B,20 zł
+16,Proporcjonalność,8,Cena za kg i masa — przykład proporcji…,prostej,pierwiastka,kąta,A,prostej
+16,Proporcjonalność,9,k = y/x — to…,średnica,procent,współczynnik proporcjonalności,C,współczynnik proporcjonalności
+16,Proporcjonalność,10,"Gdy x = 0 w y = kx, to y = ?",k,0,1,B,0
+17,Wyrażenia algebraiczne,1,Wyrażenie z literami i liczbami to…,tylko ułamek,wyrażenie algebraiczne,kąt prosty,B,wyrażenie algebraiczne
+17,Wyrażenia algebraiczne,2,Litera w wyrażeniu to często…,zmienna,procent,jednostka długości,A,zmienna
+17,Wyrażenia algebraiczne,3,Wartość liczbowa: podstawiamy…,tylko ułamek,tylko zero,liczbę zamiast litery,C,liczbę zamiast litery
+17,Wyrażenia algebraiczne,4,3x oznacza…,3 + x,3 · x,3 : x,B,3 · x
+17,Wyrażenia algebraiczne,5,x² oznacza…,x · x,x + 2,2 · x,A,x · x
+17,Wyrażenia algebraiczne,6,Kolejność działań w wyrażeniach…,tylko dodawanie,od prawej zawsze,jak zwykle: () potęgi ×: +−,C,jak zwykle: () potęgi ×: +−
+17,Wyrażenia algebraiczne,7,Dla x = 2 wartość 3x + 1 = ?,5,7,6,B,7
+17,Wyrażenia algebraiczne,8,5a + 2a = ?,7a,5a2a,10a,A,7a
+17,Wyrażenia algebraiczne,9,Wyrażenie 2x + 5 ma…,tylko procent,tylko liczby,zmienną x,C,zmienną x
+17,Wyrażenia algebraiczne,10,"Gdy x = 0, to 4x = ?",4,0,1,B,0
+18,Sumy algebraiczne,1,Jednomian to np.…,x + y + 1 zawsze jako suma 3 wyrazów,3x²,tylko znak =,B,3x²
+18,Sumy algebraiczne,2,Suma algebraiczna to…,suma/różnica jednomianów,kąt 90°,tylko jedna cyfra,A,suma/różnica jednomianów
+18,Sumy algebraiczne,3,Wyrazy podobne mają…,tylko liczby,różne litery zawsze,te same litery z tymi samymi wykładnikami,C,te same litery z tymi samymi wykładnikami
+18,Sumy algebraiczne,4,Redukcja wyrazów podobnych to…,usuwanie liter,łączenie (dodawanie współczynników),dzielenie przez 0,B,łączenie (dodawanie współczynników)
+18,Sumy algebraiczne,5,Współczynnik w 5a to…,5,0,a,A,5
+18,Sumy algebraiczne,6,3x + 2x = ?,3x2x,6x,5x,C,5x
+18,Sumy algebraiczne,7,7y − 7y = ?,14y,0,1,B,0
+18,Sumy algebraiczne,8,Czy 3x i 3x² są podobne?,nie,tylko gdy x = 1,tak,A,nie
+18,Sumy algebraiczne,9,2a + 3b — czy to wyrazy podobne?,tylko w kl. 1,tak,nie,C,nie
+18,Sumy algebraiczne,10,x + x + x = ?,x³,3x,x + 3,B,3x
+19,Równania,1,Równanie to…,tylko dodawanie,równość z niewiadomą,rysunek koła,B,równość z niewiadomą
+19,Równania,2,Niewiadoma to zwykle…,litera (np. x),znak %,jednostka °C,A,litera (np. x)
+19,Równania,3,Rozwiązanie równania to…,zawsze 1,zawsze 0,liczba spełniająca równość,C,liczba spełniająca równość
+19,Równania,4,Metoda bilansowania: co zrobisz jednej stronie…,usuń nawiasy i koniec,zrób drugiej,podziel przez zero,B,zrób drugiej
+19,Równania,5,x + 5 = 12 → x = ?,7,5,17,A,7
+19,Równania,6,Jak sprawdzić rozwiązanie?,narysować kąt,zaokrąglić,podstawić do równania,C,podstawić do równania
+19,Równania,7,Przenoszenie na drugą stronę zmienia…,literę na cyfrę,znak (+ ↔ −),procent na ułamek zawsze,B,znak (+ ↔ −)
+19,Równania,8,x − 3 = 10 → x = ?,13,30,7,A,13
+19,Równania,9,2x = 10 → x = ?,12,8,5,C,5
+19,Równania,10,Czy 3 = 3 to równanie z niewiadomą?,tak,nie,tylko w kl. 8,B,nie
+20,Długość,1,Podstawowa jednostka długości w szkole?,kilogram,metr (m),litr,B,metr (m)
+20,Długość,2,1 m = ? cm,100,1000,10,A,100
+20,Długość,3,1 m = ? mm,10,100,1000,C,1000
+20,Długość,4,1 km = ? m,100,1000,10,B,1000
+20,Długość,5,Linijką mierzymy…,długość,temperaturę,masę,A,długość
+20,Długość,6,Obwód to…,objętość,pole wewnątrz,suma długości boków,C,suma długości boków
+20,Długość,7,Które dłuższe: 1 m czy 90 cm?,90 cm,1 m,są równe,B,1 m
+20,Długość,8,"2,5 m = ? cm",250,2500,25,A,250
+20,Długość,9,1 cm = ? mm,1,100,10,C,10
+20,Długość,10,50 cm = ? m,5,"0,5",50,B,"0,5"
+21,Masa,1,Masa mówi…,jak długie jest coś,jak ciężkie jest coś,jak ciepłe jest coś,B,jak ciężkie jest coś
+21,Masa,2,1 kg = ? g,1000,10,100,A,1000
+21,Masa,3,1 t = ? kg,10,100,1000,C,1000
+21,Masa,4,Ważymy na…,linijce,wadze,zegarze,B,wadze
+21,Masa,5,Które cięższe: 1 kg czy 800 g?,1 kg,są równe,800 g,A,1 kg
+21,Masa,6,250 g = ? kg,25,"2,5","0,25",C,"0,25"
+21,Masa,7,Lekkie rzeczy często w…,kilometrach,gramach,litrach zawsze,B,gramach
+21,Masa,8,Masa netto to…,ile produktu jest w środku,data ważności tylko,cena,A,ile produktu jest w środku
+21,Masa,9,2 kg = ? g,20,200,2000,C,2000
+21,Masa,10,500 g = ? kg,5,"0,5",50,B,"0,5"
+22,Objętość i litr,1,Objętość mówi…,jak ciężkie jest,ile miejsca zajmuje,jak długie jest,B,ile miejsca zajmuje
+22,Objętość i litr,2,1 l = ? ml,1000,10,100,A,1000
+22,Objętość i litr,3,1 l ≈ ? cm³,10,100,1000,C,1000
+22,Objętość i litr,4,Płyny często w…,kilometrach,litrach / mililitrach,stopniach °C,B,litrach / mililitrach
+22,Objętość i litr,5,V prostopadłościanu = ?,a · b · c,2(a+b),a + b + c,A,a · b · c
+22,Objętość i litr,6,Pudełko 2×3×4 → V = ?,14,9,24,C,24
+22,Objętość i litr,7,500 ml = ? l,5,"0,5",50,B,"0,5"
+22,Objętość i litr,8,Co większe: 1 l czy 900 ml?,1 l,są równe,900 ml,A,1 l
+22,Objętość i litr,9,250 ml = ? l,25,"2,5","0,25",C,"0,25"
+22,Objętość i litr,10,Objętość sześcianu o krawędzi 2 = ?,6,8,4,B,8
+23,Czas,1,1 min = ? s,100,60,10,B,60
+23,Czas,2,1 h = ? min,60,24,100,A,60
+23,Czas,3,1 doba = ? h,60,12,24,C,24
+23,Czas,4,Ile zwykle trwa przerwa?,ok. 45 min,ok. 15 min,ok. 2 h,B,ok. 15 min
+23,Czas,5,Ile zwykle trwa lekcja?,ok. 45 min,ok. 5 min,ok. 15 min,A,ok. 45 min
+23,Czas,6,Czas liczymy w systemie…,10,100,60,C,60
+23,Czas,7,"2,5 h = ? min",250,150,25,B,150
+23,Czas,8,Od 14:20 do 15:05 minęło…,45 min,25 min,85 min,A,45 min
+23,Czas,9,30 min = ? h,30 h,3 h,"0,5 h",C,"0,5 h"
+23,Czas,10,1 h 30 min = ? min,130,90,60,B,90
+24,Kalendarz,1,1 tydzień = ? dni,5,7,10,B,7
+24,Kalendarz,2,Rok zwykle ma…,365 dni,30 dni,100 dni,A,365 dni
+24,Kalendarz,3,W roku przestępnym luty ma…,30 dni,28 dni,29 dni,C,29 dni
+24,Kalendarz,4,Data to…,tylko godzina,"dzień, miesiąc, rok",tylko temperatura,B,"dzień, miesiąc, rok"
+24,Kalendarz,5,Kalendarz w kl. 1–3 pomaga przy…,"urodzinach, feriach, dniu tygodnia",tylko polu koła,tylko mnożeniu,A,"urodzinach, feriach, dniu tygodnia"
+24,Kalendarz,6,Po poniedziałku jest…,piątek,niedziela,wtorek,C,wtorek
+24,Kalendarz,7,Kwiecień ma…,31 dni,30 dni,28 dni,B,30 dni
+24,Kalendarz,8,Rok przestępny ma…,366 dni,360 dni,365 dni,A,366 dni
+24,Kalendarz,9,1 miesiąc ma zwykle…,365 dni,7 dni,28–31 dni,C,28–31 dni
+24,Kalendarz,10,Ferie szukasz w…,tabliczce mnożenia,kalendarzu,kątomierzu,B,kalendarzu
+25,Temperatura,1,Jednostka temperatury w szkole?,kg,°C,m,B,°C
+25,Temperatura,2,Przyrząd do temperatury?,termometr,waga,linijka,A,termometr
+25,Temperatura,3,Temperatura poniżej zera to…,zawsze 0 tylko,zawsze 100°C,ujemna / mróz,C,ujemna / mróz
+25,Temperatura,4,−3°C ? 2°C,−3 > 2,−3 < 2,−3 = 2,B,−3 < 2
+25,Temperatura,5,Różnica z −4 do +6 = ?,10°,24°,2°,A,10°
+25,Temperatura,6,+5°C jest…,równo 100,poniżej zera,powyżej zera,C,powyżej zera
+25,Temperatura,7,Jak porównujemy temperatury?,jak ułamki tylko,jak liczby całkowite na osi,jak procenty tylko,B,jak liczby całkowite na osi
+25,Temperatura,8,0°C to…,zero na skali Celsjusza,temperatura ciała zawsze,wrzątek,A,zero na skali Celsjusza
+25,Temperatura,9,−8°C jest zimniej niż…,0°C nigdy,+2°C tylko gdy deszcz,−2°C,C,−2°C
+25,Temperatura,10,Prognoza pogody podaje…,tylko długość w km,temperaturę w °C,tylko masę w kg,B,temperaturę w °C
+26,Pieniądze,1,1 zł = ? gr,10,100,1000,B,100
+26,Pieniądze,2,"W 12,50 zł przed przecinkiem są…",złote,kilometry,grosze,A,złote
+26,Pieniądze,3,"Bułka 5 zł, masz 10 zł — reszta?",0 zł,15 zł,5 zł,C,5 zł
+26,Pieniądze,4,Reszta = ?,cena × 2,ile dałeś − cena,cena + 100,B,ile dałeś − cena
+26,Pieniądze,5,"3,40 + 1,75 = ?","5,15","5,00","4,15",A,"5,15"
+26,Pieniądze,6,Pieniądze liczysz jak…,pierwiastki,kąty,ułamki dziesiętne,C,ułamki dziesiętne
+26,Pieniądze,7,Za 15 zł bułek po 5 zł kupisz…,5,3,15,B,3
+26,Pieniądze,8,Przy porównywaniu cen sprowadź do…,tej samej jednostki,tylko procentów,różnych jednostek,A,tej samej jednostki
+26,Pieniądze,9,2 zł 50 gr = ?,"0,25 zł",250 zł,"2,50 zł",C,"2,50 zł"
+26,Pieniądze,10,"Masz 20 zł, wydasz 12,30 — zostanie…","8,70 zł","7,70 zł","32,30 zł",B,"7,70 zł"
+27,Prędkość i skala,1,v = ?,s · t,s / t,s + t,B,s / t
+27,Prędkość i skala,2,s = ?,v · t,v − t,v / t,A,v · t
+27,Prędkość i skala,3,t = ?,s + v,s · v,s / v,C,s / v
+27,Prędkość i skala,4,km/h oznacza…,kilogramy na godzinę,kilometry na godzinę,kąty na godzinę,B,kilometry na godzinę
+27,Prędkość i skala,5,120 km / 2 h = ?,60 km/h,122 km/h,240 km/h,A,60 km/h
+27,Prędkość i skala,6,Skala 1:100 000 — 1 cm na mapie to…,100 cm w terenie,1 cm w terenie,100 000 cm w terenie,C,100 000 cm w terenie
+27,Prędkość i skala,7,Skala 1:n oznacza…,powiększenie n razy,pomniejszenie n razy,dodanie n,B,pomniejszenie n razy
+27,Prędkość i skala,8,"Jeśli v = 50 km/h i t = 2 h, to s = ?",100 km,52 km,25 km,A,100 km
+27,Prędkość i skala,9,Jednostka prędkości w szkole często…,°C,kg,km/h,C,km/h
+27,Prędkość i skala,10,Mapa w skali pomaga liczyć…,temperaturę,odległość w terenie,masę,B,odległość w terenie
+28,Figury płaskie (1),1,Okno w klasie najczęściej wygląda jak…,koło,prostokąt,linia tylko,B,prostokąt
+28,Figury płaskie (1),2,Punkt — czy ma długość?,nie,"tak, 1 cm","tak, zawsze 1 m",A,nie
+28,Figury płaskie (1),3,Prosta — czy ma koniec?,"tak, jeden koniec","tak, dwa końce",nie,C,nie
+28,Figury płaskie (1),4,Odcinek ma…,0 końców,2 końce,nieskończenie wiele końców,B,2 końce
+28,Figury płaskie (1),5,Półprosta ma…,"początek, bez końca",0 punktów,2 końce,A,"początek, bez końca"
+28,Figury płaskie (1),6,Łamana to…,tylko jeden punkt,koło,ciąg odcinków,C,ciąg odcinków
+28,Figury płaskie (1),7,Wielokąt to…,prosta,figura zamknięta z odcinków,tylko łuk,B,figura zamknięta z odcinków
+28,Figury płaskie (1),8,Znak ostrzegawczy często to…,trójkąt,prosta,sześcian,A,trójkąt
+28,Figury płaskie (1),9,Piłka przypomina…,odcinek,kwadrat,koło / kulę,C,koło / kulę
+28,Figury płaskie (1),10,Drzwi w klasie wyglądają jak…,trójkąt równoboczny zawsze,prostokąt,punkt,B,prostokąt
+29,Figury płaskie (2),1,Trójkąt ma ile boków?,4,3,5,B,3
+29,Figury płaskie (2),2,Suma kątów w trójkącie = ?,180°,360°,90°,A,180°
+29,Figury płaskie (2),3,Kwadrat ma…,0 kątów,3 boki,4 równe boki i 4 kąty proste,C,4 równe boki i 4 kąty proste
+29,Figury płaskie (2),4,Prostokąt: kąty są…,ostre zawsze,proste (90°),zerowe,B,proste (90°)
+29,Figury płaskie (2),5,Romb: boki są…,wszystkie równe,tylko dwa równe,wszystkie różne zawsze,A,wszystkie równe
+29,Figury płaskie (2),6,Trapez ma ile par boków równoległych?,0,2,dokładnie 1,C,dokładnie 1
+29,Figury płaskie (2),7,Dach domu często wygląda jak…,koło,trójkąt,prosta,B,trójkąt
+29,Figury płaskie (2),8,Kafelek często to…,kwadrat,punkt,prosta,A,kwadrat
+29,Figury płaskie (2),9,Czworokąt ma ile boków?,5,3,4,C,4
+29,Figury płaskie (2),10,Kwadrat jest szczególnym…,trójkątem,prostokątem (i rombem),kołem,B,prostokątem (i rombem)
+30,Koło i okrąg,1,Okrąg to…,koło z wnętrzem zawsze to samo słowo,linia (krzywa zamknięta),odcinek,B,linia (krzywa zamknięta)
+30,Koło i okrąg,2,Koło to…,okrąg z wnętrzem,tylko punkt,tylko jedna prosta,A,okrąg z wnętrzem
+30,Koło i okrąg,3,Punkty okręgu są w tej samej…,masie,temperaturze,odległości od środka,C,odległości od środka
+30,Koło i okrąg,4,Promień to…,cała średnica × 3,odcinek od środka do okręgu,obwód kwadratu,B,odcinek od środka do okręgu
+30,Koło i okrąg,5,Średnica = ?,2 · promień,promień + 2,promień / 2,A,2 · promień
+30,Koło i okrąg,6,Cięciwa to…,kąt 90°,prosta nieskończona,odcinek łączący 2 punkty okręgu,C,odcinek łączący 2 punkty okręgu
+30,Koło i okrąg,7,Czy średnica jest cięciwą?,nie,tak (najdłuższą),tylko w kl. 1,B,tak (najdłuższą)
+30,Koło i okrąg,8,Środek okręgu oznaczamy często…,O,%,π,A,O
+30,Koło i okrąg,9,"Jeśli r = 3, to d = ?",9,3,6,C,6
+30,Koło i okrąg,10,Wszystkie promienie tego samego okręgu są…,różne,równe,zerowe,B,równe
+31,Długość okręgu i pole koła (π),1,π ≈ ?,"2,14","3,14","4,14",B,"3,14"
+31,Długość okręgu i pole koła (π),2,Długość okręgu C = ?,2πr (lub πd),2(a+b),πr²,A,2πr (lub πd)
+31,Długość okręgu i pole koła (π),3,Pole koła P = ?,a² + b²,2πr,πr²,C,πr²
+31,Długość okręgu i pole koła (π),4,"Jeśli r = 2, to d = ?",2,4,8,B,4
+31,Długość okręgu i pole koła (π),5,W C = πd litera d to…,średnica,promień tylko jako d,pole,A,średnica
+31,Długość okręgu i pole koła (π),6,W P = πr² litera r to…,obwód,średnica,promień,C,promień
+31,Długość okręgu i pole koła (π),7,Czy okrąg i koło to to samo?,tak,nie,tylko gdy π = 1,B,nie
+31,Długość okręgu i pole koła (π),8,"Przyjmuj π ≈ 3,14 chyba że…",nauczyciel poda inaczej,liczysz ułamki,jest poniedziałek,A,nauczyciel poda inaczej
+31,Długość okręgu i pole koła (π),9,"Gdy d = 10, C ≈ ?","3,14",100,"31,4",C,"31,4"
+31,Długość okręgu i pole koła (π),10,Pole rośnie z…,sumą boków tylko,kwadratem promienia,masą,B,kwadratem promienia
+32,Kąt — pojęcie,1,Kąt tworzą…,dwa koła,dwie półproste o wspólnym początku,tylko jedna prosta,B,dwie półproste o wspólnym początku
+32,Kąt — pojęcie,2,Wspólny początek ramion to…,wierzchołek,pole,średnica,A,wierzchołek
+32,Kąt — pojęcie,3,Ramiona kąta to…,tylko koła,tylko punkty,półproste / strony,C,półproste / strony
+32,Kąt — pojęcie,4,Miara kąta w szkole — jednostka?,metr,stopień (°),kilogram,B,stopień (°)
+32,Kąt — pojęcie,5,Przyrząd do mierzenia kąta?,kątomierz,termometr,waga,A,kątomierz
+32,Kąt — pojęcie,6,Pełny obrót = ?,90°,180°,360°,C,360°
+32,Kąt — pojęcie,7,Półobrót = ?,90°,180°,360°,B,180°
+32,Kąt — pojęcie,8,Kąt prosty ma…,90°,180°,45°,A,90°
+32,Kąt — pojęcie,9,Kąt ostry ma mniej niż…,360° i zero,180° tylko zawsze,90°,C,90°
+32,Kąt — pojęcie,10,Kątomierz pomaga…,zważyć książkę,zmierzyć kąt,policzyć procent,B,zmierzyć kąt
+33,Rodzaje kątów,1,Kąt zerowy ma…,90°,0°,180°,B,0°
+33,Rodzaje kątów,2,Kąt ostry: miara?,"więcej niż 0°, mniej niż 90°",więcej niż 180°,dokładnie 90°,A,"więcej niż 0°, mniej niż 90°"
+33,Rodzaje kątów,3,Kąt prosty = ?,180°,45°,90°,C,90°
+33,Rodzaje kątów,4,Kąt rozwarty: miara?,mniej niż 90°,"więcej niż 90°, mniej niż 180°",dokładnie 0°,B,"więcej niż 90°, mniej niż 180°"
+33,Rodzaje kątów,5,Kąt półpełny = ?,180°,360°,90°,A,180°
+33,Rodzaje kątów,6,Kąt pełny = ?,90°,180°,360°,C,360°
+33,Rodzaje kątów,7,45° to kąt…,prosty,ostry,rozwarty,B,ostry
+33,Rodzaje kątów,8,120° to kąt…,rozwarty,zerowy,ostry,A,rozwarty
+33,Rodzaje kątów,9,90° to kąt…,pełny,ostry,prosty,C,prosty
+33,Rodzaje kątów,10,180° to kąt…,ostry,półpełny,zerowy,B,półpełny
+34,Pary kątów / kąty przy ∥,1,Proste równoległe — czy się przecinają?,"tak, zawsze",nie,tylko w jednym punkcie zawsze,B,nie
+34,Pary kątów / kąty przy ∥,2,Sieczna to…,prosta przecinająca równoległe,tylko odcinek bez prostej,koło,A,prosta przecinająca równoległe
+34,Pary kątów / kąty przy ∥,3,Kąty odpowiadające przy ∥ są…,zawsze 180° tylko sumą bez równości,zawsze 0°,równe,C,równe
+34,Pary kątów / kąty przy ∥,4,Kąty naprzemianległe przy ∥ są…,różne zawsze,równe,zerowe,B,równe
+34,Pary kątów / kąty przy ∥,5,Kąty przyległe sumują się do…,180°,360°,90°,A,180°
+34,Pary kątów / kąty przy ∥,6,Kąty wierzchołkowe są…,zawsze 1°,zawsze ostre,równe,C,równe
+34,Pary kątów / kąty przy ∥,7,Znak równoległości:,⊥,∥,π,B,∥
+34,Pary kątów / kąty przy ∥,8,Po co sieczna?,tworzy pary kątów przy równoległych,liczy procent,mierzy masę,A,tworzy pary kątów przy równoległych
+34,Pary kątów / kąty przy ∥,9,Znak prostopadłości:,%,∥,⊥,C,⊥
+34,Pary kątów / kąty przy ∥,10,Proste ∥ nie mają…,długości nigdy,punktu wspólnego,nazwy,B,punktu wspólnego
+35,Obwód i pole,1,Obwód to…,pole wewnątrz,suma długości boków,objętość,B,suma długości boków
+35,Obwód i pole,2,Pole to…,miara powierzchni w środku,kąt,suma boków,A,miara powierzchni w środku
+35,Obwód i pole,3,Obwód prostokąta = ?,a²,a · b,2(a+b),C,2(a+b)
+35,Obwód i pole,4,Pole prostokąta = ?,2(a+b),a · b,a + b,B,a · b
+35,Obwód i pole,5,Obwód kwadratu = ?,4a,2a,a²,A,4a
+35,Obwód i pole,6,Pole kwadratu = ?,2a,4a,a²,C,a²
+35,Obwód i pole,7,Pole trójkąta = ?,a · h,(a · h) / 2,a + h,B,(a · h) / 2
+35,Obwód i pole,8,Pole równoległoboku = ?,a · h,2a + 2h,a + h,A,a · h
+35,Obwód i pole,9,Jednostka pola często…,kg,cm / m,cm² / m²,C,cm² / m²
+35,Obwód i pole,10,Obwód mierzymy…,masą,długością „ramki”,temperaturą,B,długością „ramki”
+36,Bryły,1,Bryła to figura…,tylko płaska,przestrzenna (3D),tylko punkt,B,przestrzenna (3D)
+36,Bryły,2,Sześcian ma ile ścian?,6,8,4,A,6
+36,Bryły,3,Prostopadłościan — ściany to…,tylko trójkąty zawsze,tylko koła,prostokąty,C,prostokąty
+36,Bryły,4,Ostrosłup ma…,tylko 2 punkty,podstawę i wierzchołek,tylko jedną krawędź,B,podstawę i wierzchołek
+36,Bryły,5,V sześcianu o krawędzi a = ?,a³,4a,a²,A,a³
+36,Bryły,6,Ile krawędzi ma sześcian?,8,6,12,C,12
+36,Bryły,7,Pudełko butów przypomina…,koło,prostopadłościan,odcinek,B,prostopadłościan
+36,Bryły,8,Walec / stożek / kula to…,bryły,tylko ułamki,tylko kąty,A,bryły
+36,Bryły,9,Sześcian ma wszystkie krawędzie…,zerowe,różne,równe,C,równe
+36,Bryły,10,Objętość mówi…,jak ciężka jest zawsze bez wagi,ile miejsca zajmuje bryła,jaki ma kolor,B,ile miejsca zajmuje bryła
+37,Symetria,1,Symetria lustrzana — figura ma…,tylko kąt 1°,oś symetrii,tylko ułamek,B,oś symetrii
+37,Symetria,2,Oś symetrii dzieli figurę na…,2 części lustrzane,0 części,3 równe koła,A,2 części lustrzane
+37,Symetria,3,Środek symetrii — obrót o…,45°,90°,180°,C,180°
+37,Symetria,4,Kwadrat ma ile osi symetrii?,1,4,0,B,4
+37,Symetria,5,Koło ma ile osi symetrii?,nieskończenie wiele,2,1,A,nieskończenie wiele
+37,Symetria,6,Motyl / liść — przykład…,pierwiastka,procentu,symetrii,C,symetrii
+37,Symetria,7,Punkt i jego obraz są…,w różnej temperaturze,w tej samej odległości od osi,zawsze w 0,B,w tej samej odległości od osi
+37,Symetria,8,Litera O często ma…,oś / środki symetrii,tylko masę,tylko ułamek,A,oś / środki symetrii
+37,Symetria,9,Symetria pomaga…,mierzyć °C,ważyć,rysować drugą połowę,C,rysować drugą połowę
+37,Symetria,10,Oś to…,jednostka masy,linia „lustra”,procent,B,linia „lustra”
+38,Współrzędne,1,Układ współrzędnych ma osie…,tylko Z,X i Y,tylko kąt,B,X i Y
+38,Współrzędne,2,Oś X jest…,pozioma,ukośna zawsze,pionowa,A,pozioma
+38,Współrzędne,3,Oś Y jest…,okrągła,pozioma,pionowa,C,pionowa
+38,Współrzędne,4,Punkt zapisujemy jako…,x + y tylko,"(x, y)",tylko x,B,"(x, y)"
+38,Współrzędne,5,Początek układu to…,"(0, 0)","(x, y) zawsze","(1, 1)",A,"(0, 0)"
+38,Współrzędne,6,"I ćwiartka: znaki x, y?",+ −,− −,+ +,C,+ +
+38,Współrzędne,7,II ćwiartka: znaki?,+ +,− +,− −,B,− +
+38,Współrzędne,8,"Punkt (3, 0) leży na…",osi X,nigdzie,osi Y,A,osi X
+38,Współrzędne,9,"Punkt (0, 5) leży na…",poza układem zawsze,osi X,osi Y,C,osi Y
+38,Współrzędne,10,"W (2, −3) druga liczba to…",x,y,z,B,y
+39,Statystyka (1),1,Statystyka zajmuje się…,tylko rysowaniem kątów,zbieraniem i opisem danych,tylko masą,B,zbieraniem i opisem danych
+39,Statystyka (1),2,Dane to…,informacje liczbowe / wyniki,tylko kolory bez liczb,tylko litery rzymskie,A,informacje liczbowe / wyniki
+39,Statystyka (1),3,Tabela porządkuje dane w…,tylko jednym punkcie,tylko okręgu,wierszach i kolumnach,C,wierszach i kolumnach
+39,Statystyka (1),4,Wykres słupkowy pokazuje…,tylko temperaturę ciała,porównanie wartości słupkami,tylko kąt 90°,B,porównanie wartości słupkami
+39,Statystyka (1),5,Wykres kołowy pokazuje…,części całości,tylko masę w t,tylko długość w km,A,części całości
+39,Statystyka (1),6,Po co wykres?,żeby mierzyć °C,żeby ważyć,żeby łatwiej zobaczyć różnice,C,żeby łatwiej zobaczyć różnice
+39,Statystyka (1),7,Przykład danych ze szkoły?,tylko π,"oceny, frekwencja",tylko średnica,B,"oceny, frekwencja"
+39,Statystyka (1),8,Etapy: zbierz → uporządkuj → …,wnioski,podziel przez 0,usuń wszystkie dane,A,wnioski
+39,Statystyka (1),9,Słupki porównują…,tylko kolory bez skali,tylko litery,wielkości,C,wielkości
+39,Statystyka (1),10,Koło 100% to…,zero,całość,połowa zawsze,B,całość
+40,Statystyka (2),1,Średnia arytmetyczna = ?,największa wartość,(suma) / (liczba danych),najmniejsza wartość,B,(suma) / (liczba danych)
+40,Statystyka (2),2,Mediana to…,środkowa wartość po uporządkowaniu,iloczyn,suma wszystkich,A,środkowa wartość po uporządkowaniu
+40,Statystyka (2),3,Moda to…,zawsze średnia × 2,zawsze 0,wartość najczęstsza,C,wartość najczęstsza
+40,Statystyka (2),4,"Średnia z 2, 4, 6 = ?",6,4,12,B,4
+40,Statystyka (2),5,"Mediana z 1, 3, 8 = ?",3,8,1,A,3
+40,Statystyka (2),6,"Moda w 2, 2, 5, 7 = ?",7,5,2,C,2
+40,Statystyka (2),7,Przy parzystej liczbie danych mediana to…,zawsze 0,średnia dwóch środkowych,zawsze pierwsza,B,średnia dwóch środkowych
+40,Statystyka (2),8,Która miara „psuje się” przez jedną bardzo dużą liczbę?,średnia,tylko nazwa osi,tylko moda zawsze,A,średnia
+40,Statystyka (2),9,Uporządkuj przed…,rysowaniem koła tylko,dodawaniem 0 tylko,medianą,C,medianą
+40,Statystyka (2),10,Średnia z 10 i 20 = ?,30,15,10,B,15
+41,Kombinatoryka i prawdopodobieństwo,1,Zasada mnożenia: etapy niezależne — …,zawsze dodajemy 0,mnożymy liczby sposobów,dzielimy przez zero,B,mnożymy liczby sposobów
+41,Kombinatoryka i prawdopodobieństwo,2,Zasada dodawania: albo… albo… — …,dodajemy,odejmujemy π,mnożymy zawsze,A,dodajemy
+41,Kombinatoryka i prawdopodobieństwo,3,n! = ?,n / 2,n + 1,n·(n−1)·…·1,C,n·(n−1)·…·1
+41,Kombinatoryka i prawdopodobieństwo,4,P = ?,wszystkie / korzystne,korzystne / wszystkie,korzystne · wszystkie,B,korzystne / wszystkie
+41,Kombinatoryka i prawdopodobieństwo,5,0 ≤ P ≤ ?,1,10,100,A,1
+41,Kombinatoryka i prawdopodobieństwo,6,Kostka: P(6) = ?,1/2,6,1/6,C,1/6
+41,Kombinatoryka i prawdopodobieństwo,7,P = 0 oznacza…,zdarzenie pewne,zdarzenie niemożliwe,zawsze połowę,B,zdarzenie niemożliwe
+41,Kombinatoryka i prawdopodobieństwo,8,P = 1 oznacza…,zdarzenie pewne,50%,zdarzenie niemożliwe,A,zdarzenie pewne
+41,Kombinatoryka i prawdopodobieństwo,9,3 drogi i 4 autobusy: ile połączeń?,3,7,12,C,12
+41,Kombinatoryka i prawdopodobieństwo,10,Prawdopodobieństwo to…,długość,szansa zdarzenia,masa,B,szansa zdarzenia
+42,Ściąga znaków,1,Znak + oznacza…,odejmowanie,dodawanie,mnożenie,B,dodawanie
+42,Ściąga znaków,2,Znak − oznacza…,odejmowanie,procent,dodawanie,A,odejmowanie
+42,Ściąga znaków,3,Znak × lub · oznacza…,kąt,dzielenie,mnożenie,C,mnożenie
+42,Ściąga znaków,4,Znak : lub / oznacza…,dodawanie,dzielenie,stopień,B,dzielenie
+42,Ściąga znaków,5,Znak = oznacza…,równość,mniejsze,większe,A,równość
+42,Ściąga znaków,6,Znak < oznacza…,równe,większe niż,mniejsze niż,C,mniejsze niż
+42,Ściąga znaków,7,Znak √ oznacza…,procent,pierwiastek,kąt,B,pierwiastek
+42,Ściąga znaków,8,Znak % oznacza…,procent,pole,promień,A,procent
+42,Ściąga znaków,9,Znak ∠ oznacza…,masę,procent,kąt,C,kąt
+42,Ściąga znaków,10,Znak ∥ oznacza…,prostopadłość,równoległość,procent,B,równoległość
+43,Działania pisemne i szacowanie,1,Działanie pisemne to rachunek…,tylko ustny bez zapisu,w słupku,tylko na mapie,B,w słupku
+43,Działania pisemne i szacowanie,2,Przy dodawaniu pisemnym zaczynamy od…,jedności (z prawej),lewej litery,setek zawsze najpierw,A,jedności (z prawej)
+43,Działania pisemne i szacowanie,3,Przy odejmowaniu pisemnym uważaj na…,kąt 90°,π,pożyczkę / przeniesienie,C,pożyczkę / przeniesienie
+43,Działania pisemne i szacowanie,4,Szacowanie to…,dokładny wynik tylko,przybliżony wynik przed dokładnym,usunięcie danych,B,przybliżony wynik przed dokładnym
+43,Działania pisemne i szacowanie,5,Po co szacować?,"żeby sprawdzić, czy wynik ma sens",żeby narysować koło,żeby zmienić jednostki na °C,A,"żeby sprawdzić, czy wynik ma sens"
+43,Działania pisemne i szacowanie,6,47 + 32 ≈ ?,ok. 1000,ok. 10,ok. 80,C,ok. 80
+43,Działania pisemne i szacowanie,7,Mnożenie pisemne: mnożysz przez…,tylko zero,kolejne cyfry mnożnika,tylko π,B,kolejne cyfry mnożnika
+43,Działania pisemne i szacowanie,8,Dzielenie pisemne to…,dzielenie „w słupku”,tylko kąt,tylko dodawanie,A,dzielenie „w słupku”
+43,Działania pisemne i szacowanie,9,"Najpierw oszacuj, potem…",podziel przez 0,usuń wynik,licz dokładnie,C,licz dokładnie
+43,Działania pisemne i szacowanie,10,Słupek pomaga przy…,tylko kolorach,większych liczbach,tylko dźwiękach,B,większych liczbach
+44,Rozdzielność mnożenia,1,Rozdzielność: a·(b+c) = ?,a + b + c,a·b + a·c,a·b·c,B,a·b + a·c
+44,Rozdzielność mnożenia,2,3·(10+2) = ?,36,32,15,A,36
+44,Rozdzielność mnożenia,3,4x + 4y = ?,4x4y,8xy,4(x+y),C,4(x+y)
+44,Rozdzielność mnożenia,4,Po co rozdzielność?,żeby dzielić przez 0,łatwiej liczyć / pola jako suma,żeby mierzyć °C,B,łatwiej liczyć / pola jako suma
+44,Rozdzielność mnożenia,5,2(a+3) = ?,2a+6,a+6,2a+3,A,2a+6
+44,Rozdzielność mnożenia,6,Czy (a+b)·c = a·c + b·c?,tylko gdy c = 0,nie,tak,C,tak
+44,Rozdzielność mnożenia,7,Odwrotnie do rozdzielności to…,dodawanie kątów,wyłączanie wspólnego czynnika,zaokrąglanie daty,B,wyłączanie wspólnego czynnika
+44,Rozdzielność mnożenia,8,5·7 + 5·3 = 5·(?),10,2,21,A,10
+44,Rozdzielność mnożenia,9,3·(5+1) = ?,15,8,18,C,18
+44,Rozdzielność mnożenia,10,Rozdzielność łączy…,tylko kąty,mnożenie z dodawaniem,tylko daty,B,mnożenie z dodawaniem
+45,"NWD, NWW i rozkład na czynniki",1,Czynnik pierwszy to…,zawsze 1 tylko,liczba pierwsza w rozkładzie,zawsze 100,B,liczba pierwsza w rozkładzie
+45,"NWD, NWW i rozkład na czynniki",2,12 = ?,2·2·3,3·5,2·5,A,2·2·3
+45,"NWD, NWW i rozkład na czynniki",3,NWD to…,średnia,najmniejsza wspólna wielokrotność,największy wspólny dzielnik,C,największy wspólny dzielnik
+45,"NWD, NWW i rozkład na czynniki",4,NWW to…,największy wspólny dzielnik,najmniejsza wspólna wielokrotność,mediana,B,najmniejsza wspólna wielokrotność
+45,"NWD, NWW i rozkład na czynniki",5,"NWD(12,18) = ?",6,3,36,A,6
+45,"NWD, NWW i rozkład na czynniki",6,"NWW(4,6) = ?",24,2,12,C,12
+45,"NWD, NWW i rozkład na czynniki",7,Liczba złożona ma…,dokładnie 2 dzielniki,więcej niż 2 dzielniki,0 dzielników,B,więcej niż 2 dzielniki
+45,"NWD, NWW i rozkład na czynniki",8,NWD pomaga przy…,skracaniu ułamków,rysowaniu tylko koła,mierzeniu °C,A,skracaniu ułamków
+45,"NWD, NWW i rozkład na czynniki",9,Rozkład na czynniki pierwsze: 8 = ?,5·2,3·3,2·2·2,C,2·2·2
+45,"NWD, NWW i rozkład na czynniki",10,Liczba pierwsza przykład:,8,7,9,B,7
+46,Ułamek liczby i całość z części,1,1/4 z 20 = ?,4,5,80,B,5
+46,Ułamek liczby i całość z części,2,Jak policzyć część z całości?,całość × ułamek,całość − 100,całość + ułamek,A,całość × ułamek
+46,Ułamek liczby i całość z części,3,"Jeśli 1/3 to 4, całość = ?",7,3,12,C,12
+46,Ułamek liczby i całość z części,4,Powiększenie o 1/4: mnożymy przez…,1/4,5/4,4/5,B,5/4
+46,Ułamek liczby i całość z części,5,Pomniejszenie o 1/5: mnożymy przez…,4/5,1/5,5/4,A,4/5
+46,Ułamek liczby i całość z części,6,50% z liczby = …,liczba + 50,2 × liczby,1/2 z liczby,C,1/2 z liczby
+46,Ułamek liczby i całość z części,7,3/4 z 80 = ?,20,60,80,B,60
+46,Ułamek liczby i całość z części,8,"Jeśli 20% to 10, całość = ?",50,200,20,A,50
+46,Ułamek liczby i całość z części,9,Ułamek liczby to…,zawsze masa,zawsze kąt,część z całości,C,część z całości
+46,Ułamek liczby i całość z części,10,1/2 z 50 = ?,100,25,2,B,25
+47,Wyrażenia dwumianowane,1,Przykład wyrażenia dwumianowanego:,tylko 3,3 m 25 cm,tylko x²,B,3 m 25 cm
+47,Wyrażenia dwumianowane,2,3 m 25 cm = ? cm,325,"3,25",3250,A,325
+47,Wyrażenia dwumianowane,3,2 h 30 min = ? min,90,230,150,C,150
+47,Wyrażenia dwumianowane,4,250 cm = ?,25 m,"2 m 50 cm / 2,5 m","0,25 m tylko bez cm",B,"2 m 50 cm / 2,5 m"
+47,Wyrażenia dwumianowane,5,3 m 50 cm = ?,"3,5 m","0,35 m",350 m,A,"3,5 m"
+47,Wyrażenia dwumianowane,6,1 kg 200 g = ? g,"1,2",200,1200,C,1200
+47,Wyrażenia dwumianowane,7,Po co dwumianowane?,żeby liczyć kąty π,wygodny zapis miar mieszanych,żeby dzielić przez 0,B,wygodny zapis miar mieszanych
+47,Wyrażenia dwumianowane,8,Gdzie w życiu?,"wzrost, czas, waga",tylko moda,tylko litery rzymskie,A,"wzrost, czas, waga"
+47,Wyrażenia dwumianowane,9,1 h 15 min = ? min,60,115,75,C,75
+47,Wyrażenia dwumianowane,10,2 zł 30 gr = ?,230 zł,"2,30 zł","0,23 zł",B,"2,30 zł"
+48,Proste prostopadłe i odległość,1,Proste prostopadłe tworzą kąt…,0°,prosty (90°),180° zawsze bez wyjątku jako definicja równoległych,B,prosty (90°)
+48,Proste prostopadłe i odległość,2,Znak prostopadłości:,⊥,%,∥,A,⊥
+48,Proste prostopadłe i odległość,3,Odległość punktu od prostej to…,suma kątów,najdłuższy łuk,najkrótszy odcinek (prostopadły),C,najkrótszy odcinek (prostopadły)
+48,Proste prostopadłe i odległość,4,Wysokość w figurze pada…,równolegle zawsze,prostopadle na podstawę,pod kątem 1°,B,prostopadle na podstawę
+48,Proste prostopadłe i odległość,5,Ściana i podłoga często są…,prostopadłe,tożsame,równoległe jak tory zawsze,A,prostopadłe
+48,Proste prostopadłe i odległość,6,Odcinki ⊥ tworzą…,360°,0°,90°,C,90°
+48,Proste prostopadłe i odległość,7,Wysokość trójkąta rozwartego…,zawsze w środku koła,może być na zewnątrz,nigdy nie istnieje,B,może być na zewnątrz
+48,Proste prostopadłe i odległość,8,⊥ oznacza…,prostopadłość,procent,równoległość,A,prostopadłość
+48,Proste prostopadłe i odległość,9,Najkrótsza droga do prostej jest…,okrężna zawsze,równoległa,prostopadła,C,prostopadła
+48,Proste prostopadłe i odległość,10,Kąt między ⊥ to…,45°,90°,180°,B,90°
+49,Suma kątów w trójkącie,1,Suma kątów w trójkącie = ?,90°,180°,360°,B,180°
+49,Suma kątów w trójkącie,2,Kąty 50° i 60° — trzeci = ?,70°,90°,110°,A,70°
+49,Suma kątów w trójkącie,3,W trójkącie prostokątnym jeden kąt = ?,0°,180°,90°,C,90°
+49,Suma kątów w trójkącie,4,Trójkąt równoramienny ma…,0 równych boków,2 równe boki,5 boków,B,2 równe boki
+49,Suma kątów w trójkącie,5,Nierówność trójkąta: suma dwóch boków…,większa od trzeciego,równa zero,mniejsza od trzeciego,A,większa od trzeciego
+49,Suma kątów w trójkącie,6,"Czy istnieje trójkąt 2, 3, 6?",tylko na sferze w SP,tak,nie,C,nie
+49,Suma kątów w trójkącie,7,"Jeśli dwa kąty po 45°, trzeci = ?",45°,90°,180°,B,90°
+49,Suma kątów w trójkącie,8,Po co twierdzenie o sumie kątów?,obliczyć brakujący kąt,policzyć % bez danych,zważyć bryłę,A,obliczyć brakujący kąt
+49,Suma kątów w trójkącie,9,Trójkąt ostrokątny ma wszystkie kąty…,rozwarta jeden zawsze,proste,ostre,C,ostre
+49,Suma kątów w trójkącie,10,120° + 30° + ? = 180° → ?,60°,30°,90°,B,30°
+50,"Pole rombu i trapezu; ar, ha",1,Pole rombu (przekątne) = ?,d₁ + d₂,(d₁ · d₂) / 2,2(d₁ + d₂),B,(d₁ · d₂) / 2
+50,"Pole rombu i trapezu; ar, ha",2,Pole trapezu = ?,((a+b)/2) · h,a + b + h,a · b · h,A,((a+b)/2) · h
+50,"Pole rombu i trapezu; ar, ha",3,1 ar = ? m²,10,1000,100,C,100
+50,"Pole rombu i trapezu; ar, ha",4,1 ha = ? m²,100,10 000,1000,B,10 000
+50,"Pole rombu i trapezu; ar, ha",5,1 ha = ? ar,100,1000,10,A,100
+50,"Pole rombu i trapezu; ar, ha",6,100 m² = ? ar,100,10,1,C,1
+50,"Pole rombu i trapezu; ar, ha",7,Wysokość w trapezie jest między…,przekątnymi tylko,podstawami (⊥),kątami tylko,B,podstawami (⊥)
+50,"Pole rombu i trapezu; ar, ha",8,Romb: wszystkie boki…,równe,zerowe,różne,A,równe
+50,"Pole rombu i trapezu; ar, ha",9,Ar i ha to jednostki…,czasu,masy,pola,C,pola
+50,"Pole rombu i trapezu; ar, ha",10,Pole to…,obwód,powierzchnia,objętość zawsze to samo,B,powierzchnia
+51,"Graniastosłup, siatki, pole powierzchni",1,Graniastosłup ma dwie…,tylko jedną krawędź,"podstawy (równoległe, przystające)",tylko kąt 1°,B,"podstawy (równoległe, przystające)"
+51,"Graniastosłup, siatki, pole powierzchni",2,Graniastosłup prosty — krawędzie boczne…,⊥ do podstaw,zerowe,∥ do podstaw zawsze jako definicja siecznej,A,⊥ do podstaw
+51,"Graniastosłup, siatki, pole powierzchni",3,Siatka bryły to…,ułamek,wykres słupkowy,rozkład ścian na płaszczyźnie,C,rozkład ścian na płaszczyźnie
+51,"Graniastosłup, siatki, pole powierzchni",4,Pole powierzchni = ?,tylko jedna ściana,suma pól wszystkich ścian,tylko objętość,B,suma pól wszystkich ścian
+51,"Graniastosłup, siatki, pole powierzchni",5,V graniastosłupa = ?,pole podstawy · wysokość,suma kątów,obwód · 2,A,pole podstawy · wysokość
+51,"Graniastosłup, siatki, pole powierzchni",6,Ostrosłup ma…,0 ścian,dwie podstawy jak graniastosłup,jedną podstawę i wierzchołek,C,jedną podstawę i wierzchołek
+51,"Graniastosłup, siatki, pole powierzchni",7,Sześcian to szczególny…,trójkąt,graniastosłup / prostopadłościan,kąt,B,graniastosłup / prostopadłościan
+51,"Graniastosłup, siatki, pole powierzchni",8,Po co siatka?,model / pole powierzchni,BLIK,mierzenie °C,A,model / pole powierzchni
+51,"Graniastosłup, siatki, pole powierzchni",9,Objętość mówi o…,tylko dacie,tylko kolorze,miejscu w środku,C,miejscu w środku
+51,"Graniastosłup, siatki, pole powierzchni",10,Ściany boczne graniastosłupa prostego to…,koła,prostokąty,punkty,B,prostokąty
+52,Obliczenia procentowe — wszystkie typy,1,p% z liczby = ?,liczba + p,liczba × p/100,liczba − p,B,liczba × p/100
+52,Obliczenia procentowe — wszystkie typy,2,Jaki procent? P = ?,(część/całość)×100%,całość − część tylko bez %,część + całość,A,(część/całość)×100%
+52,Obliczenia procentowe — wszystkie typy,3,"Liczba, gdy znamy p%: całość = ?",część + 100,część × p,część ÷ (p/100),C,część ÷ (p/100)
+52,Obliczenia procentowe — wszystkie typy,4,Zwiększenie o p%: × …,(1 − p/100),(1 + p/100),p,B,(1 + p/100)
+52,Obliczenia procentowe — wszystkie typy,5,Zmniejszenie o p%: × …,(1 − p/100),100,(1 + p/100),A,(1 − p/100)
+52,Obliczenia procentowe — wszystkie typy,6,+20% potem −20% — wraca do startu?,tylko gdy p = 0,tak,nie,C,nie
+52,Obliczenia procentowe — wszystkie typy,7,15% z 80 = ?,15,12,80,B,12
+52,Obliczenia procentowe — wszystkie typy,8,20 to ile % z 50?,40%,50%,20%,A,40%
+52,Obliczenia procentowe — wszystkie typy,9,50% z 90 = ?,140,50,45,C,45
+52,Obliczenia procentowe — wszystkie typy,10,10% z 10 = ?,10,1,100,B,1
+53,Notacja wykładnicza i potęga potęgi,1,3000 w notacji wykładniczej = ?,3 · 10²,3 · 10³,30 · 10,B,3 · 10³
+53,Notacja wykładnicza i potęga potęgi,2,"0,002 = ?",2 · 10⁻³,2 · 10⁻¹,2 · 10³,A,2 · 10⁻³
+53,Notacja wykładnicza i potęga potęgi,3,(aᵐ)ⁿ = ?,aᵐ⁻ⁿ,aᵐ⁺ⁿ,aᵐⁿ,C,aᵐⁿ
+53,Notacja wykładnicza i potęga potęgi,4,aᵐ · aⁿ = ?,aᵐⁿ,aᵐ⁺ⁿ,aᵐ⁻ⁿ,B,aᵐ⁺ⁿ
+53,Notacja wykładnicza i potęga potęgi,5,aᵐ / aⁿ = ?,aᵐ⁻ⁿ,aᵐⁿ,aᵐ⁺ⁿ,A,aᵐ⁻ⁿ
+53,Notacja wykładnicza i potęga potęgi,6,(2³)² = ?,4³ = 64 tylko inny zapis bez potęgi potęgi,2⁵ = 32,2⁶ = 64,C,2⁶ = 64
+53,Notacja wykładnicza i potęga potęgi,7,Po co notacja wykładnicza?,tylko kąty,bardzo duże / małe liczby,tylko daty,B,bardzo duże / małe liczby
+53,Notacja wykładnicza i potęga potęgi,8,10⁰ = ?,1,10,0,A,1
+53,Notacja wykładnicza i potęga potęgi,9,5 · 10² = ?,5,50,500,C,500
+53,Notacja wykładnicza i potęga potęgi,10,10³ = ?,100,1000,30,B,1000
+54,Pierwiastek sześcienny i działania na √,1,∛8 = ?,4,2,8,B,2
+54,Pierwiastek sześcienny i działania na √,2,∛27 = ?,3,27,9,A,3
+54,Pierwiastek sześcienny i działania na √,3,"Jeśli ∛a = b, to…",b = a + 3,b² = a,b³ = a,C,b³ = a
+54,Pierwiastek sześcienny i działania na √,4,√(a·b) = ?,√a + √b,"√a · √b (a,b ≥ 0)",a · b,B,"√a · √b (a,b ≥ 0)"
+54,Pierwiastek sześcienny i działania na √,5,√50 = ?,5√2,10,25√2,A,5√2
+54,Pierwiastek sześcienny i działania na √,6,Wyłączanie sprzed pierwiastka: szukamy…,dat,kątów prostych,kwadratów doskonałych,C,kwadratów doskonałych
+54,Pierwiastek sześcienny i działania na √,7,∛(−8) = ?,2,−2,8,B,−2
+54,Pierwiastek sześcienny i działania na √,8,√(a/b) = ?,√a / √b (b > 0),a / b bez pierwiastka zawsze,√a · √b,A,√a / √b (b > 0)
+54,Pierwiastek sześcienny i działania na √,9,√16 · √9 = ?,7,25,12,C,12
+54,Pierwiastek sześcienny i działania na √,10,∛1 = ?,0,1,3,B,1
+55,Mnożenie wyrażeń algebraicznych,1,3(x+2) = ?,3x+2,3x+6,x+6,B,3x+6
+55,Mnożenie wyrażeń algebraicznych,2,(a+b)(c+d) = ?,ac+ad+bc+bd,ac+bd,a+b+c+d,A,ac+ad+bc+bd
+55,Mnożenie wyrażeń algebraicznych,3,(x+2)(x+3) = ?,x²+5,x²+6,x²+5x+6,C,x²+5x+6
+55,Mnożenie wyrażeń algebraicznych,4,Metoda: każdy z…,nikim,każdym,tylko pierwszym,B,każdym
+55,Mnożenie wyrażeń algebraicznych,5,2x · (3x−1) = ?,6x²−2x,6x−2,5x−1,A,6x²−2x
+55,Mnożenie wyrażeń algebraicznych,6,(x−1)(x+1) = ?,x−1,x²+1,x²−1,C,x²−1
+55,Mnożenie wyrażeń algebraicznych,7,Sprawdzenie: podstaw…,tylko °C,liczbę za x,tylko datę,B,liczbę za x
+55,Mnożenie wyrażeń algebraicznych,8,Znaki minus: uważaj na…,znaki przy iloczynach,czcionkę,kolor kartki,A,znaki przy iloczynach
+55,Mnożenie wyrażeń algebraicznych,9,(x+1)(x+1) = ?,2x+1,x²+1,x²+2x+1,C,x²+2x+1
+55,Mnożenie wyrażeń algebraicznych,10,Jednomian × suma: rozdzielasz…,tylko na zero,na każdy wyraz,tylko na kąt,B,na każdy wyraz
+56,Podział proporcjonalny,1,Podział proporcjonalny: dzielimy w…,losowy sposób,danym stosunku,tylko na pół zawsze,B,danym stosunku
+56,Podział proporcjonalny,2,Stosunek 2:3 oznacza…,2 części i 3 części,2 × 3 tylko,2 + 3 = wynik tylko,A,2 części i 3 części
+56,Podział proporcjonalny,3,Suma części przy 2:3 = ?,1,6,5,C,5
+56,Podział proporcjonalny,4,100 zł w 2:3 → części?,50 zł i 50 zł,40 zł i 60 zł,20 zł i 80 zł,B,40 zł i 60 zł
+56,Podział proporcjonalny,5,"1:2:3, suma 60 → pierwszej?",10,30,20,A,10
+56,Podział proporcjonalny,6,Sprawdzenie: suma udziałów = ?,stosunek bez sumy,zero,całość,C,całość
+56,Podział proporcjonalny,7,Po co podział proporcjonalny?,mierzenie °C,sprawiedliwy podział według udziałów,rysowanie tylko osi,B,sprawiedliwy podział według udziałów
+56,Podział proporcjonalny,8,Stosunek 1:1 oznacza…,równo,wszystko pierwszej osobie,nic nikomu,A,równo
+56,Podział proporcjonalny,9,3:5 — ile części razem?,2,15,8,C,8
+56,Podział proporcjonalny,10,Udział = część / …,różnica części,suma części,iloczyn części,B,suma części
+57,Twierdzenie Pitagorasa,1,Twierdzenie Pitagorasa (prostokątny):,a + b = c,a² + b² = c²,a² − b² = c,B,a² + b² = c²
+57,Twierdzenie Pitagorasa,2,c to…,przeciwprostokątna (naprzeciw 90°),kąt,przyprostokątna zawsze,A,przeciwprostokątna (naprzeciw 90°)
+57,Twierdzenie Pitagorasa,3,"a, b to…",pola,przeciwprostokątne obie,przyprostokątne,C,przyprostokątne
+57,Twierdzenie Pitagorasa,4,"Jeśli a=3, b=4, c=?",7,5,12,B,5
+57,Twierdzenie Pitagorasa,5,"3,4,5 to…",trójka pitagorejska,procenty,kąty trójkąta,A,trójka pitagorejska
+57,Twierdzenie Pitagorasa,6,Gdy znasz c i a: b = ?,c · a,c + a,√(c² − a²),C,√(c² − a²)
+57,Twierdzenie Pitagorasa,7,Działa w trójkącie…,dowolnym zawsze bez warunku,prostokątnym,tylko równobocznym bez 90°,B,prostokątnym
+57,Twierdzenie Pitagorasa,8,Drabina przy ścianie — przykład…,Pitagorasa,średniej,procentu,A,Pitagorasa
+57,Twierdzenie Pitagorasa,9,"a=5, b=12, c=?",7,17,13,C,13
+57,Twierdzenie Pitagorasa,10,c jest naprzeciw kąta…,ostrego zawsze najmniejszego,prostego,zerowego,B,prostego
+58,Przystawanie trójkątów,1,Przystawanie trójkątów oznacza…,tylko podobne kąty bez boków,można nałożyć / równe boki i kąty,różne rozmiary zawsze,B,można nałożyć / równe boki i kąty
+58,Przystawanie trójkątów,2,Cecha BBB:,bok–bok–bok,bok–kąt,kąt–kąt–kąt,A,bok–bok–bok
+58,Przystawanie trójkątów,3,Cecha BKB:,tylko kąty,bok–bok–kąt dowolny,bok–kąt–bok (kąt między),C,bok–kąt–bok (kąt między)
+58,Przystawanie trójkątów,4,Cecha KBK:,bok–bok–bok,kąt–bok–kąt,tylko BBB,B,kąt–bok–kąt
+58,Przystawanie trójkątów,5,Przy BKB kąt musi być…,zawarty między bokami,zerowy,naprzeciw dowolnego boku zawsze,A,zawarty między bokami
+58,Przystawanie trójkątów,6,Po co cechy przystawania?,policzyć %,zważyć bryłę,udowodnić równość bez mierzenia wszystkiego,C,udowodnić równość bez mierzenia wszystkiego
+58,Przystawanie trójkątów,7,Czy AAA wystarcza do przystawania?,tak,nie (tylko podobieństwo),tylko w kl. 1,B,nie (tylko podobieństwo)
+58,Przystawanie trójkątów,8,Przystające trójkąty mają równe…,odpowiadające boki i kąty,tylko kolory,tylko jeden bok,A,odpowiadające boki i kąty
+58,Przystawanie trójkątów,9,BBB porównuje…,jedną średnicę,trzy kąty tylko,trzy boki,C,trzy boki
+58,Przystawanie trójkątów,10,Przystawanie ≠ …,równość kąta prostego tylko jako definicja,podobieństwo (skala),nazwa osi,B,podobieństwo (skala)
+59,Środek i długość odcinka,1,Środek odcinka AB (wzór):,"(x₁+x₂, y₁+y₂)","((x₁+x₂)/2, (y₁+y₂)/2)","(x₁−x₂, y₁−y₂)",B,"((x₁+x₂)/2, (y₁+y₂)/2)"
+59,Środek i długość odcinka,2,Długość odcinka:,√((x₂−x₁)²+(y₂−y₁)²),x₂+y₂,|x₂−x₁| tylko zawsze,A,√((x₂−x₁)²+(y₂−y₁)²)
+59,Środek i długość odcinka,3,"Środek (0,0) i (4,2) to…","(0,0)","(4,2)","(2,1)",C,"(2,1)"
+59,Środek i długość odcinka,4,"Długość (0,0) do (3,4) = ?",7,5,12,B,5
+59,Środek i długość odcinka,5,Gdy znasz środek i jeden koniec — znajdziesz…,drugi koniec,masę,kąt π,A,drugi koniec
+59,Środek i długość odcinka,6,Punkty kratowe mają…,tylko °C,tylko ułamki,całkowite współrzędne,C,całkowite współrzędne
+59,Środek i długość odcinka,7,"Odległość (1,1) do (1,5) = ?",5,4,0,B,4
+59,Środek i długość odcinka,8,Środek dzieli odcinek…,na pół,w stosunku 2:3 zawsze,na 3 części,A,na pół
+59,Środek i długość odcinka,9,Na mapie w kratkę liczymy…,tylko BLIK,tylko temperaturę,środek i odległość,C,środek i odległość
+59,Środek i długość odcinka,10,Wzór długości to…,tylko dodawanie x,tw. Pitagorasa na kratce,tylko y,B,tw. Pitagorasa na kratce
+60,Symetralna i dwusieczna,1,Symetralna odcinka to…,dwusieczna kąta,prosta ⊥ w środku odcinka,oś X zawsze,B,prosta ⊥ w środku odcinka
+60,Symetralna i dwusieczna,2,Punkt na symetralnej jest…,w równej odległości od A i B,w temperaturze 0,bliżej tylko A,A,w równej odległości od A i B
+60,Symetralna i dwusieczna,3,Dwusieczna kąta to…,średnica koła zawsze,prosta ∥ do boku,półprosta dzieląca kąt na pół,C,półprosta dzieląca kąt na pół
+60,Symetralna i dwusieczna,4,Punkty na dwusiecznej są…,tylko w ∞,w równej odległości od ramion,tylko w 0,B,w równej odległości od ramion
+60,Symetralna i dwusieczna,5,Przecięcie symetralnych w trójkącie to…,środek okręgu opisanego,wierzchołek tylko,środek okręgu wpisanego,A,środek okręgu opisanego
+60,Symetralna i dwusieczna,6,Przecięcie dwusiecznych to…,"punkt (0,0) zawsze",środek okręgu opisanego,środek okręgu wpisanego,C,środek okręgu wpisanego
+60,Symetralna i dwusieczna,7,Symetralna dzieli odcinek…,na 3 części,na pół i pod 90°,pod 45° zawsze,B,na pół i pod 90°
+60,Symetralna i dwusieczna,8,Dwusieczna 80° dzieli na…,dwa kąty po 40°,80° i 0°,90° i −10°,A,dwa kąty po 40°
+60,Symetralna i dwusieczna,9,⊥ w środku = …,tylko cięciwa,tylko sieczna,symetralna,C,symetralna
+60,Symetralna i dwusieczna,10,Dwusieczna „tnie” kąt…,na ćwiartki zawsze,na pół,w ogóle nie,B,na pół
+61,Stosunki przestrzenne i porównywanie,1,Prawa ręka — to strona…,lewa zawsze,prawa (na sobie),góra,B,prawa (na sobie)
+61,Stosunki przestrzenne i porównywanie,2,Góra na rysunku — ku…,górze strony / niebu,tylko lewo,dółowi zawsze,A,górze strony / niebu
+61,Stosunki przestrzenne i porównywanie,3,Przed = …,nad głową zawsze,dalej z tyłu,bliżej Ciebie,C,bliżej Ciebie
+61,Stosunki przestrzenne i porównywanie,4,Za = …,bliżej Ciebie,dalej / z tyłu,obok zawsze,B,dalej / z tyłu
+61,Stosunki przestrzenne i porównywanie,5,Obok = …,z boku,pod zawsze tylko,nad,A,z boku
+61,Stosunki przestrzenne i porównywanie,6,Dłuższy szalik vs krótszy — porównujemy…,temperaturę,masę,długość,C,długość
+61,Stosunki przestrzenne i porównywanie,7,Cięższa książka vs lżejszy piórnik — porównujemy…,długość,masę / ciężar,czas,B,masę / ciężar
+61,Stosunki przestrzenne i porównywanie,8,Najpierw ustal…,względem czego porównujesz,datę tylko,kolor kredki tylko,A,względem czego porównujesz
+61,Stosunki przestrzenne i porównywanie,9,●●●● i ●● — którego więcej?,tyle samo,drugiego,pierwszego,C,pierwszego
+61,Stosunki przestrzenne i porównywanie,10,Czy prawo na sobie = zawsze prawo na obrazku?,tak zawsze,nie — sprawdź!,tylko w lustrze bez sprawdzenia,B,nie — sprawdź!
+61,Stosunki przestrzenne i porównywanie,11,Więcej / mniej / tyle samo — to…,porównanie ilości,jednostka masy,nazwa kąta,A,porównanie ilości
+61,Stosunki przestrzenne i porównywanie,12,Porównuj długość z…,temperaturą zawsze,ciężarem,długością,C,długością

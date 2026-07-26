@@ -168,11 +168,11 @@ def _enrich_remember(items: list) -> list:
 # Ręcznie dopracowane wzory / zasady końcowe (nadpisują remember, gdy podane)
 PAGE_RULES = {
     1: [
-        {"pl": "Liczbami naturalnymi liczymy: jabłka, dzieci, kroki.", "ua": "Натуральними числами лічимо: яблука, дітей, кроки."},
-        {"pl": "Cyfr jest tylko 10 (0–9). Z nich budujesz liczby.", "ua": "Цифр лише 10 (0–9). З них будуєш числа.", "formula": "cyfra ≠ liczba"},
-        {"pl": "To samo „3” w innym miejscu znaczy co innego.", "ua": "Те саме «3» в іншому місці означає інше.", "formula": "347 → 3 setki"},
-        {"pl": "Parzysta kończy się na 0,2,4,6,8.", "ua": "Парне закінчується на 0,2,4,6,8."},
-        {"pl": "Zaokrąglaj: 0–4 w dół, 5–9 w górę.", "ua": "Округлюй: 0–4 вниз, 5–9 вгору.", "formula": "47 → 50"},
+        {"pl": "Liczymy: jabłka, dzieci, kroki.", "ua": "Лічимо: яблука, дітей, кроки."},
+        {"pl": "Cyfr jest 10 (0–9). Z nich budujesz liczby.", "ua": "Цифр 10 (0–9). З них будуєш числа.", "formula": "cyfra ≠ liczba"},
+        {"pl": "Miejsce cyfry = ile jest warta (palce, klocki).", "ua": "Місце цифри = скільки варта (пальці, кубики).", "formula": "23 = 2 dziesiątki + 3"},
+        {"pl": "Pierwszy, drugi… = kolejność (liczba porządkowa).", "ua": "Перший, другий… = порядок (порядкове число)."},
+        {"pl": "Zero = pusto; w szkole pytaj o 0 w naturalnych.", "ua": "Нуль = порожньо; у школі питай про 0 у натуральних."},
     ],
     2: [
         {"pl": "Siedem liter-znaków: I V X L C D M.", "ua": "Сім літер-знаків: I V X L C D M.", "formula": "I=1 V=5 X=10"},
@@ -288,12 +288,12 @@ PAGE_RULES = {
     ],
     23: [
         {"pl": "60 s = 1 min; 60 min = 1 h.", "ua": "60 с = 1 хв; 60 хв = 1 год.", "formula": "60–60"},
-        {"pl": "1 doba = 24 godziny.", "ua": "1 доба = 24 години.", "formula": "1 doba = 24 h"},
+        {"pl": "Przerwa ~15 min, lekcja ~45 min.", "ua": "Перерва ~15 хв, урок ~45 хв."},
         {"pl": "Czas liczymy „po 60”, nie po 100.", "ua": "Час рахуємо «по 60», не по 100."},
     ],
     24: [
         {"pl": "Tydzień = 7 dni.", "ua": "Тиждень = 7 днів.", "formula": "7 dni"},
-        {"pl": "Rok zwykle ma 365 dni.", "ua": "Рік звичайно має 365 днів."},
+        {"pl": "Urodziny i ferie — szukaj w kalendarzu.", "ua": "День народження і канікули — шукай у календарі."},
         {"pl": "Przestępny: luty ma 29 dni.", "ua": "Високосний: лютий має 29 днів."},
     ],
     25: [
@@ -303,7 +303,7 @@ PAGE_RULES = {
     ],
     26: [
         {"pl": "1 złoty = 100 groszy.", "ua": "1 злотий = 100 грошів.", "formula": "1 zł = 100 gr"},
-        {"pl": "Pieniądze licz jak liczby z przecinkiem.", "ua": "Гроші рахуй як числа з комою."},
+        {"pl": "Bułka 5 zł — ile zostaje z 10 zł?", "ua": "Булочка 5 zł — скільки лишається з 10 zł?"},
         {"pl": "Reszta = ile dałeś − cena.", "ua": "Решта = скільки дав − ціна."},
     ],
     27: [
@@ -312,15 +312,20 @@ PAGE_RULES = {
         {"pl": "Skala 1:n oznacza pomniejszenie n razy.", "ua": "Масштаб 1:n означає зменшення в n разів."},
     ],
     28: [
+        {"pl": "Okno = prostokąt, znak = trójkąt — figury wokół nas.", "ua": "Вікно = прямокутник, знак = трикутник — фігури навколо."},
         {"pl": "Punkt = miejsce (kropka).", "ua": "Точка = місце (крапка)."},
         {"pl": "Odcinek ma 2 końce; prostą ciągniesz bez końca.", "ua": "Відрізок має 2 кінці; пряму тягнеш без кінця."},
-        {"pl": "Półprosta: początek + jeden kierunek (nie myl z promieniem okręgu).", "ua": "Півпряма: початок + один напрям (не плутай із радіусом кола)."},
         {"pl": "Wielokąt = zamknięta figura z odcinków.", "ua": "Многокутник = замкнена фігура з відрізків."},
     ],
     29: [
+        {"pl": "Dach, drzwi, kafelek — szukaj figur wokół siebie.", "ua": "Дах, двері, плитка — шукай фігури навколо себе."},
         {"pl": "Suma kątów w trójkącie = 180°.", "ua": "Сума кутів у трикутнику = 180°.", "formula": "180°"},
         {"pl": "Kwadrat: 4 równe boki i 4 kąty proste.", "ua": "Квадрат: 4 рівні сторони і 4 прямі кути."},
-        {"pl": "Ucz się cech charakterystycznych figur.", "ua": "Вчи характерні ознаки фігур."},
+    ],
+    61: [
+        {"pl": "Najpierw ustal, względem czego porównujesz.", "ua": "Спочатку з'ясуй, відносно чого порівнюєш."},
+        {"pl": "Prawo/lewo na sobie sprawdź na obrazku.", "ua": "Право/ліво на собі перевір на малюнку."},
+        {"pl": "Porównuj długość z długością, ciężar z ciężarem.", "ua": "Порівнюй довжину з довжиною, вагу з вагою."},
     ],
     30: [
         {"pl": "Średnica = 2 · promień.", "ua": "Діаметр = 2 · радіус.", "formula": "d = 2r"},
@@ -429,10 +434,22 @@ CARD_OVERRIDES = {
         "rule_ua": "Читаємо зліва: спочатку більші «пакунки» (сотні), потім десятки, в кінці одиниці.",
     },
     (1, "wartość pozycyjna"): {
-        "def_pl": "To samo „3” znaczy co innego zależnie od miejsca: w 347 to 3 setki, a nie 3 jednostki.",
-        "def_ua": "Те саме «3» означає різне залежно від місця: у 347 це 3 сотні, а не 3 одиниці.",
-        "rule": "Im bardziej w lewo, tym „mocniejsze” miejsce (więcej warte).",
-        "rule_ua": "Що лівіше — то «сильніше» місце (більше варте).",
+        "def_pl": "To samo „3” znaczy co innego zależnie od miejsca: w 347 to 3 setki, a nie 3 jednostki. Jak klocki: paczka dziesiątek i osobne jedności.",
+        "def_ua": "Те саме «3» означає різне залежно від місця: у 347 це 3 сотні, а не 3 одиниці. Як кубики: пачка десятків і окремі одиниці.",
+        "rule": "Na palcach lub klockach: 23 = 2 dziesiątki + 3 jedności. Im bardziej w lewo, tym „mocniejsze” miejsce.",
+        "rule_ua": "На пальцях або кубиках: 23 = 2 десятки + 3 одиниці. Що лівіше — то «сильніше» місце.",
+    },
+    (1, "liczba porządkowa"): {
+        "def_pl": "Liczba porządkowa mówi o kolejności: pierwszy, drugi, trzeci… — nie „ile”, tylko „który z kolei”.",
+        "def_ua": "Порядкове число каже про порядок: перший, другий, третій… — не «скільки», а «який за порядком».",
+        "rule": "W wyścigu: kto dobiegł pierwszy? To liczba porządkowa. Ile dzieci biegło? To liczba naturalna.",
+        "rule_ua": "На перегонах: хто прибіг перший? Це порядкове. Скільки дітей бігло? Це натуральне.",
+    },
+    (1, "zero"): {
+        "def_pl": "Zero = nic / pusto (0 cukierków). W kl. 1–3 bywa różnie, czy 0 należy do liczb naturalnych — w szkole pytaj nauczyciela.",
+        "def_ua": "Нуль = нічого / порожньо (0 цукерок). У кл. 1–3 буває по-різному, чи 0 у натуральних — у школі спитай учителя.",
+        "rule": "0 to cyfra i specjalna liczba. Nie dziel przez zero!",
+        "rule_ua": "0 — цифра і особливе число. Не діли на нуль!",
     },
     (1, "parzysta / nieparzysta"): {
         "def_pl": "Parzysta dzieli się równo na 2 (jak pary skarpetek). Nieparzysta — zostaje 1 „bez pary”.",
@@ -550,6 +567,18 @@ CARD_OVERRIDES = {
         "rule": "W 8−3=5: 8 to odjemna, 3 to odjemnik, 5 to różnica.",
         "rule_ua": "У 8−3=5: 8 — зменшуване, 3 — від'ємник, 5 — різниця.",
     },
+    (4, "dodawanie na palcach / osi"): {
+        "def_pl": "Jak w kl. 1–2: dodajesz na palcach albo skaczesz w prawo po osi liczbowej.",
+        "def_ua": "Як у кл. 1–2: додаєш на пальцях або стрибаєш вправо по числовій прямій.",
+        "rule": "3+2: pokaż 3 palce, dołóż 2 — ile razem? Albo: start 3, dwa skoki w prawo → 5.",
+        "rule_ua": "3+2: покажи 3 пальці, додай 2 — скільки разом? Або: старт 3, два стрибки вправо → 5.",
+    },
+    (4, "odejmowanie: ile zostało"): {
+        "def_pl": "Jak w kl. 1–2: miałem 9 cukierków, zabrałem 4 — ile zostało?",
+        "def_ua": "Як у кл. 1–2: мав 9 цукерок, забрав 4 — скільки лишилось?",
+        "rule": "Zawsze pytaj: „ile zostało?”. Sprawdź dodawaniem: 5+4=9.",
+        "rule_ua": "Завжди питай: «скільки лишилось?». Перевір додаванням: 5+4=9.",
+    },
     (4, "właściwości +"): {
         "def_pl": "Przy dodawaniu kolejność nie psuje wyniku — możesz przestawiać i grupować.",
         "def_ua": "При додаванні порядок не псує результату — можна переставляти і групувати.",
@@ -574,6 +603,12 @@ CARD_OVERRIDES = {
         "def_ua": "Множення — швидке додавання того самого числа. 4×3 означає: 4+4+4.",
         "rule": "Zapis: czynnik × czynnik = iloczyn. Najpierw zrozum sens, potem ucz się na pamięć.",
         "rule_ua": "Запис: множник × множник = добуток. Спочатку зрозумій сенс, потім вчи напам'ять.",
+    },
+    (5, "mnożenie = dodawanie tej samej"): {
+        "def_pl": "Trzy paczki po 4 cukierki: 4+4+4. Mnożenie to skrót takiego dodawania.",
+        "def_ua": "Три пачки по 4 цукерки: 4+4+4. Множення — скорочення такого додавання.",
+        "rule": "4×3 = 4+4+4 = 12. Najpierw zobacz „dodawanie tej samej”, potem ucz się tabliczki.",
+        "rule_ua": "4×3 = 4+4+4 = 12. Спочатку побач «додавання тієї самої», потім вчи таблицю.",
     },
     (5, "iloczyn"): {
         "def_pl": "Iloczyn to wynik mnożenia — liczba po znaku =.",
@@ -611,6 +646,12 @@ CARD_OVERRIDES = {
         "def_ua": "Ділення — справедливий розподіл: «по скільки кожному?» або «скільки разів вміщується?».",
         "rule": "12 : 3 = 4. Zapis: dzielna : dzielnik = iloraz. Nie dziel przez 0!",
         "rule_ua": "12 : 3 = 4. Запис: ділене : дільник = частка. Не діли на 0!",
+    },
+    (6, "sprawiedliwe rozdawanie"): {
+        "def_pl": "Dzielenie = rozdajemy po równo: każdemu tyle samo, nic nie zostaje „na boku”.",
+        "def_ua": "Ділення = роздаємо порівну: кожному стільки само, нічого не лишається «збоку».",
+        "rule": "12 cukierków, 3 dzieci → po 4. To sprawiedliwe rozdawanie.",
+        "rule_ua": "12 цукерок, 3 дітей → по 4. Це справедлива роздача.",
     },
     (6, "iloraz"): {
         "def_pl": "Iloraz to wynik dzielenia — ile wyszło po rozdzieleniu.",
@@ -746,12 +787,6 @@ CARD_OVERRIDES = {
         "def_ua": "При часі увага: тут немає «100 хвилин у годині» — є 60.",
         "rule": "2,5 h = 2 h 30 min = 150 min. Najpierw godziny, potem minuty.",
         "rule_ua": "2,5 год = 2 год 30 хв = 150 хв. Спочатку години, потім хвилини.",
-    },
-    (23, "przykład"): {
-        "def_pl": "Policz, ile trwa lekcja albo droga do szkoły — to właśnie upływ czasu.",
-        "def_ua": "Порахуй, скільки триває урок або дорога до школи — це і є проміжок часу.",
-        "rule": "Od 8:45 do 10:10 = 1 h 25 min. Najpierw do pełnej godziny, potem reszta.",
-        "rule_ua": "Від 8:45 до 10:10 = 1 год 25 хв. Спочатку до повної години, потім решта.",
     },
     # ——— strona 24: Kalendarz ———
     (24, "jednostki kalendarzowe"): {
@@ -919,6 +954,36 @@ CARD_OVERRIDES = {
         "rule": "P = liczba wyników korzystnych / liczba wszystkich jednakowo możliwych.",
         "rule_ua": "P = число сприятливих / число всіх однаково можливих.",
     },
+    (23, "przykład"): {
+        "def_pl": "W szkole: przerwa 15 minut, lekcja zwykle 45. Policz od dzwonka do dzwonka.",
+        "def_ua": "У школі: перерва 15 хвилин, урок зазвичай 45. Порахуй від дзвінка до дзвінка.",
+        "rule": "Od 10:00 do 10:15 = 15 min przerwy. Od 8:00 do 8:45 = 45 min lekcji.",
+        "rule_ua": "Від 10:00 до 10:15 = 15 хв перерви. Від 8:00 до 8:45 = 45 хв уроку.",
+    },
+    (24, "urodziny i święta"): {
+        "def_pl": "Kalendarz w kl. 1–3: kiedy urodziny, kiedy ferie, który dziś dzień tygodnia.",
+        "def_ua": "Календар у кл. 1–3: коли день народження, коли канікули, який сьогодні день тижня.",
+        "rule": "Zaznacz urodziny w kalendarzu. Policz, ile dni do ferii.",
+        "rule_ua": "Познач день народження в календарі. Порахуй, скільки днів до канікул.",
+    },
+    (26, "5 zł na bułkę"): {
+        "def_pl": "Jak w kl. 1–3: masz 10 zł, bułka kosztuje 5 zł — ile zostanie?",
+        "def_ua": "Як у кл. 1–3: маєш 10 zł, булочка коштує 5 zł — скільки лишиться?",
+        "rule": "10 − 5 = 5 zł reszty. Za 15 zł kupisz 3 bułki po 5 zł.",
+        "rule_ua": "10 − 5 = 5 zł решти. За 15 zł купиш 3 булочки по 5 zł.",
+    },
+    (28, "figury wokół nas"): {
+        "def_pl": "Szukaj figur w klasie i na podwórku: okno, drzwi, znak drogowy, piłka.",
+        "def_ua": "Шукай фігури в класі й на подвір'ї: вікно, двері, дорожній знак, м'яч.",
+        "rule": "Okno ≈ prostokąt, znak ostrzegawczy ≈ trójkąt, piłka ≈ koło.",
+        "rule_ua": "Вікно ≈ прямокутник, попереджувальний знак ≈ трикутник, м'яч ≈ коло.",
+    },
+    (29, "figury wokół nas"): {
+        "def_pl": "Dach jak trójkąt, drzwi i zeszyt jak prostokąt, kafelek jak kwadrat.",
+        "def_ua": "Дах як трикутник, двері й зошит як прямокутник, плитка як квадрат.",
+        "rule": "Nazwij 3 figury w klasie na głos — to już geometria!",
+        "rule_ua": "Назви 3 фігури в класі вголос — це вже геометрія!",
+    },
 }
 
 from handbook_overrides_all import MORE_OVERRIDES
@@ -929,8 +994,8 @@ from handbook_clear import CLEAR_FIXES
 
 CARD_OVERRIDES.update(CLEAR_FIXES)
 
-EARLY_PAGES = {1, 2, 4, 5, 6, 20, 21, 23, 24, 26, 28}
-ALL_DEEP_PAGES = set(range(1, 61))
+EARLY_PAGES = {1, 2, 4, 5, 6, 20, 21, 23, 24, 26, 28, 29, 61}
+ALL_DEEP_PAGES = set(range(1, 62))
 
 
 def enrich_card(card: dict, page_n: int) -> None:

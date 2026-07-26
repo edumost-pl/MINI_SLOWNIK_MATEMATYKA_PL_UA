@@ -28,18 +28,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll("[data-print]").forEach((btn) => {
     btn.addEventListener("click", () => {
+      const mode = (btn.getAttribute("data-print") || "").trim();
       document.body.classList.add("is-printing");
+      document.body.classList.toggle("print-compact", mode === "compact");
       window.print();
-      setTimeout(() => document.body.classList.remove("is-printing"), 500);
+      setTimeout(() => {
+        document.body.classList.remove("is-printing", "print-compact");
+      }, 800);
     });
   });
 
-  initCardZoom();
+  initBlockZoom();
 });
 
-function initCardZoom() {
-  const topicCards = document.querySelectorAll("article.card");
-  if (!topicCards.length) return;
+function initBlockZoom() {
+  const zoomables = document.querySelectorAll("article.card, section.life-strip");
+  if (!zoomables.length) return;
 
   const overlay = document.createElement("div");
   overlay.className = "card-zoom-overlay no-print";
@@ -58,10 +62,13 @@ function initCardZoom() {
   const closeBtn = overlay.querySelector(".card-zoom-close");
   const panel = overlay.querySelector(".card-zoom-panel");
 
-  function openCard(card) {
-    const clone = card.cloneNode(true);
+  function openBlock(el) {
+    const clone = el.cloneNode(true);
     clone.removeAttribute("tabindex");
+    clone.removeAttribute("role");
+    clone.removeAttribute("aria-label");
     clone.setAttribute("aria-hidden", "false");
+    clone.classList.add("is-zoomed");
     content.innerHTML = "";
     content.appendChild(clone);
     overlay.classList.add("is-open");
@@ -69,33 +76,37 @@ function initCardZoom() {
     closeBtn.focus();
   }
 
-  function closeCard() {
+  function closeBlock() {
     overlay.classList.remove("is-open");
     document.body.classList.remove("card-zoom-open");
     content.innerHTML = "";
   }
 
-  topicCards.forEach((card) => {
-    card.setAttribute("tabindex", "0");
-    card.setAttribute("role", "button");
-    card.setAttribute("aria-label", "Powiększ kartę");
-    card.addEventListener("click", () => openCard(card));
-    card.addEventListener("keydown", (e) => {
+  zoomables.forEach((el) => {
+    el.classList.add("is-zoomable");
+    el.setAttribute("tabindex", "0");
+    el.setAttribute("role", "button");
+    const label = el.classList.contains("life-strip")
+      ? "Powiększ przykład z życia"
+      : "Powiększ kartę";
+    el.setAttribute("aria-label", label);
+    el.addEventListener("click", () => openBlock(el));
+    el.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        openCard(card);
+        openBlock(el);
       }
     });
   });
 
   closeBtn.addEventListener("click", (e) => {
     e.stopPropagation();
-    closeCard();
+    closeBlock();
   });
 
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay || e.target.classList.contains("card-zoom-hint")) {
-      closeCard();
+      closeBlock();
     }
   });
 
@@ -103,7 +114,7 @@ function initCardZoom() {
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && overlay.classList.contains("is-open")) {
-      closeCard();
+      closeBlock();
     }
   });
 }

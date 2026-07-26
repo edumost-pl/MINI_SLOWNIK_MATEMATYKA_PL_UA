@@ -41,17 +41,43 @@ def esc(s: str) -> str:
 
 
 def wordwall_stub(url: str = "#") -> str:
-    """Zawsze w HTML — link wklejasz w href=... w pliku .html."""
-    href = (url or "").strip() or "#"
+    """Link do ćwiczenia na karcie — tylko gdy jest prawdziwy URL."""
+    href = (url or "").strip()
+    if not href or href == "#":
+        return ""
     return (
         "\n          <div class=\"card-task no-print\">\n"
-        "            <!-- WORDWALL: wklej swój link w atrybut href poniżej -->\n"
         f'            <a class="wordwall-link" href="{esc(href)}" target="_blank" rel="noopener noreferrer">\n'
         '              <span class="ww-ico" aria-hidden="true">▶</span>\n'
         "              Ćwiczenie · Wordwall\n"
         '              <span class="lab-ua">Вправа</span>\n'
         "            </a>\n"
         "          </div>"
+    )
+
+
+def page_wordwall_block(page: dict) -> str:
+    """Miejsce na Wordwall po bloku „Częsty błąd” — zawsze widoczne na stronie."""
+    href = (page.get("wordwall") or page.get("wordwall_url") or "").strip() or "#"
+    live = href != "#"
+    link_cls = "wordwall-link" + ("" if live else " wordwall-link--pending")
+    extra = ' target="_blank" rel="noopener noreferrer"' if live else ""
+    n = int(page.get("n") or 0)
+    return (
+        f'\n    <section class="page-wordwall no-print" aria-label="Ćwiczenie Wordwall" id="wordwall-s{n:02d}">\n'
+        '      <div class="page-wordwall-inner">\n'
+        '        <div class="page-wordwall-text">\n'
+        '          <h3>Ćwiczenie · Wordwall <span class="ua">Вправа</span></h3>\n'
+        "          <p>Sprawdź hasła z tej strony w krótkim quizie.</p>\n"
+        '          <p class="ua">Перевір поняття з цієї сторінки в короткому квізі.</p>\n'
+        "        </div>\n"
+        f'        <a class="{link_cls}" href="{esc(href)}"{extra}>\n'
+        '          <span class="ww-ico" aria-hidden="true">▶</span>\n'
+        "          Otwórz ćwiczenie\n"
+        '          <span class="lab-ua">Відкрити вправу</span>\n'
+        "        </a>\n"
+        "      </div>\n"
+        "    </section>"
     )
 
 
@@ -83,9 +109,6 @@ def media_block(
       images/img01_3.png …    → karty (kolejno: karta1 = _3)
       icons/icon01_1.png …    → ikony kart
     """
-    safe_prompt = prompt.replace("--", "—")
-    comment = f"\n        <!-- AI PROMPT [{kind}]: {safe_prompt} -->\n"
-
     if slot.startswith("i") and slot[1:].isdigit():
         n = int(slot[1:])
         rel = f"assets/icons/icon{page_n:02d}_{n}.png"
@@ -97,7 +120,6 @@ def media_block(
 
     src = f"{asset_prefix}{rel}"
     return (
-        f"{comment}"
         f'        <div class="media media--{kind} has-img">\n'
         f'          <img src="{esc(src)}" alt="{esc(alt or label)}" />\n'
         f"        </div>"
@@ -106,12 +128,9 @@ def media_block(
 
 def ph(kind: str, emoji: str, label: str, prompt: str, extra_class: str = "") -> str:
     """Unused legacy — kept for compatibility."""
-    safe_prompt = prompt.replace("--", "—")
     return (
-        f"\n        <!-- AI PROMPT [{kind}]: {safe_prompt} -->\n"
         f'        <div class="media media--{kind} is-placeholder {extra_class}" '
-        f'data-emoji="{emoji}" data-label="{esc(label)}" '
-        f'data-ai-prompt="{esc(safe_prompt)}"></div>'
+        f'data-emoji="{emoji}" data-label="{esc(label)}"></div>'
     )
 
 
@@ -315,6 +334,8 @@ def chapter_body(p, asset_prefix="../"):
       </div>
     </section>'''
 
+    wordwall_html = page_wordwall_block(p)
+
     return f'''
     <header class="page-header">
       <div class="cat-badge">
@@ -357,6 +378,8 @@ def chapter_body(p, asset_prefix="../"):
 
     {mistake_html}
 
+    {wordwall_html}
+
     <section class="remember rules-box" aria-label="Zasady do zapamiętania">
       <div class="remember-head rules-head">
         <span class="rules-badge">ZASADA</span>
@@ -372,9 +395,16 @@ def chapter_body(p, asset_prefix="../"):
     </section>
 
     <footer class="page-footer">
-      <div>{p["cat"]} • {esc(p["cat_pl"])} / {esc(p["cat_ua"])}</div>
-      <div class="center">{p["n"]}</div>
-      <div class="right">Mini-słownik matematyki PL-UA</div>
+      <div class="page-footer-bar">
+        <div>{p["cat"]} • {esc(p["cat_pl"])} / {esc(p["cat_ua"])}</div>
+        <div class="center">{p["n"]}</div>
+        <div class="right">Mini-słownik matematyki PL-UA</div>
+      </div>
+      <div class="site-copyright">
+        <p>© 2026 <strong>EduMost</strong>. Wszelkie prawa zastrzeżone. / Усі права захищені.</p>
+        <p class="site-copyright-note">Kopiowanie, udostępnianie i sprzedaż bez pisemnej zgody autora są zabronione. · Копіювання, поширення та продаж без письмової згоди автора заборонені.</p>
+        <p class="site-copyright-links"><a href="{asset_prefix}regulamin.html">Regulamin</a> · <a href="{asset_prefix}rodo.html">Polityka prywatności / RODO</a></p>
+      </div>
     </footer>
 '''
 
@@ -398,9 +428,6 @@ def page_html(p, prev_f, next_f):
   <link rel="stylesheet" href="../media.css" />
 </head>
 <body class="page-body cat-{p["cat"]}">
-  <!--
-    PROMPTY AI: przy każdej zaślepce .is-placeholder jest komentarz <!-- AI PROMPT [...] -->.
-  -->
   <main class="page" id="print-root">
     <div class="page-nav no-print">
       <div class="page-nav-start">
@@ -464,7 +491,10 @@ def book_html(pages_list):
     </div>
     <div class="nav-actions">
       <button type="button" class="btn-print btn-print-lg" data-print>
-        🖨 Zapisz całą książkę jako PDF
+        🖨 PDF — 1 temat = 1 strona
+      </button>
+      <button type="button" class="btn-print btn-print-lg" data-print="compact" style="background:#0f766e">
+        📄 PDF kompaktowy (mniej pustych miejsc)
       </button>
     </div>
   </div>
@@ -476,12 +506,18 @@ def book_html(pages_list):
       <p class="ua-title">Міні-довідник з математики</p>
       <p class="lead">{len(pages_list)} tematów · Polski ↔ Українська · Szkoła podstawowa</p>
       <p class="book-cover-hint no-print">
-        Kliknij żółty przycisk → w oknie druku wybierz <strong>Zapisz jako PDF</strong>
-        (marginesy: domyślne, tło grafiki: włączone).
+        <strong>PDF — 1 temat = 1 strona</strong> — czytelna książka (mogą zostać puste doły stron).<br/>
+        <strong>PDF kompaktowy</strong> — tematy jeden za drugim, mniej pustego miejsca (zalecane).<br/>
+        W oknie druku: <em>Zapisz jako PDF</em> · marginesy domyślne · <em>Grafika tła</em> włączona.
       </p>
-      <button type="button" class="btn-print btn-print-lg no-print" data-print>
-        🖨 Zapisz całą książkę jako PDF
-      </button>
+      <div class="no-print" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+        <button type="button" class="btn-print btn-print-lg" data-print>
+          🖨 PDF — 1 temat = 1 strona
+        </button>
+        <button type="button" class="btn-print btn-print-lg" data-print="compact" style="background:#0f766e">
+          📄 PDF kompaktowy
+        </button>
+      </div>
     </div>
   </header>
 
@@ -497,7 +533,8 @@ def book_html(pages_list):
   </div>
 
   <p class="print-hint no-print">
-    Tip: Chrome / Edge → Drukuj → Miejsce docelowe: <strong>Zapisz jako PDF</strong>.
+    Tip: Chrome / Edge → Drukuj → <strong>Zapisz jako PDF</strong>.
+    Dla gęstego pliku użyj zielonego przycisku <strong>PDF kompaktowy</strong>.
     Włącz „Grafika tła”, aby zachować kolory.
   </p>
   <script src="script.js"></script>
@@ -571,7 +608,7 @@ index = f'''<!DOCTYPE html>
       <div class="features">
         <div class="feature"><strong>📚 1 PDF</strong>Cała książka jednym plikiem</div>
         <div class="feature"><strong>📱 Telefon</strong>Wygodnie na mobile</div>
-        <div class="feature"><strong>🎨 Obrazki</strong>Miejsce + prompty AI</div>
+        <div class="feature"><strong>🎨 Obrazki</strong>Ilustracje do haseł i przykładów</div>
         <div class="feature"><strong>🇺🇦 PL+UA</strong>Szkolny język + wsparcie</div>
         <div class="feature"><strong>🖨 Druk</strong>Strona lub całość</div>
       </div>
@@ -583,7 +620,7 @@ index = f'''<!DOCTYPE html>
       <div class="toc-head">
         <div>
           <h2>Spis treści / Зміст</h2>
-          <p><a href="book.html">→ Otwórz książkę i zapisz PDF</a> · <a href="howto-obrazy.html">Obrazki</a></p>
+          <p><a href="book.html">→ Otwórz książkę i zapisz PDF</a></p>
         </div>
         <label class="search">🔎 <input id="toc-search" type="search" placeholder="Szukaj tematu…" inputmode="search" /></label>
       </div>
@@ -599,7 +636,14 @@ index = f'''<!DOCTYPE html>
       <div class="toc-grid">{"".join(cards_html)}</div>
     </div>
   </section>
-  <footer class="site-footer">ZROZUM ★ ZAPAMIĘTAJ ★ DZIAŁAJ · 7–12 lat</footer>
+  <footer class="site-footer">
+    <p class="site-footer-tagline">ZROZUM ★ ZAPAMIĘTAJ ★ DZIAŁAJ · 7–12 lat</p>
+    <div class="site-copyright">
+      <p>© 2026 <strong>EduMost</strong>. Wszelkie prawa zastrzeżone. / Усі права захищені.</p>
+      <p class="site-copyright-note">Kopiowanie, udostępnianie i sprzedaż bez pisemnej zgody autora są zabronione. · Копіювання, поширення та продаж без письмової згоди автора заборонені.</p>
+      <p class="site-copyright-links"><a href="regulamin.html">Regulamin</a> · <a href="rodo.html">Polityka prywatności / RODO</a></p>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

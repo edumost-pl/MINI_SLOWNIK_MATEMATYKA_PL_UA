@@ -63,6 +63,7 @@ PAGE_KLASA = {
     58: "klasy 7–8",
     59: "klasy 7–8",
     60: "klasy 7–8",
+    61: "klasy 1–3",
 }
 
 # Precyzyjniejsze nadpisania (nr_strony, hasło_pl) → klasa

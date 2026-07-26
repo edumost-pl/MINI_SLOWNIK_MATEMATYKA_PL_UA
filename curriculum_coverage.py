@@ -17,10 +17,10 @@ from __future__ import annotations
 # (dział PP, temat, klasy, status, gdzie_w_słowniku, uwagi)
 CURRICULUM = [
     # ——— I etap: klasy 1–3 ———
-    ("I·1–3", "Stosunki przestrzenne (prawo/lewo, pion, poziom, skos)", "1–3", "gap", "—", "Edukacja wczesnoszkolna — opcjonalne hasło"),
-    ("I·1–3", "Porównywanie wielkości (dłuższy, cięższy, więcej)", "1–3", "partial", "20, 21", "Jest przy miarach, brak osobnego hasła „porównanie wielkości”"),
+    ("I·1–3", "Stosunki przestrzenne (prawo/lewo, pion, poziom, skos)", "1–3", "covered", "61", "Nowa strona: prawo/lewo, góra/dół, przed/za + porównania"),
+    ("I·1–3", "Porównywanie wielkości (dłuższy, cięższy, więcej)", "1–3", "covered", "61, 20, 21", "Hasła na s. 61 + miary"),
     ("I·1–3", "Liczby naturalne 0–1000 (+ wybrane większe)", "1–3", "covered", "01", ""),
-    ("I·1–3", "Cyfry, wartość pozycyjna, liczby porządkowe", "1–3", "partial", "01", "Brak osobnego hasła „liczba porządkowa”"),
+    ("I·1–3", "Cyfry, wartość pozycyjna, liczby porządkowe", "1–3", "covered", "01", "Hasła: cyfra, wartość pozycyjna, liczba porządkowa, zero"),
     ("I·1–3", "Porównywanie i porządkowanie liczb (< = >)", "1–3", "covered", "01", ""),
     ("I·1–3", "Dodawanie i odejmowanie", "1–3", "covered", "04", ""),
     ("I·1–3", "Tabliczka mnożenia", "1–3", "covered", "05", ""),
@@ -28,7 +28,7 @@ CURRICULUM = [
     ("I·1–3", "Zegar i upływ czasu", "1–3", "covered", "23", ""),
     ("I·1–3", "Kalendarz", "1–3", "covered", "24", ""),
     ("I·1–3", "Pieniądze (zł, gr)", "1–3", "covered", "26", ""),
-    ("I·1–3", "Figury w otoczeniu (rozpoznawanie)", "1–3", "partial", "28, 29", "Jest później; brak osobnej strony „figury wokół nas” dla 1–3"),
+    ("I·1–3", "Figury w otoczeniu (rozpoznawanie)", "1–3", "covered", "28, 29, 61", "Karty „figury wokół nas” + przestrzeń na s. 61"),
     ("I·1–3", "Mierzenie długości / masy (praktyka)", "1–3", "covered", "20, 21", ""),
 
     # ——— II etap: klasy 4–6 ———
@@ -129,16 +129,15 @@ IMPLEMENTED_PAGES_43_60 = [
     {"n": 58, "title_pl": "Przystawanie trójkątów"},
     {"n": 59, "title_pl": "Środek i długość odcinka"},
     {"n": 60, "title_pl": "Symetralna i dwusieczna"},
+    {"n": 61, "title_pl": "Stosunki przestrzenne i porównywanie"},
 ]
 
 # Opcjonalne uzupełnienia (niekrytyczne względem PP)
 OPTIONAL_REMAINING = [
-    {"title_pl": "Stosunki przestrzenne (prawo/lewo…)", "klasy": "1–3", "priorytet": "niski"},
     {"title_pl": "Zadania tekstowe — strategie", "klasy": "4–6", "priorytet": "średni (metodyka)"},
     {"title_pl": "Wielokąt foremny", "klasy": "7–8", "priorytet": "niski"},
     {"title_pl": "Podzielność przez 100", "klasy": "4–5", "priorytet": "niski (dopisek do s. 08)"},
     {"title_pl": "Przekształcanie wzorów", "klasy": "7–8", "priorytet": "średni"},
-    {"title_pl": "Liczba porządkowa / figury wokół nas", "klasy": "1–3", "priorytet": "niski"},
 ]
 
 # Legacy alias (puste — wszystko z listy wdrożone)
@@ -155,7 +154,7 @@ def summary():
         "partial": c["partial"],
         "gap": c["gap"],
         "optional": c.get("optional", 0),
-        "pages_dict": 60,
+        "pages_dict": 61,
         "implemented_43_60": len(IMPLEMENTED_PAGES_43_60),
         "optional_remaining": len(OPTIONAL_REMAINING),
         "proposed_pages": 0,

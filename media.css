@@ -237,6 +237,16 @@
   border-radius: 16px;
   background: linear-gradient(90deg, #fff6d1, #fff);
   border: 1px solid #e6c84a;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.life-strip.is-zoomable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(230, 200, 74, 0.28);
+}
+.life-strip.is-zoomable:focus-visible {
+  outline: 3px solid #f5c518;
+  outline-offset: 2px;
 }
 .life-strip .media {
   margin: 0;
