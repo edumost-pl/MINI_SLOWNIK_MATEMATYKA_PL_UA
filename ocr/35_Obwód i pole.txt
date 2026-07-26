@@ -1,0 +1,47 @@
+Ą $ Geometria pomaga
+WOG I pole nam mierzy świt
+k wokół nas!
+w Периметр i nnowja ś u
+нам вимірювати світ
+Obwód i pole e Периметр і площа навколо Hac!
+o Obwód — nepumeTp e Pole — nnowa
+P = suma długości boków | - jednostki: ст?, m
+E SC k kk P k
+! ї ! |
+о ! : EFREENESEW Z Ї
+"B p ! P=a+bra+b ' FPREBAKFAYRCF '
+» ОІ н Ш
+i н Ї шя ел тея Сче '
+І k i h
+PL: Długość „ramki” wokół figury. РІ: Ile powierzchni zajmuje figura.
+UA: Довжина «рамки» Haskono фігури. UA: Скільки поверхні займає фігура.
+е Pole prostokąta —
+площа прямокутника Przykład / Приклад
+Pi 'a b b a=7cm b=4cm
+=: Б й: ща 2
+етя тт P=a-b=7-4=28cm
+UA: Cropowa х cropowa. a
+o Pole kwadratu —
+nnouja квадрата Przykład / Приклад
+p = a2 a a=6cm
+=r- 2
+PL: Bok do kwadratu. Piziaś 2167 Ek36jcm
+UA: Cropowa в квадраті. a
+е Роїе trójkąta —
+площа трикутника Przykład / Приклад
+P_a~h a=10cm, h=6cm
+2 p = ан 1026 - 30 m*
+PL: Podstawa x wysokość/ 2. 2 2
+UA: Основа x висота / 2. a
+е Wysokość — висота ,
+h ї podstawa і
+PL: Odcinek prostopadły od wierzchołka ih
+do podstawy. |
+UA: Перпендикуляр від вершини
+до основи. а а а
+. Pamiętaj! — 3anaw'srań! 9 Wskazówka! — Nopana! Jednostki pola / Одиниці площі
+Ф Obwód - suma długości boków. Zawsze sprawdzaj jednostki! 1m* — —  mały kwadracik o boku 1 cm
+© Pole - ile powierzchni zajmuje figura. Długości mierzymy w cm, m. 1m? — - kwadrat o boku 1 m
+©) Jednostki pola to zawsze jednostki kwadratowe: фоів sws w cm*, m 1dm? — -  kwadrat o boku 1 dm
+ж ф Czśb c [c ne жя SA, 1mż — —  kwadrat o boku 1 кт
+E - GEOMETRIA / TEOMETPIA Mini-słownik matematyki PL-UA

@@ -1,0 +1,72 @@
+: : и г N
+Kombinatoryka i prawdopodobieństwo _ »-
+wszyskie mażliwości
+KombiHaTopuka i ймовірність sE f
+STATYSTYKA e
+Kombinatoryka zajmuje się liczenien możliwych sposobów wyboru i ułożenia. prawdepodobiaństwo! |
+Kom6inaropuka займається niąpaxyHkoM cnoco6ie вибору ra впорядкування. N
+о Со to jest kombinatoryka? 0 Zasady mnożenia 0 Permutacje (bez powtórzeń)
+Що rake комбінаторика? і dodawania Перестановки (без повторень)
+Котьіпаогука to dział matematyki, "FBBMIIB ік к Permutacje to różne uporządkowane ułożenia
+który zajmuje się liczeniem liczby Ta додавання elementów.
+śnaliych sposobów мубога, usżnia Zaszda rmażenia fepsczanooc - бе po впернансвой
+ц тогттівсестепів вістепвм, овін ево вен ZEr
+і п іл ве п
+Komólnaropwna ПИ posjn етн SL сся E
+який зайнається підрахунком кількості Севя F ó
+способів вибору, onopnąysanna або Якце maere К способів вабору. периї, h ОУ
+pi e jri ssm ссн вв ЛИ
+TR ін сс іВн У х FES
+5606 Zasada dodawania
+sne irh oo c .
+d e N jes różnych ulżeń 4 książek?
+Правкло додаоання
+Pesne o мексьва seee p И 45-218
+бо m czacecia ембору l
+CA
+Permutacje z powtórzeniami " Р " ї- Магіасіє (bez powtórzeń]
+o те (©) Kombinacje (bez znaczenia kolejności) © Variacje (bez p )
+Перестановки 3 повтореннями s Варіації (6e3 повторень)
+Комбінації (без значення порядку)
+Permutacje, w których niektóre elementy Variacje to wybór i uporządkowanie k elementów
+się powarzają Kombinacje to wybór k elementów z n £ peitnychiokonestów:
+Перестановки, в яких деякі елементи różnych elementów bez anaczena Коївповсі, P JE w ИЧ
+повторюються. Коннвівня =j d Клелвнент ns н
+n!
+P= — — mm ! к п
+еоея Ї c* e п w= AU
+| кот D © Tm
+n - Uczba wszystkich elementów x кв-Ю бе-
+ттн пк - liczby powtórzeń ośkśn Osksn
+елн Й icż
+Ме jest różnych ułożeń liter w słowie „BALON'? М дн і zri L e
+Litery: B, A, L, O, N - wszystkie różne. Ме sposobów można wybrać 3 osoby z grupy 6 osób? Ме sposobów można ustawić 3 osoby w kolejce
+В 5в o 20 PS и х Т х gr 6 osób?
+А w słowie „BANAN'? ха я vż s - L 720 L 120
+Litery: B, A, N, A, М -» A powtarza się 2 razy, М 2 razy. 6 ” (6-3! 6
+sł 120 o . к ш О
+ве с kk о YYY 22222 — 22
+о Prawdopodobieństwo klasyczne @ Przykłady z życia
+Класична ймовірність Приклади з життя
+Prawdopodobieństwo zdarzena А to stosunek
+lczby srzaących wyników do Ucżby wszystkch Monsta Kany погочасьв ті
+możliwych wyników. Monera Kapru Витягування кульок
+Ймовірність події A - це відношення хількості Rzucamy uceciwą monetą. Losujemy jedną kartę z tali S2 kart W worku: 3 czerwone, 2 niebieskie,
+sp клн o igrgasno чесну нонету ws у інян  ziloych. Razem 10 kulek
+e 52 ą. sz o
+FA) - % 1 — w nr :n:›. 5 зелених. Разом 10 xynsox.
+O sPIA <1 нанесчеснсю P © 4 o0o000000o
+Przykład / Приклад: р P(czerwona) = 13T.
+Kj чегсння ковн а j ревіорововівйнко й p В у
+EEE C P(orzeł) = > (serce) = 57 = х чи
+m = 1 (tlko jedna ścianka z 4) 1 ó - ś о
+етбя P(reszka) - Рн * 35 7 3 pr s s5P z
+1 10 * 2
+P(4) = ї
+О Zapamiętaj! / Запам'ятай!
+© Usta.oco pytamy: ©) Zastoruj odpowiednią ФО Sorawóż, czy kolejność © Polcz doktadnie Ф sni prawdopodobieństwa
+wybór, ulożenie czy 'erm p, ma znaczenie. wszystkie możliwości. zawze єга
+= рищ еЕ, е
+ne Й - Sn у : JE
+щ -
+ee

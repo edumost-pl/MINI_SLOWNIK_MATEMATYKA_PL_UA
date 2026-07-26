@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1e4f9c" />
+  <title>Mini-słownik matematyki PL-UA — EduMost</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark"><span class="star">★</span> EduMost</div>
+        <span class="pill">POLSKI ↔ УКРАЇНСЬКА</span>
+      </div>
+      <h1>MINI-SŁOWNIK MATEMATYKI — DLA SZKOŁY PODSTAWOWEJ</h1>
+      <p class="ua-title">МІНІ-ДОВІДНИК З МАТЕМАТИКИ — ДЛЯ ПОЧАТКОВОЇ ШКОЛИ</p>
+      <p class="lead">
+        60 tematów: co to jest, jak w szkole, przykład.
+        Jedną stronę lub <strong>całą książkę</strong> zapiszesz jako PDF.
+      </p>
+      <div class="hero-cta no-print">
+        <a class="btn-print btn-print-lg" href="book.html">📚 Książka PDF — wszystkie 60 tematów</a>
+      </div>
+      <div class="features">
+        <div class="feature"><strong>📚 1 PDF</strong>Cała książka jednym plikiem</div>
+        <div class="feature"><strong>📱 Telefon</strong>Wygodnie na mobile</div>
+        <div class="feature"><strong>🎨 Obrazki</strong>Miejsce + prompty AI</div>
+        <div class="feature"><strong>🇺🇦 PL+UA</strong>Szkolny język + wsparcie</div>
+        <div class="feature"><strong>🖨 Druk</strong>Strona lub całość</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="toc-section">
+    <div class="wrap">
+      <div class="toc-head">
+        <div>
+          <h2>Spis treści / Зміст</h2>
+          <p><a href="book.html">→ Otwórz książkę i zapisz PDF</a> · <a href="howto-obrazy.html">Obrazki</a></p>
+        </div>
+        <label class="search">🔎 <input id="toc-search" type="search" placeholder="Szukaj tematu…" inputmode="search" /></label>
+      </div>
+      <div class="cat-filters" role="toolbar" aria-label="Filtry">
+        <button class="cat-btn active" data-cat="all" type="button">Wszystkie</button>
+        <button class="cat-btn" data-cat="A" type="button">A Liczby</button>
+        <button class="cat-btn" data-cat="B" type="button">B Działania</button>
+        <button class="cat-btn" data-cat="C" type="button">C Ułamki</button>
+        <button class="cat-btn" data-cat="D" type="button">D Geometria</button>
+        <button class="cat-btn" data-cat="E" type="button">E Miary</button>
+        <button class="cat-btn" data-cat="F" type="button">F Dane</button>
+      </div>
+      <div class="toc-grid">
+    <a class="toc-card" href="pages/page01.html" data-cat="A" style="--accent:#1e4f9c">
+      <div class="toc-num">01</div>
+      <div>
+        <h3>Liczby naturalne</h3>
+        <p class="ua">Натуральні числа</p>
+        <p class="about">To podstawowe liczby, których używamy do liczenia</p>
+        <span class="tag">A · LICZBY / ЧИСЛА</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page02.html" data-cat="A" style="--accent:#1e4f9c">
+      <div class="toc-num">02</div>
+      <div>
+        <h3>Liczby rzymskie</h3>
+        <p class="ua">Римські числа</p>
+        <p class="about">System zapisu liczb używany od starożytności</p>
+        <span class="tag">A · LICZBY / ЧИСЛА</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page03.html" data-cat="A" style="--accent:#1e4f9c">
+      <div class="toc-num">03</div>
+      <div>
+        <h3>Liczby całkowite</h3>
+        <p class="ua">Цілі числа</p>
+        <p class="about">Liczby dodatnie, ujemne i zero</p>
+        <span class="tag">A · LICZBY / ЧИСЛА</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page04.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">04</div>
+      <div>
+        <h3>Dodawanie i odejmowanie</h3>
+        <p class="ua">Додавання й віднімання</p>
+        <p class="about">Uczymy się łączyć i zabierać — podstawowe działania w klasach 1–3.</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page05.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">05</div>
+      <div>
+        <h3>Tabliczka mnożenia</h3>
+        <p class="ua">Таблиця множення</p>
+        <p class="about">Mnożenie to szybkie dodawanie tej samej liczby</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page06.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">06</div>
+      <div>
+        <h3>Dzielenie</h3>
+        <p class="ua">Ділення</p>
+        <p class="about">Rozdzielanie na równe części albo ile razy mieści się liczba w liczbie</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page07.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">07</div>
+      <div>
+        <h3>Kolejność działań</h3>
+        <p class="ua">Порядок дій</p>
+        <p class="about">Co liczymy najpierw</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page08.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">08</div>
+      <div>
+        <h3>Podzielność</h3>
+        <p class="ua">Подільність</p>
+        <p class="about">Czy liczba dzieli się bez reszty</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page09.html" data-cat="C" style="--accent:#e67e22">
+      <div class="toc-num">09</div>
+      <div>
+        <h3>Ułamki zwykłe (1)</h3>
+        <p class="ua">Звичайні дроби (1)</p>
+        <p class="about">Poznajemy ułamki, porównujemy, skracamy i rozszerzamy</p>
+        <span class="tag">C · UŁAMKI / ДРОБИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page10.html" data-cat="C" style="--accent:#e67e22">
+      <div class="toc-num">10</div>
+      <div>
+        <h3>Ułamki zwykłe (2)</h3>
+        <p class="ua">Звичайні дроби (2)</p>
+        <p class="about">Skracanie, rozszerzanie i porównywanie</p>
+        <span class="tag">C · UŁAMKI / ДРОБИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page11.html" data-cat="C" style="--accent:#e67e22">
+      <div class="toc-num">11</div>
+      <div>
+        <h3>Ułamki dziesiętne</h3>
+        <p class="ua">Десяткові дроби</p>
+        <p class="about">Mianownik 10, 100, 1000…</p>
+        <span class="tag">C · UŁAMKI / ДРОБИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page12.html" data-cat="C" style="--accent:#e67e22">
+      <div class="toc-num">12</div>
+      <div>
+        <h3>Działania na ułamkach</h3>
+        <p class="ua">Дії з дробами</p>
+        <p class="about">Jak dodawać, odejmować, mnożyć i dzielić ułamki — reguły jak w klasach 4–6.</p>
+        <span class="tag">C · UŁAMKI / ДРОБИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page13.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">13</div>
+      <div>
+        <h3>Potęgi</h3>
+        <p class="ua">Степені</p>
+        <p class="about">Krótszy zapis mnożenia</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page14.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">14</div>
+      <div>
+        <h3>Pierwiastki</h3>
+        <p class="ua">Корені</p>
+        <p class="about">Pierwiastek kwadratowy z liczby</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page15.html" data-cat="C" style="--accent:#e67e22">
+      <div class="toc-num">15</div>
+      <div>
+        <h3>Procenty</h3>
+        <p class="ua">Відсотки</p>
+        <p class="about">Porównywanie i obliczanie części całości</p>
+        <span class="tag">C · UŁAMKI / ДРОБИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page16.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">16</div>
+      <div>
+        <h3>Proporcjonalność</h3>
+        <p class="ua">Пропорційність</p>
+        <p class="about">Proporcjonalność prosta</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page17.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">17</div>
+      <div>
+        <h3>Wyrażenia algebraiczne</h3>
+        <p class="ua">Алгебраїчні вирази</p>
+        <p class="about">Zapisy z literami i liczbami</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page18.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">18</div>
+      <div>
+        <h3>Sumy algebraiczne</h3>
+        <p class="ua">Алгебраїчні суми</p>
+        <p class="about">Uproszczone zapisy z liter i liczb</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page19.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">19</div>
+      <div>
+        <h3>Równania</h3>
+        <p class="ua">Рівняння</p>
+        <p class="about">Równość z niewiadomą</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page20.html" data-cat="E" style="--accent:#1a9b9b">
+      <div class="toc-num">20</div>
+      <div>
+        <h3>Długość</h3>
+        <p class="ua">Довжина</p>
+        <p class="about">Mierzymy, porównujemy i zamieniamy</p>
+        <span class="tag">E · MIARY / ВЕЛИЧИНИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page21.html" data-cat="E" style="--accent:#1a9b9b">
+      <div class="toc-num">21</div>
+      <div>
+        <h3>Masa</h3>
+        <p class="ua">Маса</p>
+        <p class="about">Ile coś waży</p>
+        <span class="tag">E · MIARY / ВЕЛИЧИНИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page22.html" data-cat="E" style="--accent:#1a9b9b">
+      <div class="toc-num">22</div>
+      <div>
+        <h3>Objętość i litr</h3>
+        <p class="ua">Об'єм і літр</p>
+        <p class="about">Ile miejsca zajmuje ciecz / ciało</p>
+        <span class="tag">E · MIARY / ВЕЛИЧИНИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page23.html" data-cat="E" style="--accent:#1a9b9b">
+      <div class="toc-num">23</div>
+      <div>
+        <h3>Czas</h3>
+        <p class="ua">Час</p>
+        <p class="about">Jak długo coś trwa</p>
+        <span class="tag">E · MIARY / ВЕЛИЧИНИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page24.html" data-cat="E" style="--accent:#1a9b9b">
+      <div class="toc-num">24</div>
+      <div>
+        <h3>Kalendarz</h3>
+        <p class="ua">Календар</p>
+        <p class="about">Doba, tydzień, miesiąc, rok</p>
+        <span class="tag">E · MIARY / ВЕЛИЧИНИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page25.html" data-cat="E" style="--accent:#1a9b9b">
+      <div class="toc-num">25</div>
+      <div>
+        <h3>Temperatura</h3>
+        <p class="ua">Температура</p>
+        <p class="about">Jak ciepło albo jak zimno</p>
+        <span class="tag">E · MIARY / ВЕЛИЧИНИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page26.html" data-cat="E" style="--accent:#1a9b9b">
+      <div class="toc-num">26</div>
+      <div>
+        <h3>Pieniądze</h3>
+        <p class="ua">Гроші</p>
+        <p class="about">Złote i grosze</p>
+        <span class="tag">E · MIARY / ВЕЛИЧИНИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page27.html" data-cat="E" style="--accent:#1a9b9b">
+      <div class="toc-num">27</div>
+      <div>
+        <h3>Prędkość i skala</h3>
+        <p class="ua">Швидкість і масштаб</p>
+        <p class="about">Jak szybko i jak na mapie</p>
+        <span class="tag">E · MIARY / ВЕЛИЧИНИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page28.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">28</div>
+      <div>
+        <h3>Figury płaskie (1)</h3>
+        <p class="ua">Плоскі фігури (1)</p>
+        <p class="about">Podstawowe figury na płaszczyźnie</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page29.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">29</div>
+      <div>
+        <h3>Figury płaskie (2)</h3>
+        <p class="ua">Плоскі фігури (2)</p>
+        <p class="about">Trójkąty i czworokąty</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page30.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">30</div>
+      <div>
+        <h3>Koło i okrąg</h3>
+        <p class="ua">Коло і круг</p>
+        <p class="about">Okrąg, koło i ich elementy</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page31.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">31</div>
+      <div>
+        <h3>Długość okręgu i pole koła (π)</h3>
+        <p class="ua">Довжина кола і площа круга (π)</p>
+        <p class="about">Liczba π i wzory</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page32.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">32</div>
+      <div>
+        <h3>Kąt — pojęcie</h3>
+        <p class="ua">Кут — поняття</p>
+        <p class="about">Figura z dwóch półprostych o wspólnym początku</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page33.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">33</div>
+      <div>
+        <h3>Rodzaje kątów</h3>
+        <p class="ua">Види кутів</p>
+        <p class="about">Kąt określamy miarą w stopniach</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page34.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">34</div>
+      <div>
+        <h3>Pary kątów / kąty przy ∥</h3>
+        <p class="ua">Пари кутів / кути при ∥</p>
+        <p class="about">Dwie proste równoległe przecięte sieczną</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page35.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">35</div>
+      <div>
+        <h3>Obwód i pole</h3>
+        <p class="ua">Периметр і площа</p>
+        <p class="about">Mierzymy dookoła i wewnątrz</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page36.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">36</div>
+      <div>
+        <h3>Bryły</h3>
+        <p class="ua">Просторові тіла</p>
+        <p class="about">Figury przestrzenne — mają objętość</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page37.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">37</div>
+      <div>
+        <h3>Symetria</h3>
+        <p class="ua">Симетрія</p>
+        <p class="about">Porządek i harmonia figur</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page38.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">38</div>
+      <div>
+        <h3>Współrzędne</h3>
+        <p class="ua">Координати</p>
+        <p class="about">Układ współrzędnych na płaszczyźnie</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page39.html" data-cat="F" style="--accent:#d14f8a">
+      <div class="toc-num">39</div>
+      <div>
+        <h3>Statystyka (1)</h3>
+        <p class="ua">Статистика (1)</p>
+        <p class="about">Zbieramy, porządkujemy i analizujemy dane</p>
+        <span class="tag">F · DANE / ДАНІ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page40.html" data-cat="F" style="--accent:#d14f8a">
+      <div class="toc-num">40</div>
+      <div>
+        <h3>Statystyka (2)</h3>
+        <p class="ua">Статистика (2)</p>
+        <p class="about">Średnia, mediana, moda</p>
+        <span class="tag">F · DANE / ДАНІ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page41.html" data-cat="F" style="--accent:#d14f8a">
+      <div class="toc-num">41</div>
+      <div>
+        <h3>Kombinatoryka i prawdopodobieństwo</h3>
+        <p class="ua">Комбінаторика і ймовірність</p>
+        <p class="about">Liczenie możliwości i szans</p>
+        <span class="tag">F · DANE / ДАНІ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page42.html" data-cat="F" style="--accent:#d14f8a">
+      <div class="toc-num">42</div>
+      <div>
+        <h3>Ściąga znaków</h3>
+        <p class="ua">Шпаргалка знаків</p>
+        <p class="about">Znaki działań, porównań i własności</p>
+        <span class="tag">F · DANE / ДАНІ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page43.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">43</div>
+      <div>
+        <h3>Działania pisemne i szacowanie</h3>
+        <p class="ua">Письмові дії й оцінювання</p>
+        <p class="about">Liczymy „w słupku” i sprawdzamy, czy wynik ma sens.</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page44.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">44</div>
+      <div>
+        <h3>Rozdzielność mnożenia</h3>
+        <p class="ua">Розподільна властивість множення</p>
+        <p class="about">Mnożenie „rozdzielamy” na dodawanie — łatwiej liczyć w pamięci.</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page45.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">45</div>
+      <div>
+        <h3>NWD, NWW i rozkład na czynniki</h3>
+        <p class="ua">НСД, НСК і розклад на множники</p>
+        <p class="about">Szukamy wspólnych dzielników i wielokrotności — klucz do ułamków.</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page46.html" data-cat="C" style="--accent:#e67e22">
+      <div class="toc-num">46</div>
+      <div>
+        <h3>Ułamek liczby i całość z części</h3>
+        <p class="ua">Дріб числа й ціле з частини</p>
+        <p class="about">Ile to jest 3/4 z liczby? Jak znaleźć całość, gdy znasz część?</p>
+        <span class="tag">C · UŁAMKI / ДРОБИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page47.html" data-cat="E" style="--accent:#1a9b9b">
+      <div class="toc-num">47</div>
+      <div>
+        <h3>Wyrażenia dwumianowane</h3>
+        <p class="ua">Двочленні вирази мір</p>
+        <p class="about">2 m 15 cm — dwa miana naraz. Zamieniamy na jedną jednostkę.</p>
+        <span class="tag">E · MIARY / ВЕЛИЧИНИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page48.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">48</div>
+      <div>
+        <h3>Proste prostopadłe i odległość</h3>
+        <p class="ua">Перпендикулярні прямі й відстань</p>
+        <p class="about">Prostopadłe tworzą kąt prosty. Odległość — najkrótsza droga.</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page49.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">49</div>
+      <div>
+        <h3>Suma kątów w trójkącie</h3>
+        <p class="ua">Сума кутів у трикутнику</p>
+        <p class="about">W każdym trójkącie suma kątów wewnętrznych to 180°.</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page50.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">50</div>
+      <div>
+        <h3>Pole rombu i trapezu; ar, ha</h3>
+        <p class="ua">Площа ромба й трапеції; ар, га</p>
+        <p class="about">Wzory na pole + duże jednostki pola używane w terenie.</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page51.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">51</div>
+      <div>
+        <h3>Graniastosłup, siatki, pole powierzchni</h3>
+        <p class="ua">Призма, сітки, площа поверхні</p>
+        <p class="about">Bryły z dwiema równoległymi podstawami + siatka i pole „opakowania”.</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page52.html" data-cat="C" style="--accent:#e67e22">
+      <div class="toc-num">52</div>
+      <div>
+        <h3>Obliczenia procentowe — wszystkie typy</h3>
+        <p class="ua">Відсоткові обчислення — усі типи</p>
+        <p class="about">Cztery typowe pytania o procenty — jak w klasach 6–8.</p>
+        <span class="tag">C · UŁAMKI / ДРОБИ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page53.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">53</div>
+      <div>
+        <h3>Notacja wykładnicza i potęga potęgi</h3>
+        <p class="ua">Показниковий запис і степінь степеня</p>
+        <p class="about">Duże i małe liczby zapisujemy z 10ᵏ. Potęgi łączymy regułami.</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page54.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">54</div>
+      <div>
+        <h3>Pierwiastek sześcienny i działania na √</h3>
+        <p class="ua">Кубічний корінь і дії з √</p>
+        <p class="about">∛ to „odwrócenie” sześcianu. Pierwiastki można upraszczać.</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page55.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">55</div>
+      <div>
+        <h3>Mnożenie wyrażeń algebraicznych</h3>
+        <p class="ua">Множення алгебраїчних виразів</p>
+        <p class="about">Jednomian × suma oraz dwumian × dwumian — jak w klasach 7–8.</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page56.html" data-cat="B" style="--accent:#2e9b57">
+      <div class="toc-num">56</div>
+      <div>
+        <h3>Podział proporcjonalny</h3>
+        <p class="ua">Пропорційний поділ</p>
+        <p class="about">Dzielimy całość w danym stosunku — sprawiedliwie według części.</p>
+        <span class="tag">B · DZIAŁANIA / ДІЇ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page57.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">57</div>
+      <div>
+        <h3>Twierdzenie Pitagorasa</h3>
+        <p class="ua">Теорема Піфагора</p>
+        <p class="about">W trójkącie prostokątnym: a² + b² = c² — kluczowe twierdzenie klasy 8.</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page58.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">58</div>
+      <div>
+        <h3>Przystawanie trójkątów</h3>
+        <p class="ua">Рівність (конгруентність) трикутників</p>
+        <p class="about">Kiedy dwa trójkąty są „takie same”? Cechy BBB, BKB, KBK.</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page59.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">59</div>
+      <div>
+        <h3>Środek i długość odcinka</h3>
+        <p class="ua">Середина і довжина відрізка</p>
+        <p class="about">We współrzędnych: środek = średnia; długość ze wzoru jak Pitagoras.</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a>
+    <a class="toc-card" href="pages/page60.html" data-cat="D" style="--accent:#7b4db8">
+      <div class="toc-num">60</div>
+      <div>
+        <h3>Symetralna i dwusieczna</h3>
+        <p class="ua">Серединний перпендикуляр і бісектриса</p>
+        <p class="about">Symetralna dzieli odcinek na pół pod 90°. Dwusieczna dzieli kąt na pół.</p>
+        <span class="tag">D · GEOMETRIA / ГЕОМЕТРІЯ</span>
+      </div>
+    </a></div>
+    </div>
+  </section>
+  <footer class="site-footer">ZROZUM ★ ZAPAMIĘTAJ ★ DZIAŁAJ · 7–12 lat</footer>
+  <script src="script.js"></script>
+</body>
+</html>

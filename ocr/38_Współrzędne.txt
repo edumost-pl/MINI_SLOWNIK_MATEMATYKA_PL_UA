@@ -1,0 +1,61 @@
+Współrzędne e 05Х /о5 У — вісь Х / sic Y
+У
+P)A Х — pozioma
+ST Координати (46) :
+p (pozioma oś)
+Współrzędne + Координати
+Y — pionowa ) x
+Ф Uktad współrzędnych — система координат (pionowa oś)
+y
+PL: Osie X i Y
+do| opisu |połażenia Oś X — pozioma Oś Y — pionowa
+punktów.
+W prawo wartości Х są dodatnie (+). - W górę wartości Y są dodatnie (+).
+W lewo wartości Х są ujemne (-). - W dół wartości Y są ujemne (-
+) X UA: Oci X i Y
+для onucy 3
+положення точок. Z O ooo z
+3-210 1 2 3 1
+7 о
+_ O — początek układu Osie przecinają się 1
+Q (punkt (0, O)) pod kątem prostym (90*). -2
+-
+Do czego służą współrzędne?
+Dzięki współrzędnym możemy dokładnie określić, о Ćwiartka -- чверть (квадрант)
+gdzie znajduje зіє każdy punkt па płaszczyźnie.
+y
+PL: Jedna z czterech
+z u І ści
+е Współrzędne punktu — координати точки części płaszczyzny.
+-Ся (- +)
+x У
+. AG, 2) Y m UA: Одна 3
+чотирьох частин
+x=3 y=2 П М площини.
+с- ,)
+PL: Para liczb (x, y) na płaszczyźnie.
+UA: п , і
+вь жя я І ćwiartka — x > O, y > O - (obie współrzędne dodanie)
+Jak odczytać współrzędne punktu? Ш ćwiartka x < O, y > O — (х ujemne, y dodatnie)
+Najpierw odczytujemy wartość па ові Х (poziomo), III ćwiartka — x < 0, y < O — (obie współrzędne ujemne)
+potem na osi Y (pionowo). IV ćwiartka — x > O, y < O — (x dodatnie, y ujemne)
+у Ф ldziemy w prawo
+ń т, ©) Przykłady punktów w układzie współrzędnych
+: А(3, 2) ФО Następnie w górę У
+4 "'”"7".1 wzdłuż ові Y do 2. »
+WL B(-3, 2) 3 A, 2)
+веЗя 0] я 2734 | 1 |
+- /кіас ółrzędnych: x
+z Pw 4-3 -2 - © AL pż 8U ĄJ
+Ф2 > x == y m 1 ї: і, .
+'i Oc -)-x-0y=-3 Ї -21 e £(0, -2) вт
+OD(4,0) > x=4 y=0 c(-2, -3) —- -3
+ФО Е(с-1, -2) -2 х в -1, у в -2 -4
+Jak narysować punkt A(3, 2)? Y
+4
+Ф Pamiętaj! | Запам'ятай Ф śri owiSzeNzśc х da3 п AG, 2)
+2 ł- ę
+Ф Współrzędne zapieujemy w nawiasię, najierw х, potem y, © Następnie w górę wzdłuż ові Y do 2. 1 l
+©) Początek układu to punkt (0, O).
+©) координати sanwcycno e дужках, cnosamy %, потін y Ф Stawiamy punkk i go opisujemy 5 x
+© Початок системи координат — точка (0, O). z el 1 s €

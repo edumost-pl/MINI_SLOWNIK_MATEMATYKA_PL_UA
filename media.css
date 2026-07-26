@@ -1,0 +1,464 @@
+/* =========================================================
+   MEDIA SYSTEM — typy obrazków
+   =========================================================
+   NAMING (trzymaj w assets/):
+     images/img01_1.png   → hero strony 1
+     images/img01_2.png   → „w życiu”
+     images/img01_3.png…  → karty hasła (kolejno)
+     icons/icon01_1.png…  → ikony kart
+
+   W HTML zawsze jest gotowy:
+     <div class="media media--icon has-img">
+       <img src="../assets/icons/icon01_7.png" alt="…" />
+     </div>
+   SVG schematy usunięte. Obrazki nie są przycinane (object-fit: contain).
+   ========================================================= */
+
+.media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #eef3fa;
+  border: 1px dashed #b8c7dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 12px;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* CAŁY obraz widoczny — bez crop */
+.media img,
+.media picture img,
+.media video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: inherit;
+}
+
+.media:not(.is-placeholder),
+.media.has-img {
+  border-style: solid;
+  border-color: #d7e0ee;
+  background: #f7faff;
+}
+
+/* Gdy jest <img>, zaślepka znika (nawet jeśli ktoś zostawi is-placeholder) */
+.media.has-img,
+.media:has(> img) {
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
+  padding: 0;
+  flex-direction: row;
+  background: #f7faff;
+  border-style: solid;
+  border-color: #d7e0ee;
+}
+.media.has-img::before,
+.media.has-img::after,
+.media:has(> img)::before,
+.media:has(> img)::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Zaślępka — tylko gdy BRAK obrazka */
+.media.is-placeholder:not(.has-img):not(:has(> img)) {
+  min-height: 88px;
+  flex-direction: column;
+  gap: 4px;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      #f4f7fc,
+      #f4f7fc 8px,
+      #e8eef8 8px,
+      #e8eef8 16px
+    );
+  color: #5a6a7e;
+  text-align: center;
+  padding: 12px;
+}
+.media.is-placeholder:not(.has-img):not(:has(> img))::before {
+  content: attr(data-emoji);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.media.is-placeholder:not(.has-img):not(:has(> img))::after {
+  content: attr(data-label);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  max-width: 95%;
+}
+
+/* Rozmiary / role — bez wymuszania crop */
+.media--hero {
+  margin: 0;
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  min-height: 0;
+  background: #eef3fa;
+}
+.media--hero.is-placeholder:not(.has-img):not(:has(> img)) {
+  min-height: 140px;
+}
+/* Na ekranie hero czytelny, ale nie zajmuje całego viewportu */
+.media--hero.has-img,
+.media--hero:has(> img) {
+  max-height: min(360px, 46vh);
+  overflow: hidden;
+  background: #f0f4fa;
+}
+.media--hero img {
+  width: auto;
+  max-width: 100%;
+  max-height: min(360px, 46vh);
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.media--cover {
+  min-height: 0;
+  margin-bottom: 10px;
+}
+.media--cover.has-img img,
+.media--cover:has(> img) img,
+.media--photo.has-img img,
+.media--diagram.has-img img {
+  max-height: 160px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.media--cover.is-placeholder:not(.has-img):not(:has(> img)) {
+  aspect-ratio: 16 / 9;
+  min-height: 100px;
+}
+
+.media--photo {
+  min-height: 0;
+}
+.media--photo.is-placeholder:not(.has-img):not(:has(> img)) {
+  aspect-ratio: 4 / 3;
+  min-height: 110px;
+}
+.life-strip .media--photo.has-img img,
+.life-strip .media--photo:has(> img) img {
+  max-height: 140px;
+}
+
+.media--diagram {
+  min-height: 0;
+  background: #fffef6;
+  border-style: solid;
+  border-color: #e6c84a;
+}
+.media--diagram.is-placeholder:not(.has-img):not(:has(> img)) {
+  aspect-ratio: 16 / 10;
+  min-height: 100px;
+  background:
+    repeating-linear-gradient(-45deg, #fffef8, #fffef8 8px, #fff6d1 8px, #fff6d1 16px);
+}
+
+.media--icon {
+  width: 64px;
+  height: 64px;
+  min-height: 64px;
+  margin: 0 0 8px;
+  border-radius: 16px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.media--icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.media--banner {
+  min-height: 0;
+  border-radius: 16px;
+  margin: 0 18px 16px;
+}
+.media--banner.is-placeholder:not(.has-img):not(:has(> img)) {
+  min-height: 72px;
+}
+
+.media--step {
+  width: 100%;
+  min-height: 0;
+}
+.media--step.is-placeholder:not(.has-img):not(:has(> img)) {
+  aspect-ratio: 3 / 2;
+  min-height: 80px;
+}
+
+.media--compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  min-height: 0;
+  overflow: visible;
+}
+.media--compare .media {
+  margin: 0;
+}
+
+.media-caption {
+  margin: 6px 0 12px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Pasek „W życiu” */
+.life-strip {
+  display: grid;
+  grid-template-columns: minmax(140px, 240px) 1fr;
+  gap: 14px;
+  align-items: center;
+  margin: 0 18px 16px;
+  padding: 12px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #fff6d1, #fff);
+  border: 1px solid #e6c84a;
+}
+.life-strip .media {
+  margin: 0;
+  width: 100%;
+}
+.life-strip .media img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.life-strip h3 {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  color: var(--blue-dark);
+}
+.life-strip p { margin: 0; font-size: 0.9rem; color: var(--ink); }
+.life-strip .ua { color: var(--blue); font-weight: 700; display: block; margin-top: 4px; }
+
+/* =========================================================
+   PEDAGOGIKA — nie tylko tłumaczenie
+   ========================================================= */
+.topic-lead {
+  margin: 0 18px 8px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--blue-soft);
+  border-left: 5px solid var(--cat, var(--blue));
+}
+.topic-lead .label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cat, var(--blue));
+  margin-bottom: 4px;
+}
+.topic-lead p { margin: 0; font-size: 1rem; font-weight: 700; color: var(--ink); }
+.topic-lead .ua {
+  margin-top: 4px;
+  font-size: 0.92rem;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.learn-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--cat, var(--blue));
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-bottom: 4px;
+}
+.learn-label .lab-ua {
+  text-transform: none;
+  font-weight: 600;
+  opacity: 0.55;
+  letter-spacing: 0;
+  margin-left: 4px;
+  font-size: 0.9em;
+}
+.learn-label.soft {
+  background: transparent;
+  color: var(--cat, var(--blue));
+  border: 1px solid color-mix(in srgb, var(--cat, var(--blue)) 40%, #fff);
+  padding: 1px 7px;
+}
+.learn-label.soft .lab-ua {
+  color: #8a93a3;
+  opacity: 0.75;
+}
+.learn-block {
+  margin-bottom: 8px;
+}
+.learn-pl {
+  margin: 0 0 2px;
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.4;
+}
+.learn-ua {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  color: #8a93a3;
+  font-weight: 600;
+  line-height: 1.35;
+  opacity: 0.92;
+}
+.learn-rule {
+  margin: 0 0 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #f7faff;
+  border: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+.learn-rule .learn-label { margin-bottom: 6px; }
+.learn-rule .learn-pl {
+  font-size: 0.98rem;
+}
+.learn-example {
+  margin: 0 0 4px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: linear-gradient(160deg, #fff9e8 0%, #fff 55%);
+  border: 1px solid #f0d78c;
+}
+.learn-example .learn-label {
+  margin-bottom: 8px;
+}
+.example-story.learn-pl {
+  margin: 0 0 2px !important;
+  font-size: 0.98rem !important;
+  line-height: 1.35;
+  font-weight: 800 !important;
+  color: var(--ink) !important;
+}
+.example-story.learn-ua {
+  margin-bottom: 8px !important;
+  font-size: 0.76rem !important;
+  font-weight: 600 !important;
+  color: #8a93a3 !important;
+  opacity: 0.92;
+}
+.example-math {
+  margin-bottom: 0 !important;
+  background: #fff !important;
+  border: 2px solid #f5c518 !important;
+  box-shadow: 0 2px 0 rgba(245, 197, 24, 0.35);
+}
+
+.card-task {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--line);
+}
+.card-task a,
+a.wordwall-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #0d47a1;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #e3f2fd;
+  border: 1px solid #90caf9;
+  transition: background .15s ease, transform .15s ease;
+}
+.card-task a:hover,
+a.wordwall-link:hover {
+  background: #bbdefb;
+  transform: translateY(-1px);
+}
+.wordwall-link .lab-ua {
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #5a7a9a;
+  margin-left: 2px;
+}
+
+@media print {
+  .card-task,
+  .wordwall-link {
+    display: none !important;
+  }
+}
+.card-term-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.card-term-row .media--icon { margin: 0; }
+.card-term-row--no-icon {
+  gap: 0;
+  margin-bottom: 10px;
+}
+.card-term-row--no-icon > div {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .life-strip {
+    grid-template-columns: 1fr;
+    margin: 0 12px 12px;
+  }
+  .media--hero.has-img,
+  .media--hero:has(> img) {
+    max-height: min(260px, 40vh);
+  }
+  .media--hero img {
+    max-height: min(260px, 40vh);
+  }
+  .media--cover.has-img img,
+  .media--photo.has-img img,
+  .media--diagram.has-img img {
+    max-height: 120px;
+  }
+  .card-term-row { gap: 8px; }
+  .topic-lead { margin: 0 12px 8px; padding: 12px; }
+}
+
+@media (max-width: 420px) {
+  .media--icon {
+    width: 52px;
+    height: 52px;
+    min-height: 52px;
+  }
+}
+
+@media print {
+  .media.is-placeholder:not(:has(> img)) {
+    border-style: solid;
+    min-height: 40px;
+  }
+  .life-strip, .topic-lead { break-inside: avoid; }
+}

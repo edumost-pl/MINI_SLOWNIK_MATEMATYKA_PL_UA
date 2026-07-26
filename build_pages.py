@@ -1,0 +1,608 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Generate hardcoded HTML pages for Mini-słownik matematyki PL-UA."""
+from pathlib import Path
+
+from pages_data import PAGES
+from ai_prompts import (
+    prompt_hero,
+    prompt_life,
+    prompt_card_media,
+)
+
+ROOT = Path(__file__).resolve().parent
+PAGES_DIR = ROOT / "pages"
+ASSETS = ROOT / "assets"
+IMAGES = ASSETS / "images"
+ICONS = ASSETS / "icons"
+ASSETS.mkdir(exist_ok=True)
+IMAGES.mkdir(exist_ok=True)
+ICONS.mkdir(exist_ok=True)
+PAGES_DIR.mkdir(exist_ok=True)
+
+# Domyślne typy media wg kategorii (zaślepki do podmiany)
+CAT_MEDIA = {
+    "A": {"hero": "🔢", "life": "🍎", "photo": "📸", "life_pl": "Liczby widzisz w sklepie, na ulicy, w grze.", "life_ua": "Числа бачиш у магазині, на вулиці, в грі."},
+    "B": {"hero": "➕", "life": "🧮", "photo": "✏️", "life_pl": "Działania pomagają dzielić się, kupować, liczyć punkty.", "life_ua": "Дії допомагають ділитися, купувати, рахувати очки."},
+    "C": {"hero": "🍕", "life": "🍰", "photo": "🧀", "life_pl": "Ułamki to części pizzy, tortu, czekolady.", "life_ua": "Дроби — частини піци, торта, шоколаду."},
+    "D": {"hero": "📐", "life": "🏠", "photo": "△", "life_pl": "Figury są w domach, znakach, w przyrodzie.", "life_ua": "Фігури є в будинках, знаках, у природі."},
+    "E": {"hero": "📏", "life": "⏱️", "photo": "🪙", "life_pl": "Miary pomagają gotować, podróżować, płacić.", "life_ua": "Величини допомагають готувати, подорожувати, платити."},
+    "F": {"hero": "📊", "life": "🎲", "photo": "📈", "life_pl": "Dane pomagają porównywać i podejmować decyzje.", "life_ua": "Дані допомагають порівнювати і приймати рішення."},
+}
+
+
+def esc(s: str) -> str:
+    return (
+        s.replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
+
+
+def wordwall_stub(url: str = "#") -> str:
+    """Zawsze w HTML — link wklejasz w href=... w pliku .html."""
+    href = (url or "").strip() or "#"
+    return (
+        "\n          <div class=\"card-task no-print\">\n"
+        "            <!-- WORDWALL: wklej swój link w atrybut href poniżej -->\n"
+        f'            <a class="wordwall-link" href="{esc(href)}" target="_blank" rel="noopener noreferrer">\n'
+        '              <span class="ww-ico" aria-hidden="true">▶</span>\n'
+        "              Ćwiczenie · Wordwall\n"
+        '              <span class="lab-ua">Вправа</span>\n'
+        "            </a>\n"
+        "          </div>"
+    )
+
+
+def block_meta(klasa: str) -> str:
+    if not klasa:
+        return ""
+    return (
+        "\n          <div class=\"block-meta\">\n"
+        f'            <span class="klasa-pill" title="Etap w polskiej szkole podstawowej">{esc(klasa)}</span>\n'
+        "          </div>"
+    )
+
+
+def media_block(
+    kind: str,
+    emoji: str,
+    label: str,
+    prompt: str,
+    *,
+    page_n: int,
+    slot: str,
+    alt: str = "",
+    asset_prefix: str = "../",
+) -> str:
+    """
+    Zawsze wstawia gotowy <img> (has-img), wg schematu:
+      images/img01_1.png      → hero
+      images/img01_2.png      → w życiu
+      images/img01_3.png …    → karty (kolejno: karta1 = _3)
+      icons/icon01_1.png …    → ikony kart
+    """
+    safe_prompt = prompt.replace("--", "—")
+    comment = f"\n        <!-- AI PROMPT [{kind}]: {safe_prompt} -->\n"
+
+    if slot.startswith("i") and slot[1:].isdigit():
+        n = int(slot[1:])
+        rel = f"assets/icons/icon{page_n:02d}_{n}.png"
+    elif slot.startswith("c") and slot[1:].isdigit():
+        n = int(slot[1:])
+        rel = f"assets/images/img{page_n:02d}_{n + 2}.png"
+    else:
+        rel = f"assets/images/img{page_n:02d}_{slot}.png"
+
+    src = f"{asset_prefix}{rel}"
+    return (
+        f"{comment}"
+        f'        <div class="media media--{kind} has-img">\n'
+        f'          <img src="{esc(src)}" alt="{esc(alt or label)}" />\n'
+        f"        </div>"
+    )
+
+
+def ph(kind: str, emoji: str, label: str, prompt: str, extra_class: str = "") -> str:
+    """Unused legacy — kept for compatibility."""
+    safe_prompt = prompt.replace("--", "—")
+    return (
+        f"\n        <!-- AI PROMPT [{kind}]: {safe_prompt} -->\n"
+        f'        <div class="media media--{kind} is-placeholder {extra_class}" '
+        f'data-emoji="{emoji}" data-label="{esc(label)}" '
+        f'data-ai-prompt="{esc(safe_prompt)}"></div>'
+    )
+
+
+def card_html(i, c, page=None, asset_prefix="../"):
+    from klasa_map import resolve_klasa
+
+    page = page or {}
+    cat = page.get("cat", "A")
+    page_n = int(page.get("n") or 1)
+    meta = CAT_MEDIA.get(cat, CAT_MEDIA["A"])
+    visual = c.get("visual") or ""
+    explain = c.get("explain") or c.get("def_pl") or ""
+    explain_ua = c.get("explain_ua") or c.get("def_ua") or ""
+    rule = c.get("rule") or ""
+    rule_ua = c.get("rule_ua") or ""
+    example = c.get("example") or visual
+    example_pl = c.get("example_pl") or ""
+    example_ua = c.get("example_ua") or ""
+    media_kind = c.get("media") or "cover"
+    term = c.get("pl") or ""
+    klasa = resolve_klasa(page_n, term, c)
+
+    # Jeden Wordwall na całą kartę pojęcia
+    ww_url = (
+        c.get("wordwall")
+        or c.get("wordwall_def")
+        or c.get("wordwall_rule")
+        or c.get("wordwall_example")
+        or "#"
+    )
+    ww_url = (ww_url or "").strip() or "#"
+
+    media_block_html = media_block(
+        media_kind,
+        meta["photo"],
+        f"{media_kind} · {term}",
+        prompt_card_media(page, c, media_kind),
+        page_n=page_n,
+        slot=f"c{i:02d}",
+        alt=term,
+        asset_prefix=asset_prefix,
+    )
+
+    if not rule and explain:
+        rule = explain
+        rule_ua = explain_ua
+
+    def_block = (
+        f'\n        <div class="learn-block learn-def">\n'
+        f'          <span class="learn-label">Co to jest? <span class="lab-ua">Що це?</span></span>\n'
+        f'          <p class="learn-pl">{esc(explain)}</p>\n'
+        f'          <p class="learn-ua">{esc(explain_ua)}</p>\n'
+        f"        </div>"
+    )
+
+    rule_block = ""
+    if rule:
+        ua_line = f'\n          <p class="learn-ua">{esc(rule_ua)}</p>' if rule_ua else ""
+        rule_block = (
+            f'\n        <div class="learn-rule learn-block">\n'
+            f'          <span class="learn-label soft">Jak w szkole? <span class="lab-ua">Як у школі?</span></span>\n'
+            f'          <p class="learn-pl">{esc(rule)}</p>'
+            f"{ua_line}\n"
+            f"        </div>"
+        )
+
+    example_block = ""
+    if example_pl or example_ua or example:
+        story = ""
+        if example_pl:
+            story += f'\n          <p class="example-story learn-pl">{esc(example_pl)}</p>'
+        if example_ua:
+            story += f'\n          <p class="example-story learn-ua">{esc(example_ua)}</p>'
+        math = f'\n          <div class="visual example-math">{example}</div>' if example else ""
+        example_block = (
+            f'\n        <div class="learn-example learn-block">\n'
+            f'          <span class="learn-label soft">Przykład z życia <span class="lab-ua">Приклад з життя</span></span>'
+            f"{story}"
+            f"{math}\n"
+            f"        </div>"
+        )
+
+    klasa_html = block_meta(klasa)
+
+    # Bez ikon — zostaje tylko ilustracja karty (zdjęcie / cover / diagram)
+    return (
+        f'\n      <article class="card {c.get("wide", "")}">\n'
+        f'        <div class="card-term-row card-term-row--no-icon">\n'
+        f"          <div>\n"
+        f'            <div class="card-num-row">\n'
+        f'              <div class="card-num">{i}</div>\n'
+        f"{klasa_html}\n"
+        f"            </div>\n"
+        f"            <h3>{esc(c['pl'])}</h3>\n"
+        f'            <p class="term-ua">{esc(c["ua"])}</p>\n'
+        f"          </div>\n"
+        f"        </div>\n\n"
+        f"        {media_block_html}\n"
+        f"{def_block}"
+        f"{rule_block}"
+        f"{example_block}"
+        f"{wordwall_stub(ww_url)}\n"
+        f"      </article>"
+    )
+
+
+def chapter_body(p, asset_prefix="../"):
+    """Treść jednej tematyki (bez <html>) — używane w pageXX i w book.html."""
+    meta = CAT_MEDIA.get(p["cat"], CAT_MEDIA["A"])
+    page_n = int(p["n"])
+    card_bits = [
+        card_html(i + 1, c, p, asset_prefix=asset_prefix)
+        for i, c in enumerate(p["cards"])
+    ]
+    cards = "\n".join(card_bits)
+    rem_bits = []
+    for ri, r in enumerate(p["remember"], 1):
+        formula = (r.get("formula") or "").strip()
+        pl = (r.get("pl") or "").strip()
+        ua = (r.get("ua") or "").strip()
+        # W ramce: czysty wzór/pojęcie; poniżej: rozszyfrowanie (nigdy kopia wzoru)
+        core = formula or pl
+        explain_pl = pl if formula else ""
+        explain_ua = ua
+        if formula and explain_pl and explain_pl.rstrip(".!…") == formula.rstrip(".!…"):
+            explain_pl = ""
+        if explain_ua and core and explain_ua.rstrip(".!…") == core.rstrip(".!…"):
+            explain_ua = ""
+        if not formula and ua:
+            # pojęcie w ramce (PL) → poniżej UA jako znaczenie / tłumaczenie
+            explain_pl = ""
+            explain_ua = ua
+
+        memorize = (
+            f'<div class="rules-memorize">'
+            f'<span class="rules-memorize-label">Zapamiętaj</span>'
+            f'<div class="rules-formula">{esc(core)}</div>'
+            f"</div>"
+        )
+        explain_parts = []
+        if explain_pl or explain_ua:
+            explain_parts.append('<div class="rules-explain">')
+            explain_parts.append('<span class="rules-explain-label">Znaczenie</span>')
+            if explain_pl:
+                explain_parts.append(f"<strong>{esc(explain_pl)}</strong>")
+            if explain_ua:
+                explain_parts.append(f'<span class="ua">{esc(explain_ua)}</span>')
+            explain_parts.append("</div>")
+        rem_bits.append(
+            f'<div class="remember-item rules-item">'
+            f'<span class="rules-num">{ri}</span>'
+            f'<div class="rules-text">'
+            f"{memorize}"
+            f'{"".join(explain_parts)}'
+            f"</div></div>"
+        )
+    rem = "\n".join(rem_bits)
+
+    hero = media_block(
+        "hero",
+        meta["hero"],
+        f"hero · {p['title_pl']}",
+        prompt_hero(p),
+        page_n=page_n,
+        slot="1",
+        alt=p["title_pl"],
+        asset_prefix=asset_prefix,
+    )
+
+    life_media = media_block(
+        "photo",
+        meta["life"],
+        "w życiu · photo",
+        prompt_life(p),
+        page_n=page_n,
+        slot="2",
+        alt=f"W życiu — {p['title_pl']}",
+        asset_prefix=asset_prefix,
+    )
+
+    howto_pl = (p.get("howto_pl") or "").strip()
+    howto_ua = (p.get("howto_ua") or "").strip()
+    howto_html = ""
+    if howto_pl or howto_ua:
+        howto_html = ""
+        if howto_pl:
+            howto_html += f'<p class="howto-mini">{esc(howto_pl)}</p>\n'
+        if howto_ua:
+            howto_html += f'<p class="howto-mini ua">{esc(howto_ua)}</p>\n'
+
+    mistake_pl = (p.get("mistake_pl") or "").strip()
+    mistake_ua = (p.get("mistake_ua") or "").strip()
+    mistake_html = ""
+    if mistake_pl or mistake_ua:
+        mistake_html = f'''
+    <section class="mistake-box" aria-label="Częsty błąd">
+      <div class="mistake-head">⚠ Częsty błąd! <span class="ua">Часта помилка!</span></div>
+      <div class="mistake-body">
+        {f'<p class="learn-pl">{esc(mistake_pl)}</p>' if mistake_pl else ""}
+        {f'<p class="learn-ua">{esc(mistake_ua)}</p>' if mistake_ua else ""}
+      </div>
+    </section>'''
+
+    return f'''
+    <header class="page-header">
+      <div class="cat-badge">
+        <div class="letter">{p["cat"]}</div>
+        <div class="label">{esc(p["cat_pl"])}<br/>{esc(p["cat_ua"])}</div>
+      </div>
+      <div>
+        <h1>{esc(p["title_pl"])}</h1>
+        <p class="ua">{esc(p["title_ua"])}</p>
+        <p class="intro">{esc(p["intro_pl"])}</p>
+      </div>
+      <aside class="owl-tip">
+        <span class="owl-tip-icon" aria-hidden="true">🦉</span>
+        <p class="owl-tip-pl">{esc(p["tip_pl"])}</p>
+        <span class="owl-tip-ua ua">{esc(p["tip_ua"])}</span>
+      </aside>
+    </header>
+
+    {hero}
+
+    <section class="topic-lead">
+      <span class="label">Na tej stronie / На цій сторінці</span>
+      <p>{esc(p["intro_pl"])}</p>
+      <p class="ua">{esc(p["intro_ua"])}</p>
+      {howto_html}
+    </section>
+
+    <section class="life-strip">
+      {life_media}
+      <div>
+        <h3>W życiu / У житті</h3>
+        <p>{esc(p.get("life_pl") or meta["life_pl"])}</p>
+        <span class="ua">{esc(p.get("life_ua") or meta["life_ua"])}</span>
+      </div>
+    </section>
+
+    <section class="cards">
+      {cards}
+    </section>
+
+    {mistake_html}
+
+    <section class="remember rules-box" aria-label="Zasady do zapamiętania">
+      <div class="remember-head rules-head">
+        <span class="rules-badge">ZASADA</span>
+        <div class="rules-head-text">
+          <strong>Zasady do zapamiętania</strong>
+          <span class="ua">Правила для запам'ятовування</span>
+        </div>
+      </div>
+      <p class="rules-lead">To reguły matematyczne — ucz się ich jak tabliczki mnożenia. / Це математичні правила — вчи їх як таблицю множення.</p>
+      <div class="remember-body rules-body">
+        {rem}
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div>{p["cat"]} • {esc(p["cat_pl"])} / {esc(p["cat_ua"])}</div>
+      <div class="center">{p["n"]}</div>
+      <div class="right">Mini-słownik matematyki PL-UA</div>
+    </footer>
+'''
+
+
+def page_html(p, prev_f, next_f):
+    prev = f'<a href="{prev_f}">← Poprzednia</a>' if prev_f else "<span></span>"
+    nxt = f'<a href="{next_f}">Następna →</a>' if next_f else "<span></span>"
+    body = chapter_body(p, asset_prefix="../")
+
+    return f'''<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1e4f9c" />
+  <title>{esc(p["title_pl"])} — Mini-słownik matematyki PL-UA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../media.css" />
+</head>
+<body class="page-body cat-{p["cat"]}">
+  <!--
+    PROMPTY AI: przy każdej zaślepce .is-placeholder jest komentarz <!-- AI PROMPT [...] -->.
+  -->
+  <main class="page" id="print-root">
+    <div class="page-nav no-print">
+      <div class="page-nav-start">
+        <a class="site-logo" href="../index.html" aria-label="EduMost">
+          <img src="../assets/logo.png" alt="EduMost" width="160" height="36" />
+        </a>
+        <a href="../index.html">⌂ Spis</a>
+      </div>
+      <div class="nav-actions">
+        <button type="button" class="btn-print" data-print>🖨 PDF</button>
+        <a class="btn-book" href="../book.html">📚 Książka</a>
+        {prev}{nxt}
+      </div>
+    </div>
+    {body}
+  </main>
+  <div class="print-hint no-print">Drukuj → <strong>Zapisz jako PDF</strong></div>
+  <script src="../script.js"></script>
+</body>
+</html>
+'''
+
+
+def book_html(pages_list):
+    chapters = []
+    toc_items = []
+    for p in pages_list:
+        body = chapter_body(p, asset_prefix="")
+        # w książce ścieżki CSS są z roota; media placeholders OK
+        # popraw linków w body nie trzeba — brak linków wewnętrznych
+        chapters.append(
+            f'<article class="book-chapter cat-{p["cat"]}" id="rozdzial-{p["n"]:02d}">\n'
+            f'{body}\n</article>'
+        )
+        toc_items.append(
+            f'<li><a href="#rozdzial-{p["n"]:02d}">'
+            f'<span class="toc-n">{p["n"]:02d}</span> {esc(p["title_pl"])} '
+            f'<em>{esc(p["title_ua"])}</em></a></li>'
+        )
+
+    return f'''<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1e4f9c" />
+  <title>Mini-słownik matematyki PL-UA — Książka PDF ({len(pages_list)} tematów)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+<body class="book-body">
+  <div class="book-toolbar no-print">
+    <div class="page-nav-start">
+      <a class="site-logo" href="index.html" aria-label="EduMost">
+        <img src="assets/logo.png" alt="EduMost" width="160" height="36" />
+      </a>
+      <a href="index.html">⌂ Spis treści</a>
+    </div>
+    <div class="nav-actions">
+      <button type="button" class="btn-print btn-print-lg" data-print>
+        🖨 Zapisz całą książkę jako PDF
+      </button>
+    </div>
+  </div>
+
+  <header class="book-cover no-print-keep">
+    <div class="book-cover-inner">
+      <p class="brand-mark"><span class="star">★</span> EduMost</p>
+      <h1>Mini-słownik matematyki</h1>
+      <p class="ua-title">Міні-довідник з математики</p>
+      <p class="lead">{len(pages_list)} tematów · Polski ↔ Українська · Szkoła podstawowa</p>
+      <p class="book-cover-hint no-print">
+        Kliknij żółty przycisk → w oknie druku wybierz <strong>Zapisz jako PDF</strong>
+        (marginesy: domyślne, tło grafiki: włączone).
+      </p>
+      <button type="button" class="btn-print btn-print-lg no-print" data-print>
+        🖨 Zapisz całą książkę jako PDF
+      </button>
+    </div>
+  </header>
+
+  <nav class="book-toc no-print">
+    <h2>Spis rozdziałów</h2>
+    <ol class="book-toc-list">
+      {"".join(toc_items)}
+    </ol>
+  </nav>
+
+  <div class="book-pages">
+    {"".join(chapters)}
+  </div>
+
+  <p class="print-hint no-print">
+    Tip: Chrome / Edge → Drukuj → Miejsce docelowe: <strong>Zapisz jako PDF</strong>.
+    Włącz „Grafika tła”, aby zachować kolory.
+  </p>
+  <script src="script.js"></script>
+</body>
+</html>
+'''
+
+
+pages = PAGES
+
+for i, p in enumerate(pages):
+    prev_f = pages[i - 1]["file"] if i > 0 else None
+    next_f = pages[i + 1]["file"] if i < len(pages) - 1 else None
+    (PAGES_DIR / p["file"]).write_text(page_html(p, prev_f, next_f), encoding="utf-8")
+
+(ROOT / "book.html").write_text(book_html(pages), encoding="utf-8")
+
+CAT_NAMES = {
+    "A": ("LICZBY", "ЧИСЛА", "#1e4f9c"),
+    "B": ("DZIAŁANIA", "ДІЇ", "#2e9b57"),
+    "C": ("UŁAMKI", "ДРОБИ", "#e67e22"),
+    "D": ("GEOMETRIA", "ГЕОМЕТРІЯ", "#7b4db8"),
+    "E": ("MIARY", "ВЕЛИЧИНИ", "#1a9b9b"),
+    "F": ("DANE", "ДАНІ", "#d14f8a"),
+}
+
+cards_html = []
+for p in pages:
+    accent = CAT_NAMES[p["cat"]][2]
+    cat_pl, cat_ua = CAT_NAMES[p["cat"]][0], CAT_NAMES[p["cat"]][1]
+    cards_html.append(f'''
+    <a class="toc-card" href="pages/{p["file"]}" data-cat="{p["cat"]}" style="--accent:{accent}">
+      <div class="toc-num">{p["n"]:02d}</div>
+      <div>
+        <h3>{esc(p["title_pl"])}</h3>
+        <p class="ua">{esc(p["title_ua"])}</p>
+        <p class="about">{esc(p["intro_pl"])}</p>
+        <span class="tag">{p["cat"]} · {cat_pl} / {cat_ua}</span>
+      </div>
+    </a>''')
+
+index = f'''<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1e4f9c" />
+  <title>Mini-słownik matematyki PL-UA — EduMost</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark"><span class="star">★</span> EduMost</div>
+        <span class="pill">POLSKI ↔ УКРАЇНСЬКА</span>
+      </div>
+      <h1>MINI-SŁOWNIK MATEMATYKI — DLA SZKOŁY PODSTAWOWEJ</h1>
+      <p class="ua-title">МІНІ-ДОВІДНИК З МАТЕМАТИКИ — ДЛЯ ПОЧАТКОВОЇ ШКОЛИ</p>
+      <p class="lead">
+        {len(pages)} tematów: co to jest, jak w szkole, przykład.
+        Jedną stronę lub <strong>całą książkę</strong> zapiszesz jako PDF.
+      </p>
+      <div class="hero-cta no-print">
+        <a class="btn-print btn-print-lg" href="book.html">📚 Książka PDF — wszystkie {len(pages)} tematów</a>
+      </div>
+      <div class="features">
+        <div class="feature"><strong>📚 1 PDF</strong>Cała książka jednym plikiem</div>
+        <div class="feature"><strong>📱 Telefon</strong>Wygodnie na mobile</div>
+        <div class="feature"><strong>🎨 Obrazki</strong>Miejsce + prompty AI</div>
+        <div class="feature"><strong>🇺🇦 PL+UA</strong>Szkolny język + wsparcie</div>
+        <div class="feature"><strong>🖨 Druk</strong>Strona lub całość</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="toc-section">
+    <div class="wrap">
+      <div class="toc-head">
+        <div>
+          <h2>Spis treści / Зміст</h2>
+          <p><a href="book.html">→ Otwórz książkę i zapisz PDF</a> · <a href="howto-obrazy.html">Obrazki</a></p>
+        </div>
+        <label class="search">🔎 <input id="toc-search" type="search" placeholder="Szukaj tematu…" inputmode="search" /></label>
+      </div>
+      <div class="cat-filters" role="toolbar" aria-label="Filtry">
+        <button class="cat-btn active" data-cat="all" type="button">Wszystkie</button>
+        <button class="cat-btn" data-cat="A" type="button">A Liczby</button>
+        <button class="cat-btn" data-cat="B" type="button">B Działania</button>
+        <button class="cat-btn" data-cat="C" type="button">C Ułamki</button>
+        <button class="cat-btn" data-cat="D" type="button">D Geometria</button>
+        <button class="cat-btn" data-cat="E" type="button">E Miary</button>
+        <button class="cat-btn" data-cat="F" type="button">F Dane</button>
+      </div>
+      <div class="toc-grid">{"".join(cards_html)}</div>
+    </div>
+  </section>
+  <footer class="site-footer">ZROZUM ★ ZAPAMIĘTAJ ★ DZIAŁAJ · 7–12 lat</footer>
+  <script src="script.js"></script>
+</body>
+</html>
+'''
+(ROOT / "index.html").write_text(index, encoding="utf-8")
+print(f"OK: {len(pages)} pages + index + book.html")

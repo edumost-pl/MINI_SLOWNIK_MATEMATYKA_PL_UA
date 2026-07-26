@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jak wstawiać obrazki — Mini-słownik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+  <style>
+    .guide { width: min(900px, calc(100% - 32px)); margin: 24px auto 48px; }
+    .guide h1 { color: var(--blue-dark); }
+    .guide h2 { margin-top: 28px; color: var(--blue); }
+    .guide pre {
+      background: #1a2332; color: #e8f0fb; padding: 14px; border-radius: 12px;
+      overflow: auto; font-size: 0.85rem; line-height: 1.4;
+    }
+    .demo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 700px) { .demo-grid { grid-template-columns: 1fr; } }
+    .tip {
+      background: #fff6d1; border-left: 4px solid #f5c518; padding: 12px 14px;
+      border-radius: 10px; margin: 12px 0; font-weight: 700;
+    }
+  </style>
+</head>
+<body class="page-body">
+  <div class="guide">
+    <p><a href="index.html">← Spis treści</a></p>
+    <h1>Obrazki w słowniku — typy i jak wstawiać</h1>
+    <p>Prosty HTML. Zero frameworków. Podmieniasz zaślepkę na <code>&lt;img&gt;</code>.</p>
+
+    <div class="tip">
+      <strong>Nazwy plików</strong> (wrzuć do <code>assets/images/</code>):<br/>
+      <code>img01_1.png</code> = hero strony 1 &nbsp;·&nbsp;
+      <code>img01_2.png</code> = „w życiu” &nbsp;·&nbsp;
+      <code>img01_c01.png</code> = cover 1. karty &nbsp;·&nbsp;
+      <code>img01_i01.png</code> = ikona 1. karty<br/>
+      Potem uruchom <code>python3 build_pages.py</code> — obrazek podłączy się sam.<br/>
+      <strong>Bez przycinania:</strong> CSS używa <code>object-fit: contain</code>. Generuj ok. 3:2 lub 16:9.
+    </div>
+
+    <div class="tip">
+      <strong>Prompty AI:</strong> w każdym <code>pages/pageXX.html</code> przy zaślepce jest komentarz
+      <code>&lt;!-- AI PROMPT [hero|photo|cover|diagram|icon]: … --&gt;</code>.
+      Przy schematach SVG: <code>&lt;!-- SCHEMAT SVG […] AI PROMPT (bogatsza wersja)… --&gt;</code>.
+      Skopiuj prompt do generatora obrazków, potem zapisz plik wg nazwy powyżej.
+      Pełna baza promptów: plik <code>ai_prompts.py</code>.
+    </div>
+
+    <h2>1) Typy media (zaślepki)</h2>
+    <div class="demo-grid">
+      <div>
+        <p><strong>hero</strong> — duży obraz tematu</p>
+        <div class="media media--hero is-placeholder" data-emoji="🎨" data-label="hero · temat strony"></div>
+      </div>
+      <div>
+        <p><strong>photo</strong> — zdjęcie z życia</p>
+        <div class="media media--photo is-placeholder" data-emoji="📸" data-label="photo · życie"></div>
+      </div>
+      <div>
+        <p><strong>diagram</strong> — schemat / rysunek mat.</p>
+        <div class="media media--diagram is-placeholder" data-emoji="📐" data-label="diagram · schemat"></div>
+      </div>
+      <div>
+        <p><strong>cover</strong> — obrazek karty hasła</p>
+        <div class="media media--cover is-placeholder" data-emoji="🖼️" data-label="cover · karta"></div>
+      </div>
+      <div>
+        <p><strong>icon</strong> — mała ikona</p>
+        <div class="media media--icon is-placeholder" data-emoji="✨" data-label="ikona"></div>
+      </div>
+      <div>
+        <p><strong>banner</strong> — pasek</p>
+        <div class="media media--banner is-placeholder" data-emoji="📏" data-label="banner"></div>
+      </div>
+    </div>
+
+    <p style="margin-top:16px"><strong>compare</strong> — dwa obrazy obok siebie</p>
+    <div class="media media--compare">
+      <div class="media media--photo is-placeholder" data-emoji="1️⃣" data-label="przed / A"></div>
+      <div class="media media--photo is-placeholder" data-emoji="2️⃣" data-label="po / B"></div>
+    </div>
+
+    <h2>2) Jak podmienić zaślepkę</h2>
+    <p><strong>Było (zaślepka):</strong></p>
+<pre>&lt;div class="media media--photo is-placeholder"
+     data-emoji="📸" data-label="photo · życie"&gt;&lt;/div&gt;</pre>
+
+    <p><strong>Ma być (Twój plik):</strong></p>
+<pre>&lt;div class="media media--photo"&gt;
+  &lt;img src="../assets/pizza.jpg" alt="Pizza podzielona na 4 części" /&gt;
+&lt;/div&gt;</pre>
+
+    <p><strong>Albo URL:</strong></p>
+<pre>&lt;div class="media media--hero"&gt;
+  &lt;img src="https://example.com/obrazek.png" alt="Opis" /&gt;
+&lt;/div&gt;</pre>
+
+    <h2>3) Co pasuje do jakiego tematu?</h2>
+    <ul>
+      <li><strong>Ułamki</strong> — pizza, tort, czekolada, pasek / diagram koła</li>
+      <li><strong>Liczby</strong> — jabłka, klocki, oś liczbowa</li>
+      <li><strong>Czas / kalendarz</strong> — zegar, kalendarz na ścianie</li>
+      <li><strong>Pieniądze</strong> — monety, banknoty (ilustracja, nie skan prawdziwych)</li>
+      <li><strong>Geometria</strong> — dom, znaki drogowe, klocki, rysunek odręczny</li>
+      <li><strong>Statystyka</strong> — wykres, ankieta klasowa, kostka</li>
+    </ul>
+
+    <h2>4) Zasady (żeby było „ładnie i dla dziecka”)</h2>
+    <ul>
+      <li>1 główny obraz na stronę (hero) — nie zaśmiecaj</li>
+      <li>Alt zawsze po polsku, krótko: co widać</li>
+      <li>Preferuj jasne, duże kształty; unikaj drobiazgu</li>
+      <li>SVG schemat (już w kartach) + foto z życia = najlepsza para</li>
+      <li>Druk/PDF: obrazki zostają (print-color-adjust)</li>
+    </ul>
+
+    <h2>5) Gdzie wstawiasz w pageXX.html?</h2>
+    <ol>
+      <li>Pod nagłówkiem → <code>.media--hero</code></li>
+      <li>Blok „W życiu” → <code>.media--photo</code></li>
+      <li>W karcie hasła → <code>.media--cover</code> / <code>--diagram</code></li>
+      <li>Ikona przy tytule hasła → <code>.media--icon</code></li>
+    </ol>
+
+    <p class="tip">Po edycji HTML nie musisz odpalać Pythona — wystarczy odświeżyć przeglądarkę. Python (<code>build_pages.py</code>) tylko gdy chcesz przebudować WSZYSTKIE strony naraz (nadpisze ręczne zmiany w pages/).</p>
+
+    <p><a href="pages/page09.html">Zobacz przykład: Ułamki →</a> · <a href="pages/page01.html">Liczby naturalne →</a></p>
+  </div>
+</body>
+</html>
