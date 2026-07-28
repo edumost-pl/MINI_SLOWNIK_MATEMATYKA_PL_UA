@@ -108,11 +108,16 @@ def _same_rule_text(a: str, b: str) -> bool:
 
 
 def _split_label_formula(text: str) -> tuple[str, str] | tuple[None, None]:
-    """'Romb: P=a·h' → ('Romb', 'P=a·h')."""
-    m = re.match(r"^([^:]{2,36}):\s*(.+)$", (text or "").strip())
+    """'Romb: P=a·h' → ('Romb', 'P=a·h'). Nie dziel wzorów typu 'ℚ = { a/b : … }'."""
+    text = (text or "").strip()
+    # Etykieta bez '=', bez '{' — samo słowo/fraza przed dwukropkiem
+    m = re.match(r"^([^:={]{2,36}):\s*(.+)$", text)
     if not m:
         return None, None
     label, rest = m.group(1).strip(), m.group(2).strip().rstrip(".")
+    # etykieta nie może wyglądać jak wzór
+    if re.search(r"[=·×+/√²³ℚℕℤℝ]|^\d", label):
+        return None, None
     if _looks_formula(rest) or re.search(r"[=·×:/²³√]|m²|ha|\d", rest):
         return label, rest
     return None, None
@@ -137,21 +142,21 @@ def _enrich_remember(items: list) -> list:
             label, core = _split_label_formula(pl)
             if core and _is_pure_formula(core):
                 formula = core
-                pl = f"{label}: co oznacza każda litera / znak we wzorze."
+                pl = f"{label} — wzór poniżej."
                 ua_label, ua_core = _split_label_formula(ua)
                 if ua_core and _is_pure_formula(ua_core):
-                    ua = f"{ua_label or label}: що означає кожна літера / знак у формулі."
+                    ua = f"{ua_label or label} — формула нижче."
             elif _is_pure_formula(pl):
                 formula = pl.rstrip(".")
-                pl = "Wzór egzaminacyjny — sprawdź znaczenie każdej litery."
+                pl = "Znaczenie liter we wzorze — jak w podręczniku."
                 if not ua or _same_rule_text(ua, formula) or _is_pure_formula(ua):
-                    ua = "Формула для іспиту — перевір значення кожної літери."
+                    ua = "Значення літер у формулі — як у підручнику."
 
-        # Jeśli wyjaśnienie = sam wzór → zamień na rozszyfrowanie
+        # Jeśli wyjaśnienie = sam wzór → krótkie rozszyfrowanie (bez porad)
         if formula and _same_rule_text(pl, formula):
-            pl = "Wzór do zapamiętania — wiesz, co oznacza każda litera?"
+            pl = "Wzór — litery jak w zadaniu / podręczniku."
         if formula and ua and _same_rule_text(ua, formula):
-            ua = "Формула для запам'ятовування — знаєш значення кожної літери?"
+            ua = "Формула — літери як у задачі / підручнику."
 
         if pl and not pl.endswith((".", "!", "…", "?")) and len(pl) < 100:
             pl = pl + "."
@@ -418,8 +423,8 @@ CARD_OVERRIDES = {
     (1, "liczba naturalna"): {
         "def_pl": "To liczby do liczenia rzeczy: 1 jabłko, 2 dzieci, 3 kroki. Zaczynamy od 1 i idziemy dalej: 1, 2, 3, 4…",
         "def_ua": "Це числа для лічби речей: 1 яблуко, 2 дитини, 3 кроки. Починаємо від 1 і далі: 1, 2, 3, 4…",
-        "rule": "W klasach 1–3 liczymy nimi przedmioty. (Czasem w szkole pojawia się też 0 — zapytaj nauczyciela.)",
-        "rule_ua": "У класах 1–3 ними лічимо предмети. (Іноді в школі є й 0 — спитай учителя.)",
+        "rule": "W klasach 1–3 liczymy nimi przedmioty. W wielu podręcznikach ℕ zaczyna się od 1; czasem umowa szkolna obejmuje też 0.",
+        "rule_ua": "У класах 1–3 ними лічимо предмети. У багатьох підручниках ℕ починається від 1; інколи шкільна домовленість включає й 0.",
     },
     (1, "cyfra"): {
         "def_pl": "Cyfra to „klocek” do budowania liczb. Jest ich tylko dziesięć: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.",
@@ -446,8 +451,8 @@ CARD_OVERRIDES = {
         "rule_ua": "На перегонах: хто прибіг перший? Це порядкове. Скільки дітей бігло? Це натуральне.",
     },
     (1, "zero"): {
-        "def_pl": "Zero = nic / pusto (0 cukierków). W kl. 1–3 bywa różnie, czy 0 należy do liczb naturalnych — w szkole pytaj nauczyciela.",
-        "def_ua": "Нуль = нічого / порожньо (0 цукерок). У кл. 1–3 буває по-різному, чи 0 у натуральних — у школі спитай учителя.",
+        "def_pl": "Zero = nic / pusto (0 cukierków). W kl. 1–3 bywa umowa: liczby naturalne od 1 albo od 0 — ważne, jak w Twojej klasie.",
+        "def_ua": "Нуль = нічого / порожньо (0 цукерок). У кл. 1–3 буває домовленість: натуральні від 1 або від 0 — важливо, як у твоєму класі.",
         "rule": "0 to cyfra i specjalna liczba. Nie dziel przez zero!",
         "rule_ua": "0 — цифра і особливе число. Не діли на нуль!",
     },

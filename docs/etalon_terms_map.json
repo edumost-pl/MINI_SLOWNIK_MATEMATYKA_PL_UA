@@ -1,0 +1,2208 @@
+{
+  "total": 244,
+  "covered": 213,
+  "partial": 9,
+  "missing": 15,
+  "missing_most": 7,
+  "pct_strict_all": 87.3,
+  "pct_soft_sp": 93.7,
+  "pct_strict_sp": 89.9,
+  "results": [
+    {
+      "pl": "prawo",
+      "ua": "право",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "61 (Stosunki przestrzenne i porównywanie)",
+      "action": "61 (Stosunki przestrzenne i porównywanie)"
+    },
+    {
+      "pl": "lewo",
+      "ua": "ліво",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "61 (Stosunki przestrzenne i porównywanie)",
+      "action": "61 (Stosunki przestrzenne i porównywanie)"
+    },
+    {
+      "pl": "góra",
+      "ua": "вгору",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "61 (Stosunki przestrzenne i porównywanie)",
+      "action": "61 (Stosunki przestrzenne i porównywanie)"
+    },
+    {
+      "pl": "dół",
+      "ua": "вниз",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "61 (Stosunki przestrzenne i porównywanie)",
+      "action": "61 (Stosunki przestrzenne i porównywanie)"
+    },
+    {
+      "pl": "przed",
+      "ua": "перед",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "za",
+      "ua": "за",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "obok",
+      "ua": "біля",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "29 (Figury płaskie (2))",
+      "action": "29 (Figury płaskie (2))"
+    },
+    {
+      "pl": "dłuższy",
+      "ua": "довший",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "23 (Czas)",
+      "action": "23 (Czas)"
+    },
+    {
+      "pl": "krótszy",
+      "ua": "коротший",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "61 (Stosunki przestrzenne i porównywanie)",
+      "action": "61 (Stosunki przestrzenne i porównywanie)"
+    },
+    {
+      "pl": "cięższy",
+      "ua": "важчий",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "61 (Stosunki przestrzenne i porównywanie)",
+      "action": "61 (Stosunki przestrzenne i porównywanie)"
+    },
+    {
+      "pl": "lżejszy",
+      "ua": "легший",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "61 (Stosunki przestrzenne i porównywanie)",
+      "action": "61 (Stosunki przestrzenne i porównywanie)"
+    },
+    {
+      "pl": "więcej",
+      "ua": "більше",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "61 (Stosunki przestrzenne i porównywanie)",
+      "action": "61 (Stosunki przestrzenne i porównywanie)"
+    },
+    {
+      "pl": "mniej",
+      "ua": "менше",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "61 (Stosunki przestrzenne i porównywanie)",
+      "action": "61 (Stosunki przestrzenne i porównywanie)"
+    },
+    {
+      "pl": "tyle samo",
+      "ua": "порівну",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "61 (Stosunki przestrzenne i porównywanie)",
+      "action": "61 (Stosunki przestrzenne i porównywanie)"
+    },
+    {
+      "pl": "liczba naturalna",
+      "ua": "натуральне число",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "cyfra",
+      "ua": "цифра",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "liczba",
+      "ua": "число",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "wartość pozycyjna",
+      "ua": "позиційний розряд",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "liczba porządkowa",
+      "ua": "порядкове число",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "zero",
+      "ua": "нуль",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "liczba parzysta",
+      "ua": "парне число",
+      "klasy": "1–4",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "liczba nieparzysta",
+      "ua": "непарне число",
+      "klasy": "1–4",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "porównanie liczb",
+      "ua": "порівняння чисел",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "zaokrąglanie",
+      "ua": "округлення",
+      "klasy": "4–6",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "następnik",
+      "ua": "наступник",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "poprzednik",
+      "ua": "попередник",
+      "klasy": "1–3",
+      "dzial": "A",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "oś liczbowa",
+      "ua": "числова вісь",
+      "klasy": "4–6",
+      "dzial": "A",
+      "status": "covered",
+      "where": "03 (Liczby całkowite)",
+      "action": "03 (Liczby całkowite)"
+    },
+    {
+      "pl": "liczba całkowita",
+      "ua": "ціле число",
+      "klasy": "4–6",
+      "dzial": "A",
+      "status": "covered",
+      "where": "03 (Liczby całkowite)",
+      "action": "03 (Liczby całkowite)"
+    },
+    {
+      "pl": "liczba dodatnia",
+      "ua": "додатне число",
+      "klasy": "4–6",
+      "dzial": "A",
+      "status": "partial",
+      "where": "03 (Liczby całkowite)",
+      "action": "osobne hasła zamiast bundla „dodatnie, ujemne, zero\" na 03 (Liczby całkowite)"
+    },
+    {
+      "pl": "liczba ujemna",
+      "ua": "від'ємне число",
+      "klasy": "4–6",
+      "dzial": "A",
+      "status": "partial",
+      "where": "03 (Liczby całkowite)",
+      "action": "osobne hasła zamiast bundla „dodatnie, ujemne, zero\" na 03 (Liczby całkowite)"
+    },
+    {
+      "pl": "wartość bezwzględna",
+      "ua": "модуль / абсолютне значення",
+      "klasy": "4–7",
+      "dzial": "A",
+      "status": "covered",
+      "where": "03 (Liczby całkowite)",
+      "action": "03 (Liczby całkowite)"
+    },
+    {
+      "pl": "liczba przeciwna",
+      "ua": "протилежне число",
+      "klasy": "4–6",
+      "dzial": "A",
+      "status": "covered",
+      "where": "03 (Liczby całkowite)",
+      "action": "03 (Liczby całkowite)"
+    },
+    {
+      "pl": "liczby rzymskie",
+      "ua": "римські числа",
+      "klasy": "2–4",
+      "dzial": "A",
+      "status": "covered",
+      "where": "02 (Liczby rzymskie)",
+      "action": "02 (Liczby rzymskie)"
+    },
+    {
+      "pl": "liczba wymierna",
+      "ua": "раціональне число",
+      "klasy": "7–8",
+      "dzial": "A",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale A"
+    },
+    {
+      "pl": "liczba niewymierna",
+      "ua": "ірраціональне число",
+      "klasy": "7–8",
+      "dzial": "A",
+      "status": "missing_most",
+      "where": "—",
+      "action": "dział I (most) lub oznaczyć jako ponad PP"
+    },
+    {
+      "pl": "dodawanie",
+      "ua": "додавання",
+      "klasy": "1–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "02 (Liczby rzymskie)",
+      "action": "02 (Liczby rzymskie)"
+    },
+    {
+      "pl": "suma",
+      "ua": "сума",
+      "klasy": "1–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "04 (Dodawanie i odejmowanie)",
+      "action": "04 (Dodawanie i odejmowanie)"
+    },
+    {
+      "pl": "składnik",
+      "ua": "доданок",
+      "klasy": "1–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "04 (Dodawanie i odejmowanie)",
+      "action": "04 (Dodawanie i odejmowanie)"
+    },
+    {
+      "pl": "odejmowanie",
+      "ua": "віднімання",
+      "klasy": "1–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "02 (Liczby rzymskie)",
+      "action": "02 (Liczby rzymskie)"
+    },
+    {
+      "pl": "różnica",
+      "ua": "різниця",
+      "klasy": "1–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "04 (Dodawanie i odejmowanie)",
+      "action": "04 (Dodawanie i odejmowanie)"
+    },
+    {
+      "pl": "odjemna",
+      "ua": "зменшуване",
+      "klasy": "2–4",
+      "dzial": "B",
+      "status": "covered",
+      "where": "04 (Dodawanie i odejmowanie)",
+      "action": "04 (Dodawanie i odejmowanie)"
+    },
+    {
+      "pl": "odjemnik",
+      "ua": "від'ємник",
+      "klasy": "2–4",
+      "dzial": "B",
+      "status": "covered",
+      "where": "04 (Dodawanie i odejmowanie)",
+      "action": "04 (Dodawanie i odejmowanie)"
+    },
+    {
+      "pl": "przemienność",
+      "ua": "переставна властивість",
+      "klasy": "2–4",
+      "dzial": "B",
+      "status": "covered",
+      "where": "05 (Tabliczka mnożenia)",
+      "action": "05 (Tabliczka mnożenia)"
+    },
+    {
+      "pl": "łączność",
+      "ua": "сполучна властивість",
+      "klasy": "2–4",
+      "dzial": "B",
+      "status": "partial",
+      "where": "04 (Dodawanie i odejmowanie)",
+      "action": "osobne hasło (teraz w: 04 (Dodawanie i odejmowanie) · „właściwości +”)"
+    },
+    {
+      "pl": "rozdzielność mnożenia",
+      "ua": "розподільна властивість множення",
+      "klasy": "4–5",
+      "dzial": "B",
+      "status": "covered",
+      "where": "44 (Rozdzielność mnożenia)",
+      "action": "44 (Rozdzielność mnożenia)"
+    },
+    {
+      "pl": "mnożenie",
+      "ua": "множення",
+      "klasy": "2–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "05 (Tabliczka mnożenia)",
+      "action": "05 (Tabliczka mnożenia)"
+    },
+    {
+      "pl": "iloczyn",
+      "ua": "добуток",
+      "klasy": "2–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "05 (Tabliczka mnożenia)",
+      "action": "05 (Tabliczka mnożenia)"
+    },
+    {
+      "pl": "czynnik",
+      "ua": "множник",
+      "klasy": "2–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "05 (Tabliczka mnożenia)",
+      "action": "05 (Tabliczka mnożenia)"
+    },
+    {
+      "pl": "dzielenie",
+      "ua": "ділення",
+      "klasy": "2–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "06 (Dzielenie)",
+      "action": "06 (Dzielenie)"
+    },
+    {
+      "pl": "iloraz",
+      "ua": "частка",
+      "klasy": "2–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "06 (Dzielenie)",
+      "action": "06 (Dzielenie)"
+    },
+    {
+      "pl": "dzielna",
+      "ua": "ділене",
+      "klasy": "2–3",
+      "dzial": "B",
+      "status": "covered",
+      "where": "06 (Dzielenie)",
+      "action": "06 (Dzielenie)"
+    },
+    {
+      "pl": "dzielnik",
+      "ua": "дільник",
+      "klasy": "2–4",
+      "dzial": "B",
+      "status": "covered",
+      "where": "06 (Dzielenie)",
+      "action": "06 (Dzielenie)"
+    },
+    {
+      "pl": "dzielenie z resztą",
+      "ua": "ділення з остачею",
+      "klasy": "2–4",
+      "dzial": "B",
+      "status": "covered",
+      "where": "06 (Dzielenie)",
+      "action": "06 (Dzielenie)"
+    },
+    {
+      "pl": "kolejność działań",
+      "ua": "порядок дій",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "07 (Kolejność działań)",
+      "action": "07 (Kolejność działań)"
+    },
+    {
+      "pl": "nawiasy",
+      "ua": "дужки",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "07 (Kolejność działań)",
+      "action": "07 (Kolejność działań)"
+    },
+    {
+      "pl": "działanie pisemne",
+      "ua": "письмова дія",
+      "klasy": "3–5",
+      "dzial": "B",
+      "status": "covered",
+      "where": "43 (Działania pisemne i szacowanie)",
+      "action": "43 (Działania pisemne i szacowanie)"
+    },
+    {
+      "pl": "szacowanie",
+      "ua": "оцінювання",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "14 (Pierwiastki)",
+      "action": "14 (Pierwiastki)"
+    },
+    {
+      "pl": "podzielność",
+      "ua": "подільність",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "08 (Podzielność)",
+      "action": "08 (Podzielność)"
+    },
+    {
+      "pl": "wielokrotność",
+      "ua": "кратне",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "08 (Podzielność)",
+      "action": "08 (Podzielność)"
+    },
+    {
+      "pl": "liczba pierwsza",
+      "ua": "просте число",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "08 (Podzielność)",
+      "action": "08 (Podzielność)"
+    },
+    {
+      "pl": "liczba złożona",
+      "ua": "складене число",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "45 (NWD, NWW i rozkład na czynniki)",
+      "action": "45 (NWD, NWW i rozkład na czynniki)"
+    },
+    {
+      "pl": "czynnik pierwszy",
+      "ua": "простий множник",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "45 (NWD, NWW i rozkład na czynniki)",
+      "action": "45 (NWD, NWW i rozkład na czynniki)"
+    },
+    {
+      "pl": "rozkład na czynniki pierwsze",
+      "ua": "розклад на прості множники",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "45 (NWD, NWW i rozkład na czynniki)",
+      "action": "45 (NWD, NWW i rozkład na czynniki)"
+    },
+    {
+      "pl": "NWD",
+      "ua": "НСД",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "45 (NWD, NWW i rozkład na czynniki)",
+      "action": "45 (NWD, NWW i rozkład na czynniki)"
+    },
+    {
+      "pl": "NWW",
+      "ua": "НСК",
+      "klasy": "4–6",
+      "dzial": "B",
+      "status": "covered",
+      "where": "45 (NWD, NWW i rozkład na czynniki)",
+      "action": "45 (NWD, NWW i rozkład na czynniki)"
+    },
+    {
+      "pl": "potęga",
+      "ua": "степінь",
+      "klasy": "5–7",
+      "dzial": "B",
+      "status": "covered",
+      "where": "13 (Potęgi)",
+      "action": "13 (Potęgi)"
+    },
+    {
+      "pl": "podstawa potęgi",
+      "ua": "основа степеня",
+      "klasy": "5–7",
+      "dzial": "B",
+      "status": "covered",
+      "where": "13 (Potęgi)",
+      "action": "13 (Potęgi)"
+    },
+    {
+      "pl": "wykładnik",
+      "ua": "показник степеня",
+      "klasy": "5–7",
+      "dzial": "B",
+      "status": "covered",
+      "where": "13 (Potęgi)",
+      "action": "13 (Potęgi)"
+    },
+    {
+      "pl": "kwadrat liczby",
+      "ua": "квадрат числа",
+      "klasy": "5–7",
+      "dzial": "B",
+      "status": "covered",
+      "where": "13 (Potęgi)",
+      "action": "13 (Potęgi)"
+    },
+    {
+      "pl": "sześcian liczby",
+      "ua": "куб числа",
+      "klasy": "5–7",
+      "dzial": "B",
+      "status": "covered",
+      "where": "13 (Potęgi)",
+      "action": "13 (Potęgi)"
+    },
+    {
+      "pl": "notacja wykładnicza",
+      "ua": "показниковий запис",
+      "klasy": "7–8",
+      "dzial": "B",
+      "status": "covered",
+      "where": "53 (Notacja wykładnicza i potęga potęgi)",
+      "action": "53 (Notacja wykładnicza i potęga potęgi)"
+    },
+    {
+      "pl": "potęga potęgi",
+      "ua": "степінь степеня",
+      "klasy": "7–8",
+      "dzial": "B",
+      "status": "covered",
+      "where": "53 (Notacja wykładnicza i potęga potęgi)",
+      "action": "53 (Notacja wykładnicza i potęga potęgi)"
+    },
+    {
+      "pl": "pierwiastek kwadratowy",
+      "ua": "квадратний корінь",
+      "klasy": "6–8",
+      "dzial": "B",
+      "status": "covered",
+      "where": "14 (Pierwiastki)",
+      "action": "14 (Pierwiastki)"
+    },
+    {
+      "pl": "pierwiastek sześcienny",
+      "ua": "кубічний корінь",
+      "klasy": "7–8",
+      "dzial": "B",
+      "status": "covered",
+      "where": "54 (Pierwiastek sześcienny i działania na √)",
+      "action": "54 (Pierwiastek sześcienny i działania na √)"
+    },
+    {
+      "pl": "kwadrat doskonały",
+      "ua": "повний квадрат",
+      "klasy": "6–8",
+      "dzial": "B",
+      "status": "covered",
+      "where": "14 (Pierwiastki)",
+      "action": "14 (Pierwiastki)"
+    },
+    {
+      "pl": "ułamek zwykły",
+      "ua": "звичайний дріб",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "09 (Ułamki zwykłe (1))",
+      "action": "09 (Ułamki zwykłe (1))"
+    },
+    {
+      "pl": "licznik",
+      "ua": "чисельник",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "09 (Ułamki zwykłe (1))",
+      "action": "09 (Ułamki zwykłe (1))"
+    },
+    {
+      "pl": "mianownik",
+      "ua": "знаменник",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "09 (Ułamki zwykłe (1))",
+      "action": "09 (Ułamki zwykłe (1))"
+    },
+    {
+      "pl": "ułamek właściwy",
+      "ua": "правильний дріб",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "09 (Ułamki zwykłe (1))",
+      "action": "09 (Ułamki zwykłe (1))"
+    },
+    {
+      "pl": "ułamek niewłaściwy",
+      "ua": "неправильний дріб",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "09 (Ułamki zwykłe (1))",
+      "action": "09 (Ułamki zwykłe (1))"
+    },
+    {
+      "pl": "liczba mieszana",
+      "ua": "мішане число",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "09 (Ułamki zwykłe (1))",
+      "action": "09 (Ułamki zwykłe (1))"
+    },
+    {
+      "pl": "ułamki równe",
+      "ua": "рівні дроби",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "09 (Ułamki zwykłe (1))",
+      "action": "09 (Ułamki zwykłe (1))"
+    },
+    {
+      "pl": "skracanie ułamka",
+      "ua": "скорочення дробу",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "10 (Ułamki zwykłe (2))",
+      "action": "10 (Ułamki zwykłe (2))"
+    },
+    {
+      "pl": "rozszerzanie ułamka",
+      "ua": "розширення дробу",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "10 (Ułamki zwykłe (2))",
+      "action": "10 (Ułamki zwykłe (2))"
+    },
+    {
+      "pl": "ułamek nieskracalny",
+      "ua": "нескоротний дріб",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "10 (Ułamki zwykłe (2))",
+      "action": "10 (Ułamki zwykłe (2))"
+    },
+    {
+      "pl": "wspólny mianownik",
+      "ua": "спільний знаменник",
+      "klasy": "4–5",
+      "dzial": "C",
+      "status": "covered",
+      "where": "10 (Ułamki zwykłe (2))",
+      "action": "10 (Ułamki zwykłe (2))"
+    },
+    {
+      "pl": "ułamek dziesiętny",
+      "ua": "десятковий дріб",
+      "klasy": "4–6",
+      "dzial": "C",
+      "status": "covered",
+      "where": "11 (Ułamki dziesiętne)",
+      "action": "11 (Ułamki dziesiętne)"
+    },
+    {
+      "pl": "miejsce po przecinku",
+      "ua": "розряд після коми",
+      "klasy": "4–6",
+      "dzial": "C",
+      "status": "covered",
+      "where": "11 (Ułamki dziesiętne)",
+      "action": "11 (Ułamki dziesiętne)"
+    },
+    {
+      "pl": "odwrotność ułamka",
+      "ua": "обернений дріб",
+      "klasy": "5–6",
+      "dzial": "C",
+      "status": "covered",
+      "where": "12 (Działania na ułamkach)",
+      "action": "12 (Działania na ułamkach)"
+    },
+    {
+      "pl": "ułamek liczby",
+      "ua": "дріб числа",
+      "klasy": "4–6",
+      "dzial": "C",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "całość z części",
+      "ua": "ціле з частини",
+      "klasy": "4–6",
+      "dzial": "C",
+      "status": "covered",
+      "where": "46 (Ułamek liczby i całość z części)",
+      "action": "46 (Ułamek liczby i całość z części)"
+    },
+    {
+      "pl": "procent",
+      "ua": "відсоток",
+      "klasy": "5–7",
+      "dzial": "C",
+      "status": "covered",
+      "where": "15 (Procenty)",
+      "action": "15 (Procenty)"
+    },
+    {
+      "pl": "procent z liczby",
+      "ua": "відсоток від числа",
+      "klasy": "5–7",
+      "dzial": "C",
+      "status": "covered",
+      "where": "15 (Procenty)",
+      "action": "15 (Procenty)"
+    },
+    {
+      "pl": "jaki procent",
+      "ua": "який відсоток",
+      "klasy": "6–8",
+      "dzial": "C",
+      "status": "covered",
+      "where": "52 (Obliczenia procentowe — wszystkie typy)",
+      "action": "52 (Obliczenia procentowe — wszystkie typy)"
+    },
+    {
+      "pl": "liczba z procentu",
+      "ua": "число з відсотка",
+      "klasy": "6–8",
+      "dzial": "C",
+      "status": "covered",
+      "where": "52 (Obliczenia procentowe — wszystkie typy)",
+      "action": "52 (Obliczenia procentowe — wszystkie typy)"
+    },
+    {
+      "pl": "zwiększenie o p%",
+      "ua": "збільшення на p%",
+      "klasy": "5–8",
+      "dzial": "C",
+      "status": "covered",
+      "where": "15 (Procenty)",
+      "action": "15 (Procenty)"
+    },
+    {
+      "pl": "zmniejszenie o p%",
+      "ua": "зменшення на p%",
+      "klasy": "5–8",
+      "dzial": "C",
+      "status": "covered",
+      "where": "15 (Procenty)",
+      "action": "15 (Procenty)"
+    },
+    {
+      "pl": "proporcjonalność prosta",
+      "ua": "пряма пропорційність",
+      "klasy": "6–8",
+      "dzial": "C",
+      "status": "covered",
+      "where": "16 (Proporcjonalność)",
+      "action": "16 (Proporcjonalność)"
+    },
+    {
+      "pl": "proporcja",
+      "ua": "пропорція",
+      "klasy": "6–8",
+      "dzial": "C",
+      "status": "covered",
+      "where": "16 (Proporcjonalność)",
+      "action": "16 (Proporcjonalność)"
+    },
+    {
+      "pl": "stosunek",
+      "ua": "відношення",
+      "klasy": "6–8",
+      "dzial": "C",
+      "status": "covered",
+      "where": "56 (Podział proporcjonalny)",
+      "action": "56 (Podział proporcjonalny)"
+    },
+    {
+      "pl": "podział proporcjonalny",
+      "ua": "пропорційний поділ",
+      "klasy": "7–8",
+      "dzial": "C",
+      "status": "covered",
+      "where": "56 (Podział proporcjonalny)",
+      "action": "56 (Podział proporcjonalny)"
+    },
+    {
+      "pl": "współczynnik proporcjonalności",
+      "ua": "коефіцієнт пропорційності",
+      "klasy": "6–8",
+      "dzial": "C",
+      "status": "covered",
+      "where": "16 (Proporcjonalność)",
+      "action": "16 (Proporcjonalność)"
+    },
+    {
+      "pl": "wyrażenie algebraiczne",
+      "ua": "алгебраїчний вираз",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "17 (Wyrażenia algebraiczne)",
+      "action": "17 (Wyrażenia algebraiczne)"
+    },
+    {
+      "pl": "zmienna",
+      "ua": "змінна",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "17 (Wyrażenia algebraiczne)",
+      "action": "17 (Wyrażenia algebraiczne)"
+    },
+    {
+      "pl": "wartość liczbowa wyrażenia",
+      "ua": "числове значення виразу",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "17 (Wyrażenia algebraiczne)",
+      "action": "17 (Wyrażenia algebraiczne)"
+    },
+    {
+      "pl": "jednomian",
+      "ua": "одночлен",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "18 (Sumy algebraiczne)",
+      "action": "18 (Sumy algebraiczne)"
+    },
+    {
+      "pl": "suma algebraiczna",
+      "ua": "алгебраїчна сума",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "18 (Sumy algebraiczne)",
+      "action": "18 (Sumy algebraiczne)"
+    },
+    {
+      "pl": "wyrazy podobne",
+      "ua": "подібні доданки",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "18 (Sumy algebraiczne)",
+      "action": "18 (Sumy algebraiczne)"
+    },
+    {
+      "pl": "redukcja",
+      "ua": "зведення подібних",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "18 (Sumy algebraiczne)",
+      "action": "18 (Sumy algebraiczne)"
+    },
+    {
+      "pl": "współczynnik",
+      "ua": "коефіцієнт",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "16 (Proporcjonalność)",
+      "action": "16 (Proporcjonalność)"
+    },
+    {
+      "pl": "dwumian",
+      "ua": "двочлен",
+      "klasy": "7–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "47 (Wyrażenia dwumianowane)",
+      "action": "47 (Wyrażenia dwumianowane)"
+    },
+    {
+      "pl": "równanie",
+      "ua": "рівняння",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "niewiadoma",
+      "ua": "невідоме",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "19 (Równania)",
+      "action": "19 (Równania)"
+    },
+    {
+      "pl": "rozwiązanie równania",
+      "ua": "розв'язок рівняння",
+      "klasy": "6–8",
+      "dzial": "D",
+      "status": "covered",
+      "where": "19 (Równania)",
+      "action": "19 (Równania)"
+    },
+    {
+      "pl": "nierówność",
+      "ua": "нерівність",
+      "klasy": "7–8",
+      "dzial": "D",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale D"
+    },
+    {
+      "pl": "rozwiązanie nierówności",
+      "ua": "розв'язок нерівності",
+      "klasy": "7–8",
+      "dzial": "D",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale D"
+    },
+    {
+      "pl": "przekształcanie wzoru",
+      "ua": "перетворення формули",
+      "klasy": "7–8",
+      "dzial": "D",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale D"
+    },
+    {
+      "pl": "układ równań",
+      "ua": "система рівнянь",
+      "klasy": "8/most",
+      "dzial": "D",
+      "status": "missing_most",
+      "where": "—",
+      "action": "dział I (most) lub oznaczyć jako ponad PP"
+    },
+    {
+      "pl": "punkt",
+      "ua": "точка",
+      "klasy": "1–4",
+      "dzial": "E",
+      "status": "covered",
+      "where": "28 (Figury płaskie (1))",
+      "action": "28 (Figury płaskie (1))"
+    },
+    {
+      "pl": "prosta",
+      "ua": "пряма",
+      "klasy": "1–4",
+      "dzial": "E",
+      "status": "covered",
+      "where": "16 (Proporcjonalność)",
+      "action": "16 (Proporcjonalność)"
+    },
+    {
+      "pl": "odcinek",
+      "ua": "відрізок",
+      "klasy": "1–4",
+      "dzial": "E",
+      "status": "covered",
+      "where": "28 (Figury płaskie (1))",
+      "action": "28 (Figury płaskie (1))"
+    },
+    {
+      "pl": "półprosta",
+      "ua": "півпряма",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "28 (Figury płaskie (1))",
+      "action": "28 (Figury płaskie (1))"
+    },
+    {
+      "pl": "łamana",
+      "ua": "ламана",
+      "klasy": "1–4",
+      "dzial": "E",
+      "status": "covered",
+      "where": "28 (Figury płaskie (1))",
+      "action": "28 (Figury płaskie (1))"
+    },
+    {
+      "pl": "wielokąt",
+      "ua": "многокутник",
+      "klasy": "1–4",
+      "dzial": "E",
+      "status": "covered",
+      "where": "28 (Figury płaskie (1))",
+      "action": "28 (Figury płaskie (1))"
+    },
+    {
+      "pl": "trójkąt",
+      "ua": "трикутник",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "29 (Figury płaskie (2))",
+      "action": "29 (Figury płaskie (2))"
+    },
+    {
+      "pl": "trójkąt równoboczny",
+      "ua": "рівносторонній трикутник",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "partial",
+      "where": "29 (Figury płaskie (2))",
+      "action": "osobne hasło (teraz w: 29 (Figury płaskie (2)) · „rodzaje trójkątów”)"
+    },
+    {
+      "pl": "trójkąt równoramienny",
+      "ua": "рівнобедрений трикутник",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "49 (Suma kątów w trójkącie)",
+      "action": "49 (Suma kątów w trójkącie)"
+    },
+    {
+      "pl": "trójkąt prostokątny",
+      "ua": "прямокутний трикутник",
+      "klasy": "4–6",
+      "dzial": "E",
+      "status": "covered",
+      "where": "49 (Suma kątów w trójkącie)",
+      "action": "49 (Suma kątów w trójkącie)"
+    },
+    {
+      "pl": "kwadrat",
+      "ua": "квадрат",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "13 (Potęgi)",
+      "action": "13 (Potęgi)"
+    },
+    {
+      "pl": "prostokąt",
+      "ua": "прямокутник",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "29 (Figury płaskie (2))",
+      "action": "29 (Figury płaskie (2))"
+    },
+    {
+      "pl": "romb",
+      "ua": "ромб",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "29 (Figury płaskie (2))",
+      "action": "29 (Figury płaskie (2))"
+    },
+    {
+      "pl": "równoległobok",
+      "ua": "паралелограм",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "29 (Figury płaskie (2))",
+      "action": "29 (Figury płaskie (2))"
+    },
+    {
+      "pl": "trapez",
+      "ua": "трапеція",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "29 (Figury płaskie (2))",
+      "action": "29 (Figury płaskie (2))"
+    },
+    {
+      "pl": "wielokąt foremny",
+      "ua": "правильний многокутник",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale E"
+    },
+    {
+      "pl": "proste prostopadłe",
+      "ua": "перпендикулярні прямі",
+      "klasy": "4–6",
+      "dzial": "E",
+      "status": "covered",
+      "where": "48 (Proste prostopadłe i odległość)",
+      "action": "48 (Proste prostopadłe i odległość)"
+    },
+    {
+      "pl": "proste równoległe",
+      "ua": "паралельні прямі",
+      "klasy": "4–6",
+      "dzial": "E",
+      "status": "covered",
+      "where": "34 (Pary kątów / kąty przy ∥)",
+      "action": "34 (Pary kątów / kąty przy ∥)"
+    },
+    {
+      "pl": "odległość punktu od prostej",
+      "ua": "відстань від точки до прямої",
+      "klasy": "4–6",
+      "dzial": "E",
+      "status": "covered",
+      "where": "48 (Proste prostopadłe i odległość)",
+      "action": "48 (Proste prostopadłe i odległość)"
+    },
+    {
+      "pl": "kąt",
+      "ua": "кут",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "28 (Figury płaskie (1))",
+      "action": "28 (Figury płaskie (1))"
+    },
+    {
+      "pl": "wierzchołek",
+      "ua": "вершина",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "32 (Kąt — pojęcie)",
+      "action": "32 (Kąt — pojęcie)"
+    },
+    {
+      "pl": "ramiona kąta",
+      "ua": "сторони кута",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "32 (Kąt — pojęcie)",
+      "action": "32 (Kąt — pojęcie)"
+    },
+    {
+      "pl": "miara kąta",
+      "ua": "міра кута",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "32 (Kąt — pojęcie)",
+      "action": "32 (Kąt — pojęcie)"
+    },
+    {
+      "pl": "kątomierz",
+      "ua": "кутомір",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "32 (Kąt — pojęcie)",
+      "action": "32 (Kąt — pojęcie)"
+    },
+    {
+      "pl": "kąt ostry",
+      "ua": "гострий кут",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "33 (Rodzaje kątów)",
+      "action": "33 (Rodzaje kątów)"
+    },
+    {
+      "pl": "kąt prosty",
+      "ua": "прямий кут",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "33 (Rodzaje kątów)",
+      "action": "33 (Rodzaje kątów)"
+    },
+    {
+      "pl": "kąt rozwarty",
+      "ua": "тупий кут",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "33 (Rodzaje kątów)",
+      "action": "33 (Rodzaje kątów)"
+    },
+    {
+      "pl": "kąt półpełny",
+      "ua": "розгорнутий кут",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "33 (Rodzaje kątów)",
+      "action": "33 (Rodzaje kątów)"
+    },
+    {
+      "pl": "kąt pełny",
+      "ua": "повний кут",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "33 (Rodzaje kątów)",
+      "action": "33 (Rodzaje kątów)"
+    },
+    {
+      "pl": "kąty przyległe",
+      "ua": "суміжні кути",
+      "klasy": "6–7",
+      "dzial": "E",
+      "status": "covered",
+      "where": "34 (Pary kątów / kąty przy ∥)",
+      "action": "34 (Pary kątów / kąty przy ∥)"
+    },
+    {
+      "pl": "kąty wierzchołkowe",
+      "ua": "вертикальні кути",
+      "klasy": "6–7",
+      "dzial": "E",
+      "status": "covered",
+      "where": "34 (Pary kątów / kąty przy ∥)",
+      "action": "34 (Pary kątów / kąty przy ∥)"
+    },
+    {
+      "pl": "kąty odpowiadające",
+      "ua": "відповідні кути",
+      "klasy": "6–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "34 (Pary kątów / kąty przy ∥)",
+      "action": "34 (Pary kątów / kąty przy ∥)"
+    },
+    {
+      "pl": "kąty naprzemianległe",
+      "ua": "навхрест лежачі кути",
+      "klasy": "6–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "34 (Pary kątów / kąty przy ∥)",
+      "action": "34 (Pary kątów / kąty przy ∥)"
+    },
+    {
+      "pl": "sieczna",
+      "ua": "січна",
+      "klasy": "6–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "34 (Pary kątów / kąty przy ∥)",
+      "action": "34 (Pary kątów / kąty przy ∥)"
+    },
+    {
+      "pl": "suma kątów w trójkącie",
+      "ua": "сума кутів у трикутнику",
+      "klasy": "4–6",
+      "dzial": "E",
+      "status": "covered",
+      "where": "49 (Suma kątów w trójkącie)",
+      "action": "49 (Suma kątów w trójkącie)"
+    },
+    {
+      "pl": "nierówność trójkąta",
+      "ua": "нерівність трикутника",
+      "klasy": "4–6",
+      "dzial": "E",
+      "status": "covered",
+      "where": "49 (Suma kątów w trójkącie)",
+      "action": "49 (Suma kątów w trójkącie)"
+    },
+    {
+      "pl": "okrąg",
+      "ua": "коло",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "koło",
+      "ua": "круг",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "30 (Koło i okrąg)",
+      "action": "30 (Koło i okrąg)"
+    },
+    {
+      "pl": "środek",
+      "ua": "центр",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "30 (Koło i okrąg)",
+      "action": "30 (Koło i okrąg)"
+    },
+    {
+      "pl": "promień",
+      "ua": "радіус",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "30 (Koło i okrąg)",
+      "action": "30 (Koło i okrąg)"
+    },
+    {
+      "pl": "średnica",
+      "ua": "діаметр",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "30 (Koło i okrąg)",
+      "action": "30 (Koło i okrąg)"
+    },
+    {
+      "pl": "cięciwa",
+      "ua": "хорда",
+      "klasy": "3–5",
+      "dzial": "E",
+      "status": "covered",
+      "where": "30 (Koło i okrąg)",
+      "action": "30 (Koło i okrąg)"
+    },
+    {
+      "pl": "liczba π",
+      "ua": "число π",
+      "klasy": "6–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "31 (Długość okręgu i pole koła (π))",
+      "action": "31 (Długość okręgu i pole koła (π))"
+    },
+    {
+      "pl": "długość okręgu",
+      "ua": "довжина кола",
+      "klasy": "6–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "31 (Długość okręgu i pole koła (π))",
+      "action": "31 (Długość okręgu i pole koła (π))"
+    },
+    {
+      "pl": "pole koła",
+      "ua": "площа круга",
+      "klasy": "6–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "31 (Długość okręgu i pole koła (π))",
+      "action": "31 (Długość okręgu i pole koła (π))"
+    },
+    {
+      "pl": "obwód",
+      "ua": "периметр",
+      "klasy": "4–6",
+      "dzial": "E",
+      "status": "covered",
+      "where": "20 (Długość)",
+      "action": "20 (Długość)"
+    },
+    {
+      "pl": "pole",
+      "ua": "площа",
+      "klasy": "4–6",
+      "dzial": "E",
+      "status": "covered",
+      "where": "31 (Długość okręgu i pole koła (π))",
+      "action": "31 (Długość okręgu i pole koła (π))"
+    },
+    {
+      "pl": "ar",
+      "ua": "ар",
+      "klasy": "5–7",
+      "dzial": "E",
+      "status": "covered",
+      "where": "01 (Liczby naturalne)",
+      "action": "01 (Liczby naturalne)"
+    },
+    {
+      "pl": "hektar",
+      "ua": "гектар",
+      "klasy": "5–7",
+      "dzial": "E",
+      "status": "covered",
+      "where": "50 (Pole rombu i trapezu; ar, ha)",
+      "action": "50 (Pole rombu i trapezu; ar, ha)"
+    },
+    {
+      "pl": "symetria",
+      "ua": "симетрія",
+      "klasy": "3–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "37 (Symetria)",
+      "action": "37 (Symetria)"
+    },
+    {
+      "pl": "oś symetrii",
+      "ua": "вісь симетрії",
+      "klasy": "3–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "37 (Symetria)",
+      "action": "37 (Symetria)"
+    },
+    {
+      "pl": "środek symetrii",
+      "ua": "центр симетрії",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "37 (Symetria)",
+      "action": "37 (Symetria)"
+    },
+    {
+      "pl": "symetralna odcinka",
+      "ua": "серединний перпендикуляр",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "60 (Symetralna i dwusieczna)",
+      "action": "60 (Symetralna i dwusieczna)"
+    },
+    {
+      "pl": "dwusieczna kąta",
+      "ua": "бісектриса кута",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "60 (Symetralna i dwusieczna)",
+      "action": "60 (Symetralna i dwusieczna)"
+    },
+    {
+      "pl": "wysokość",
+      "ua": "висота",
+      "klasy": "5–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "48 (Proste prostopadłe i odległość)",
+      "action": "48 (Proste prostopadłe i odległość)"
+    },
+    {
+      "pl": "środkowa trójkąta",
+      "ua": "медіана трикутника",
+      "klasy": "6–8",
+      "dzial": "E",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale E"
+    },
+    {
+      "pl": "układ współrzędnych",
+      "ua": "система координат",
+      "klasy": "5–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "38 (Współrzędne)",
+      "action": "38 (Współrzędne)"
+    },
+    {
+      "pl": "oś X",
+      "ua": "вісь X",
+      "klasy": "5–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "38 (Współrzędne)",
+      "action": "38 (Współrzędne)"
+    },
+    {
+      "pl": "oś Y",
+      "ua": "вісь Y",
+      "klasy": "5–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "38 (Współrzędne)",
+      "action": "38 (Współrzędne)"
+    },
+    {
+      "pl": "współrzędne punktu",
+      "ua": "координати точки",
+      "klasy": "5–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "38 (Współrzędne)",
+      "action": "38 (Współrzędne)"
+    },
+    {
+      "pl": "ćwiartki",
+      "ua": "чверті",
+      "klasy": "5–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "38 (Współrzędne)",
+      "action": "38 (Współrzędne)"
+    },
+    {
+      "pl": "środek odcinka",
+      "ua": "середина відрізка",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "59 (Środek i długość odcinka)",
+      "action": "59 (Środek i długość odcinka)"
+    },
+    {
+      "pl": "długość odcinka",
+      "ua": "довжина відрізка",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "59 (Środek i długość odcinka)",
+      "action": "59 (Środek i długość odcinka)"
+    },
+    {
+      "pl": "przystawanie",
+      "ua": "конгруентність",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "58 (Przystawanie trójkątów)",
+      "action": "58 (Przystawanie trójkątów)"
+    },
+    {
+      "pl": "cecha BBB",
+      "ua": "ознака ССС",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "58 (Przystawanie trójkątów)",
+      "action": "58 (Przystawanie trójkątów)"
+    },
+    {
+      "pl": "cecha BKB",
+      "ua": "ознака СКС",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "58 (Przystawanie trójkątów)",
+      "action": "58 (Przystawanie trójkątów)"
+    },
+    {
+      "pl": "cecha KBK",
+      "ua": "ознака КСК",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "58 (Przystawanie trójkątów)",
+      "action": "58 (Przystawanie trójkątów)"
+    },
+    {
+      "pl": "podobieństwo figur",
+      "ua": "подібність фігур",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale E"
+    },
+    {
+      "pl": "skala podobieństwa",
+      "ua": "коефіцієнт подібності",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale E"
+    },
+    {
+      "pl": "twierdzenie Pitagorasa",
+      "ua": "теорема Піфагора",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "57 (Twierdzenie Pitagorasa)",
+      "action": "57 (Twierdzenie Pitagorasa)"
+    },
+    {
+      "pl": "przyprostokątna",
+      "ua": "катет",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "57 (Twierdzenie Pitagorasa)",
+      "action": "57 (Twierdzenie Pitagorasa)"
+    },
+    {
+      "pl": "przeciwprostokątna",
+      "ua": "гіпотенуза",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "57 (Twierdzenie Pitagorasa)",
+      "action": "57 (Twierdzenie Pitagorasa)"
+    },
+    {
+      "pl": "trójka pitagorejska",
+      "ua": "піфагорова трійка",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "covered",
+      "where": "57 (Twierdzenie Pitagorasa)",
+      "action": "57 (Twierdzenie Pitagorasa)"
+    },
+    {
+      "pl": "okrąg wpisany",
+      "ua": "вписане коло",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale E"
+    },
+    {
+      "pl": "okrąg opisany",
+      "ua": "описане коло",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale E"
+    },
+    {
+      "pl": "przesunięcie",
+      "ua": "паралельне перенесення",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale E"
+    },
+    {
+      "pl": "obrót (przekształcenie)",
+      "ua": "поворот (перетворення)",
+      "klasy": "7–8",
+      "dzial": "E",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale E"
+    },
+    {
+      "pl": "bryła",
+      "ua": "просторове тіло",
+      "klasy": "4–6",
+      "dzial": "F",
+      "status": "covered",
+      "where": "36 (Bryły)",
+      "action": "36 (Bryły)"
+    },
+    {
+      "pl": "sześcian",
+      "ua": "куб",
+      "klasy": "4–6",
+      "dzial": "F",
+      "status": "covered",
+      "where": "13 (Potęgi)",
+      "action": "13 (Potęgi)"
+    },
+    {
+      "pl": "prostopadłościan",
+      "ua": "прямокутний паралелепіпед",
+      "klasy": "4–6",
+      "dzial": "F",
+      "status": "covered",
+      "where": "36 (Bryły)",
+      "action": "36 (Bryły)"
+    },
+    {
+      "pl": "graniastosłup",
+      "ua": "призма",
+      "klasy": "5–8",
+      "dzial": "F",
+      "status": "covered",
+      "where": "51 (Graniastosłup, siatki, pole powierzchni)",
+      "action": "51 (Graniastosłup, siatki, pole powierzchni)"
+    },
+    {
+      "pl": "graniastosłup prosty",
+      "ua": "пряма призма",
+      "klasy": "5–8",
+      "dzial": "F",
+      "status": "covered",
+      "where": "51 (Graniastosłup, siatki, pole powierzchni)",
+      "action": "51 (Graniastosłup, siatki, pole powierzchni)"
+    },
+    {
+      "pl": "ostrosłup",
+      "ua": "піраміда",
+      "klasy": "4–8",
+      "dzial": "F",
+      "status": "partial",
+      "where": "36 (Bryły)",
+      "action": "rozdzielić / osobne hasło (teraz: 36 (Bryły) · „ostrosłup”)"
+    },
+    {
+      "pl": "walec",
+      "ua": "циліндр",
+      "klasy": "4–8",
+      "dzial": "F",
+      "status": "partial",
+      "where": "36 (Bryły)",
+      "action": "rozdzielić / osobne hasło (teraz: 36 (Bryły) · „walec / stożek / kula”)"
+    },
+    {
+      "pl": "stożek",
+      "ua": "конус",
+      "klasy": "4–8",
+      "dzial": "F",
+      "status": "partial",
+      "where": "36 (Bryły)",
+      "action": "rozdzielić / osobne hasło (teraz: 36 (Bryły) · „walec / stożek / kula”)"
+    },
+    {
+      "pl": "kula",
+      "ua": "куля",
+      "klasy": "4–8",
+      "dzial": "F",
+      "status": "partial",
+      "where": "36 (Bryły)",
+      "action": "rozdzielić / osobne hasło (teraz: 36 (Bryły) · „walec / stożek / kula”)"
+    },
+    {
+      "pl": "sfera",
+      "ua": "сфера",
+      "klasy": "7–8",
+      "dzial": "F",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale F"
+    },
+    {
+      "pl": "siatka bryły",
+      "ua": "сітка тіла",
+      "klasy": "5–8",
+      "dzial": "F",
+      "status": "covered",
+      "where": "51 (Graniastosłup, siatki, pole powierzchni)",
+      "action": "51 (Graniastosłup, siatki, pole powierzchni)"
+    },
+    {
+      "pl": "pole powierzchni",
+      "ua": "площа поверхні",
+      "klasy": "5–8",
+      "dzial": "F",
+      "status": "covered",
+      "where": "51 (Graniastosłup, siatki, pole powierzchni)",
+      "action": "51 (Graniastosłup, siatki, pole powierzchni)"
+    },
+    {
+      "pl": "objętość",
+      "ua": "об'єм",
+      "klasy": "4–8",
+      "dzial": "F",
+      "status": "covered",
+      "where": "22 (Objętość i litr)",
+      "action": "22 (Objętość i litr)"
+    },
+    {
+      "pl": "objętość ostrosłupa",
+      "ua": "об'єм піраміди",
+      "klasy": "7–8",
+      "dzial": "F",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale F"
+    },
+    {
+      "pl": "pole powierzchni ostrosłupa",
+      "ua": "площа поверхні піраміди",
+      "klasy": "7–8",
+      "dzial": "F",
+      "status": "missing",
+      "where": "—",
+      "action": "dodać osobną stronę/hasło w dziale F"
+    },
+    {
+      "pl": "jednostki długości",
+      "ua": "одиниці довжини",
+      "klasy": "1–3",
+      "dzial": "G",
+      "status": "covered",
+      "where": "20 (Długość)",
+      "action": "20 (Długość)"
+    },
+    {
+      "pl": "jednostki masy",
+      "ua": "одиниці маси",
+      "klasy": "1–3",
+      "dzial": "G",
+      "status": "covered",
+      "where": "21 (Masa)",
+      "action": "21 (Masa)"
+    },
+    {
+      "pl": "litr",
+      "ua": "літр",
+      "klasy": "2–4",
+      "dzial": "G",
+      "status": "covered",
+      "where": "22 (Objętość i litr)",
+      "action": "22 (Objętość i litr)"
+    },
+    {
+      "pl": "mililitr",
+      "ua": "мілілітр",
+      "klasy": "2–4",
+      "dzial": "G",
+      "status": "covered",
+      "where": "22 (Objętość i litr)",
+      "action": "22 (Objętość i litr)"
+    },
+    {
+      "pl": "jednostki czasu",
+      "ua": "одиниці часу",
+      "klasy": "1–3",
+      "dzial": "G",
+      "status": "covered",
+      "where": "23 (Czas)",
+      "action": "23 (Czas)"
+    },
+    {
+      "pl": "zegar",
+      "ua": "годинник",
+      "klasy": "1–3",
+      "dzial": "G",
+      "status": "covered",
+      "where": "23 (Czas)",
+      "action": "23 (Czas)"
+    },
+    {
+      "pl": "doba",
+      "ua": "доба",
+      "klasy": "1–3",
+      "dzial": "G",
+      "status": "covered",
+      "where": "23 (Czas)",
+      "action": "23 (Czas)"
+    },
+    {
+      "pl": "kalendarz",
+      "ua": "календар",
+      "klasy": "1–3",
+      "dzial": "G",
+      "status": "covered",
+      "where": "24 (Kalendarz)",
+      "action": "24 (Kalendarz)"
+    },
+    {
+      "pl": "rok przestępny",
+      "ua": "високосний рік",
+      "klasy": "1–3",
+      "dzial": "G",
+      "status": "covered",
+      "where": "24 (Kalendarz)",
+      "action": "24 (Kalendarz)"
+    },
+    {
+      "pl": "stopień Celsjusza",
+      "ua": "градус Цельсія",
+      "klasy": "2–4",
+      "dzial": "G",
+      "status": "covered",
+      "where": "25 (Temperatura)",
+      "action": "25 (Temperatura)"
+    },
+    {
+      "pl": "złoty",
+      "ua": "злотий",
+      "klasy": "1–3",
+      "dzial": "G",
+      "status": "covered",
+      "where": "26 (Pieniądze)",
+      "action": "26 (Pieniądze)"
+    },
+    {
+      "pl": "grosz",
+      "ua": "грош",
+      "klasy": "1–3",
+      "dzial": "G",
+      "status": "covered",
+      "where": "26 (Pieniądze)",
+      "action": "26 (Pieniądze)"
+    },
+    {
+      "pl": "prędkość",
+      "ua": "швидкість",
+      "klasy": "5–7",
+      "dzial": "G",
+      "status": "covered",
+      "where": "27 (Prędkość i skala)",
+      "action": "27 (Prędkość i skala)"
+    },
+    {
+      "pl": "skala mapy",
+      "ua": "масштаб карти",
+      "klasy": "5–7",
+      "dzial": "G",
+      "status": "covered",
+      "where": "27 (Prędkość i skala)",
+      "action": "27 (Prędkość i skala)"
+    },
+    {
+      "pl": "wyrażenie dwumianowane",
+      "ua": "двочленний вираз міри",
+      "klasy": "4–5",
+      "dzial": "G",
+      "status": "covered",
+      "where": "47 (Wyrażenia dwumianowane)",
+      "action": "47 (Wyrażenia dwumianowane)"
+    },
+    {
+      "pl": "statystyka",
+      "ua": "статистика",
+      "klasy": "4–6",
+      "dzial": "H",
+      "status": "covered",
+      "where": "39 (Statystyka (1))",
+      "action": "39 (Statystyka (1))"
+    },
+    {
+      "pl": "dane",
+      "ua": "дані",
+      "klasy": "4–6",
+      "dzial": "H",
+      "status": "covered",
+      "where": "39 (Statystyka (1))",
+      "action": "39 (Statystyka (1))"
+    },
+    {
+      "pl": "tabela",
+      "ua": "таблиця",
+      "klasy": "4–6",
+      "dzial": "H",
+      "status": "covered",
+      "where": "16 (Proporcjonalność)",
+      "action": "16 (Proporcjonalność)"
+    },
+    {
+      "pl": "wykres słupkowy",
+      "ua": "стовпчикова діаграма",
+      "klasy": "4–6",
+      "dzial": "H",
+      "status": "covered",
+      "where": "39 (Statystyka (1))",
+      "action": "39 (Statystyka (1))"
+    },
+    {
+      "pl": "wykres kołowy",
+      "ua": "кругова діаграма",
+      "klasy": "4–6",
+      "dzial": "H",
+      "status": "covered",
+      "where": "39 (Statystyka (1))",
+      "action": "39 (Statystyka (1))"
+    },
+    {
+      "pl": "średnia arytmetyczna",
+      "ua": "середнє арифметичне",
+      "klasy": "5–7",
+      "dzial": "H",
+      "status": "covered",
+      "where": "40 (Statystyka (2))",
+      "action": "40 (Statystyka (2))"
+    },
+    {
+      "pl": "mediana",
+      "ua": "медіана",
+      "klasy": "5–7",
+      "dzial": "H",
+      "status": "covered",
+      "where": "40 (Statystyka (2))",
+      "action": "40 (Statystyka (2))"
+    },
+    {
+      "pl": "moda",
+      "ua": "мода",
+      "klasy": "5–7",
+      "dzial": "H",
+      "status": "covered",
+      "where": "40 (Statystyka (2))",
+      "action": "40 (Statystyka (2))"
+    },
+    {
+      "pl": "kombinatoryka",
+      "ua": "комбінаторика",
+      "klasy": "6–8",
+      "dzial": "H",
+      "status": "covered",
+      "where": "41 (Kombinatoryka i prawdopodobieństwo)",
+      "action": "41 (Kombinatoryka i prawdopodobieństwo)"
+    },
+    {
+      "pl": "zasada mnożenia",
+      "ua": "правило множення",
+      "klasy": "6–8",
+      "dzial": "H",
+      "status": "covered",
+      "where": "41 (Kombinatoryka i prawdopodobieństwo)",
+      "action": "41 (Kombinatoryka i prawdopodobieństwo)"
+    },
+    {
+      "pl": "permutacje",
+      "ua": "перестановки",
+      "klasy": "6–8",
+      "dzial": "H",
+      "status": "covered",
+      "where": "41 (Kombinatoryka i prawdopodobieństwo)",
+      "action": "41 (Kombinatoryka i prawdopodobieństwo)"
+    },
+    {
+      "pl": "prawdopodobieństwo",
+      "ua": "ймовірність",
+      "klasy": "6–8",
+      "dzial": "H",
+      "status": "covered",
+      "where": "41 (Kombinatoryka i prawdopodobieństwo)",
+      "action": "41 (Kombinatoryka i prawdopodobieństwo)"
+    },
+    {
+      "pl": "doświadczenie losowe",
+      "ua": "випадковий дослід",
+      "klasy": "7–8",
+      "dzial": "H",
+      "status": "partial",
+      "where": "41 (Kombinatoryka i prawdopodobieństwo)",
+      "action": "osobne hasło (teraz w: 41 (Kombinatoryka i prawdopodobieństwo) · „prawdopodobieństwo”)"
+    },
+    {
+      "pl": "funkcja",
+      "ua": "функція",
+      "klasy": "most",
+      "dzial": "I",
+      "status": "missing_most",
+      "where": "—",
+      "action": "dział I (most) lub oznaczyć jako ponad PP"
+    },
+    {
+      "pl": "wykres funkcji",
+      "ua": "графік функції",
+      "klasy": "most",
+      "dzial": "I",
+      "status": "missing_most",
+      "where": "—",
+      "action": "dział I (most) lub oznaczyć jako ponad PP"
+    },
+    {
+      "pl": "sinus",
+      "ua": "синус",
+      "klasy": "most",
+      "dzial": "I",
+      "status": "missing_most",
+      "where": "—",
+      "action": "dział I (most) lub oznaczyć jako ponad PP"
+    },
+    {
+      "pl": "cosinus",
+      "ua": "косинус",
+      "klasy": "most",
+      "dzial": "I",
+      "status": "missing_most",
+      "where": "—",
+      "action": "dział I (most) lub oznaczyć jako ponad PP"
+    },
+    {
+      "pl": "tangens",
+      "ua": "тангенс",
+      "klasy": "most",
+      "dzial": "I",
+      "status": "missing_most",
+      "where": "—",
+      "action": "dział I (most) lub oznaczyć jako ponad PP"
+    },
+    {
+      "pl": "symbole matematyczne",
+      "ua": "математичні символи",
+      "klasy": "1–8",
+      "dzial": "J",
+      "status": "covered",
+      "where": "42 (Ściąga znaków)",
+      "action": "42 (Ściąga znaków)"
+    }
+  ]
+}

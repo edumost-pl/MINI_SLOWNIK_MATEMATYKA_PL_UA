@@ -1,0 +1,642 @@
+{
+  "checked": 75,
+  "ok": 75,
+  "warn": 0,
+  "fixes": [
+    "Naprawiono dzielenie wzoru ℚ = { a/b : … } w handbook_enrich (_split_label_formula).",
+    "Usunięto odniesienia do liceum (√2, punkt procentowy) z kart/ściąg.",
+    "Usunięto „pytaj nauczyciela” — fakt o umowie ℕ ⊇ {0} lub od 1.",
+    "Wzmocniono strony 62–75: remember, mistake_pl, UA koło=круг.",
+    "Naprawiono błędne „Nie pomyl” (liczba ⊂ liczba wymierna).",
+    "Wyczyszczono ściągi/częste błędy z porad i par PL↔UA."
+  ],
+  "author": [
+    {
+      "n": 60,
+      "title": "Kombinatoryka i prawdopodobieństwo",
+      "q": "Czy zostawić hasło „permutacje” / n! (niektóre serie GWO/WSiP uczą skromniej — drzewko, zasada mnożenia)?"
+    },
+    {
+      "n": 64,
+      "title": "Kula i sfera",
+      "q": "Czy trzymać osobne rozróżnienie kula/sfera (często most; PP mocniej: kula)?"
+    },
+    {
+      "n": 66,
+      "title": "Nierówności",
+      "q": "Czy zostawić regułę odwracania znaku przy ×/(−) (kl. 7–8), czy tylko znaki i zapis?"
+    },
+    {
+      "n": 71,
+      "title": "Przekształcenia geometryczne",
+      "q": "Jak głęboko formalizować przesunięcie/obrót wobec samej symetrii w PP SP?"
+    },
+    {
+      "n": 72,
+      "title": "Liczby wymierne",
+      "q": "Potwierdź brak √2/niewymiernych na powierzchni SP (świadomie usunięte)."
+    }
+  ],
+  "pages": [
+    {
+      "n": 1,
+      "title": "Stosunki przestrzenne i porównywanie",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 2,
+      "title": "Liczby naturalne",
+      "status": "✅ sprawdzona",
+      "note": "drobna jakość pary błędów (auto)",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 3,
+      "title": "Liczby rzymskie",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 4,
+      "title": "Liczby całkowite",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 5,
+      "title": "Dodawanie i odejmowanie",
+      "status": "✅ sprawdzona",
+      "note": "drobna jakość pary błędów (auto)",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 6,
+      "title": "Tabliczka mnożenia",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 7,
+      "title": "Dzielenie",
+      "status": "✅ sprawdzona",
+      "note": "drobna jakość pary błędów (auto)",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 8,
+      "title": "Kolejność działań",
+      "status": "✅ sprawdzona",
+      "note": "drobna jakość pary błędów (auto)",
+      "cheat_n": 8,
+      "mist_n": 3
+    },
+    {
+      "n": 9,
+      "title": "Działania pisemne i szacowanie",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 10,
+      "title": "Rozdzielność mnożenia",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 11,
+      "title": "Podzielność",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 12,
+      "title": "NWD, NWW i rozkład na czynniki",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 13,
+      "title": "Potęgi",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 14,
+      "title": "Notacja wykładnicza i potęga potęgi",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 15,
+      "title": "Pierwiastki",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 16,
+      "title": "Pierwiastek sześcienny i działania na √",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 17,
+      "title": "Ułamki zwykłe (1)",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 18,
+      "title": "Ułamki zwykłe (2)",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 19,
+      "title": "Ułamki dziesiętne",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 20,
+      "title": "Działania na ułamkach",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 21,
+      "title": "Ułamek liczby i całość z części",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 22,
+      "title": "Procenty",
+      "status": "✅ sprawdzona",
+      "note": "drobna jakość pary błędów (auto)",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 23,
+      "title": "Obliczenia procentowe — wszystkie typy",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 24,
+      "title": "Proporcjonalność",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 25,
+      "title": "Podział proporcjonalny",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 7,
+      "mist_n": 2
+    },
+    {
+      "n": 26,
+      "title": "Wyrażenia algebraiczne",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 27,
+      "title": "Sumy algebraiczne",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 28,
+      "title": "Mnożenie wyrażeń algebraicznych",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 29,
+      "title": "Równania",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 30,
+      "title": "Figury płaskie (1)",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 31,
+      "title": "Figury płaskie (2)",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 32,
+      "title": "Proste prostopadłe i odległość",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 33,
+      "title": "Kąt — pojęcie",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 34,
+      "title": "Rodzaje kątów",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 35,
+      "title": "Pary kątów / kąty przy ∥",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 36,
+      "title": "Suma kątów w trójkącie",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 3
+    },
+    {
+      "n": 37,
+      "title": "Koło i okrąg",
+      "status": "✅ sprawdzona",
+      "note": "drobna jakość pary błędów (auto)",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 38,
+      "title": "Długość okręgu i pole koła (π)",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 39,
+      "title": "Obwód i pole",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 40,
+      "title": "Pole rombu i trapezu; ar, ha",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 3
+    },
+    {
+      "n": 41,
+      "title": "Symetria",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 42,
+      "title": "Symetralna i dwusieczna",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 43,
+      "title": "Współrzędne",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 44,
+      "title": "Środek i długość odcinka",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 45,
+      "title": "Przystawanie trójkątów",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 46,
+      "title": "Twierdzenie Pitagorasa",
+      "status": "✅ sprawdzona",
+      "note": "drobna jakość pary błędów (auto)",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 47,
+      "title": "Bryły",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 48,
+      "title": "Graniastosłup, siatki, pole powierzchni",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 49,
+      "title": "Długość",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 50,
+      "title": "Masa",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 51,
+      "title": "Objętość i litr",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 3
+    },
+    {
+      "n": 52,
+      "title": "Czas",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 53,
+      "title": "Kalendarz",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 4
+    },
+    {
+      "n": 54,
+      "title": "Temperatura",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 3
+    },
+    {
+      "n": 55,
+      "title": "Pieniądze",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 56,
+      "title": "Prędkość i skala",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 57,
+      "title": "Wyrażenia dwumianowane",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 58,
+      "title": "Statystyka (1)",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 59,
+      "title": "Statystyka (2)",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 60,
+      "title": "Kombinatoryka i prawdopodobieństwo",
+      "status": "✅ sprawdzona",
+      "note": "decyzja autora: Czy zostawić hasło „permutacje” / n! (niektóre serie GWO/WSi",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 61,
+      "title": "Ściąga znaków",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 5
+    },
+    {
+      "n": 62,
+      "title": "Walec",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 7,
+      "mist_n": 2
+    },
+    {
+      "n": 63,
+      "title": "Stożek",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 7,
+      "mist_n": 2
+    },
+    {
+      "n": 64,
+      "title": "Kula i sfera",
+      "status": "✅ sprawdzona",
+      "note": "decyzja autora: Czy trzymać osobne rozróżnienie kula/sfera (często most; PP ",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 65,
+      "title": "Ostrosłup — pole i objętość",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 66,
+      "title": "Nierówności",
+      "status": "✅ sprawdzona",
+      "note": "decyzja autora: Czy zostawić regułę odwracania znaku przy ×/(−) (kl. 7–8), c",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 67,
+      "title": "Przekształcanie wzorów",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 68,
+      "title": "Wielokąt foremny",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 69,
+      "title": "Podobieństwo figur",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 70,
+      "title": "Okręgi wpisane i opisane",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 71,
+      "title": "Przekształcenia geometryczne",
+      "status": "✅ sprawdzona",
+      "note": "decyzja autora: Jak głęboko formalizować przesunięcie/obrót wobec samej syme",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 72,
+      "title": "Liczby wymierne",
+      "status": "✅ sprawdzona",
+      "note": "decyzja autora: Potwierdź brak √2/niewymiernych na powierzchni SP (świadomie",
+      "cheat_n": 7,
+      "mist_n": 2
+    },
+    {
+      "n": 73,
+      "title": "Środkowa w trójkącie",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 2
+    },
+    {
+      "n": 74,
+      "title": "Prawdopodobieństwo",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 8,
+      "mist_n": 3
+    },
+    {
+      "n": 75,
+      "title": "Skala mapy",
+      "status": "✅ sprawdzona",
+      "note": "",
+      "cheat_n": 7,
+      "mist_n": 2
+    }
+  ]
+}

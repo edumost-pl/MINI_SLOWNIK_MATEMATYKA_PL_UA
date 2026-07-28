@@ -64,6 +64,21 @@ PAGE_KLASA = {
     59: "klasy 7–8",
     60: "klasy 7–8",
     61: "klasy 1–3",
+    # Nowe strony (po Fazie A numery 62+; klasa wg tematu)
+    62: "klasy 4–8",
+    63: "klasy 4–8",
+    64: "klasy 4–8",
+    65: "klasy 7–8",
+    66: "klasy 7–8",
+    67: "klasy 7–8",
+    68: "klasy 7–8",
+    69: "klasy 7–8",
+    70: "klasy 7–8",
+    71: "klasy 7–8",
+    72: "klasy 7–8",
+    73: "klasy 6–8",
+    74: "klasy 6–8",
+    75: "klasy 5–7",
 }
 
 # Precyzyjniejsze nadpisania (nr_strony, hasło_pl) → klasa

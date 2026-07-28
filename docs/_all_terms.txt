@@ -1,0 +1,374 @@
+prawo / lewo
+góra / dół
+przed / za / obok
+dłuższy / krótszy
+cięższy / lżejszy
+więcej / mniej / tyle samo
+liczba naturalna
+cyfra
+liczba
+wartość pozycyjna
+liczba porządkowa
+zero
+parzysta / nieparzysta
+porównanie
+zaokrąglanie
+następnik / poprzednik
+kolejność liczb
+Podstawowe znaki
+Przykłady
+Dodawanie znaków
+Odejmowanie znaków
+Ograniczenia
+Większe przykłady
+Gdzie spotykamy?
+Zamiana na arabskie
+oś liczbowa
+dodatnie, ujemne, zero
+wartość bezwzględna
+porównywanie
+dodawanie
+odejmowanie
+liczba przeciwna
+zastosowania
+suma
+różnica
+składnik
+odjemna i odjemnik
+właściwości +
+właściwości −
+przykłady
+mnożenie
+mnożenie = dodawanie tej samej
+iloczyn
+czynnik
+przemienność
+×0 i ×1
+kluczowe wyniki
+dzielenie
+sprawiedliwe rozdawanie
+iloraz
+dzielna i dzielnik
+z resztą
+związek z ×
+:1 i : siebie
+nawiasy
+potęgi
+× i :
++ i −
+ten sam poziom
+przykład
+działanie pisemne
+dodawanie pisemne
+odejmowanie pisemne
+mnożenie pisemne
+dzielenie pisemne
+szacowanie
+rozdzielność
+przykład liczbowy
+odwrotnie: wyłączanie
+w geometrii
+z literami
+przez 2
+przez 3
+przez 4
+przez 5
+przez 9
+przez 10
+dzielnik / wielokrotność
+liczba pierwsza
+czynnik pierwszy
+rozkład na czynniki
+NWD
+NWW
+liczba złożona
+do ułamków
+potęga
+podstawa i wykładnik
+kwadrat i sześcian
+0, 1, 10
+mnożenie potęg
+dzielenie potęg
+notacja wykładnicza
+potęga potęgi
+różne podstawy, ten sam wykładnik
+przypomnienie: ta sama podstawa
+w nauce i technice
+pierwiastek kwadratowy
+zapis
+związek z potęgą
+kwadraty doskonałe
+pierwiastek sześcienny
+związek z sześcianem
+wyłączanie sprzed pierwiastka
+włączanie pod pierwiastek
+mnożenie i dzielenie pierwiastków
+ułamek zwykły
+licznik
+mianownik
+właściwy / niewłaściwy
+liczba mieszana
+ułamki równe
+skracanie
+rozszerzanie
+ułamek nieskracalny
+wspólny mianownik
+ułamek = dzielenie
+ułamek dziesiętny
+miejsca po przecinku
+równoważność
+zamiana na zwykły
++/− ten sam mianownik
+różne mianowniki
+odwrotność
+skracanie przed ×
+ułamek liczby
+przykład: część z całości
+całość z części
+powiększenie o część
+pomniejszenie o część
+procent
+procent z liczby
+zwiększenie o p%
+zmniejszenie o p%
+zamiany
+p% z liczby
+jaki procent?
+liczba z procentu
+zwiększenie / zmniejszenie
+podwójna zmiana
+w zadaniach
+proporcjonalność prosta
+współczynnik
+wykres
+tabela wartości
+proporcja
+podział proporcjonalny
+stosunek
+trzy osoby
+związek z proporcją
+wyrażenie algebraiczne
+elementy
+zmienna
+wartość liczbowa
+zapis skrócony
+kolejność
+jednomian
+suma algebraiczna
+wyrazy podobne
+redukcja
+jednomian × suma
+dwumian × dwumian
+metoda kolejności
+znaki minus
+sprawdzenie
+równanie
+niewiadoma
+rozwiązanie
+metoda bilansowania
+przenoszenie
+figury wokół nas
+punkt
+prosta
+odcinek
+półprosta
+łamana
+wielokąt
+trójkąt
+rodzaje trójkątów
+kwadrat
+prostokąt
+romb / równoległobok
+trapez
+proste prostopadłe
+odcinki prostopadłe
+odległość punktu od prostej
+wysokość w figurze
+w życiu
+kąt
+wierzchołek
+ramiona / strony
+miara kąta
+kątomierz
+półobrót / obrót
+kąt zerowy
+kąt ostry
+kąt prosty
+kąt rozwarty
+kąt półpełny
+kąt pełny
+proste równoległe
+sieczna
+kąty odpowiadające
+naprzemianległe
+przyległe
+wierzchołkowe
+twierdzenie
+obliczanie trzeciego
+trójkąt prostokątny
+równoramienny
+nierówność trójkąta
+okrąg
+koło
+środek
+promień
+średnica
+cięciwa
+liczba π
+długość okręgu
+pole koła
+przykład C
+przykład P
+zależność
+obwód
+pole
+równoległobok
+pole rombu
+pole trapezu
+ar
+hektar
+zamiana jednostek pola
+symetria
+oś symetrii
+środek symetrii
+rysowanie
+w przyrodzie
+symetralna odcinka
+własność symetralnej
+dwusieczna kąta
+własność dwusiecznej
+w trójkącie
+układ współrzędnych
+oś X
+oś Y
+punkt (x, y)
+ćwiartki
+początek układu
+środek odcinka
+długość odcinka
+drugi koniec
+punkty kratowe
+przystawanie
+cecha BBB
+cecha BKB
+cecha KBK
+po co to?
+twierdzenie Pitagorasa
+przyprostokątne i przeciwprostokątna
+obliczanie przeciwprostokątnej
+obliczanie przyprostokątnej
+trójki pitagorejskie
+bryła
+sześcian
+prostopadłościan
+ostrosłup
+walec / stożek / kula
+objętość sześcianu
+graniastosłup
+graniastosłup prosty
+siatka bryły
+pole powierzchni
+objętość graniastosłupa
+ostrosłup — przypomnienie
+jednostki długości
+zamiana
+mierzenie
+obwód a długość
+jednostki masy
+ważenie
+objętość
+litr
+mililitr
+przeliczanie
+objętość bryły
+jednostki czasu
+zegar
+upływ czasu
+doba
+przykład dłuższy
+jednostki kalendarzowe
+data
+urodziny i święta
+rok przestępny
+miesiące
+kolejność dni
+stopień Celsjusza
+termometr
+powyżej / poniżej zera
+różnica temperatur
+złoty i grosz
+5 zł na bułkę
+dodawanie / odejmowanie
+reszta
+porównywanie cen
+budżet
+prędkość
+jednostki
+droga i czas
+skala mapy
+obliczanie odległości
+przykład v
+wyrażenie dwumianowane
+zamiana na mniejszą
+zamiana na większą
+i ułamek dziesiętny
+statystyka
+dane
+etapy
+tabela
+wykres słupkowy
+wykres kołowy
+średnia arytmetyczna
+mediana
+moda
+przykład średniej
+przykład mediany
+przykład mody
+kombinatoryka
+zasada mnożenia
+zasada dodawania
+permutacje
+prawdopodobieństwo
++ plus / dodawanie
+− minus / odejmowanie
+× · mnożenie
+: / dzielenie
+= &lt; &gt; ≤ ≥ ≠
+() [] √ ² % π ∠ ∥
+walec
+podstawa walca
+wysokość walca
+stożek
+podstawa stożka
+wierzchołek stożka
+kula
+sfera
+środek i promień
+ostrosłup prawidłowy
+objętość ostrosłupa
+wysokość ostrosłupa
+nierówność
+rozwiązanie nierówności
+znaki
+na osi
+a równanie?
+przekształcanie wzoru
+przykład: prędkość
+przykład: pole
+krok po kroku
+wielokąt foremny
+podobieństwo
+skala podobieństwa
+a przystawanie?
+okrąg wpisany
+okrąg opisany
+przesunięcie
+obrót
+a symetria?
+liczba wymierna
+środkowa
+trzy środkowe
+a wysokość / dwusieczna?
+doświadczenie losowe
+zdarzenie
+wzór klasyczny

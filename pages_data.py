@@ -36,8 +36,8 @@ P(1,"page01.html","A","LICZBY","ЧИСЛА","Liczby naturalne","Натураль
 [C("liczba naturalna","натуральне число","1, 2, 3, 4, 5, …",
    "Liczby, którymi liczymy: ile jabłek, ile dzieci, ile kroków.",
    "Числа, якими лічимо: скільки яблук, дітей, кроків.",
-   rule="Zaczynamy od 1 i idziemy dalej: 1, 2, 3, 4… (w szkole czasem też od 0 — zapytaj nauczyciela).",
-   rule_ua="Починаємо від 1 і далі: 1, 2, 3…", media="photo"),
+   rule="Zaczynamy od 1 i idziemy dalej: 1, 2, 3, 4… (w niektórych umowach szkolnych też od 0).",
+   rule_ua="Починаємо від 1 і далі: 1, 2, 3… (у деяких шкільних домовленнях також від 0).", media="photo"),
  C("cyfra","цифра","0 1 2 3 4 5 6 7 8 9",
    "Cyfra to „klocek” do budowania liczb. Jest ich tylko dziesięć.",
    "Цифра — «цеглинка» для чисел. Їх лише десять.",
@@ -58,8 +58,8 @@ P(1,"page01.html","A","LICZBY","ЧИСЛА","Liczby naturalne","Натураль
    "Каже про порядок: хто перший, хто другий — не «скільки», а «який за порядком».",
    klasa="klasy 1–3", media="cover"),
  C("zero","нуль","0",
-   "Zero = nic / pusto. W kl. 1–3 bywa różnie (czy 0 jest naturalne?) — w szkole pytaj nauczyciela.",
-   "Нуль = нічого / порожньо. У кл. 1–3 буває по-різному — у школі спитай учителя.",
+   "Zero = nic / pusto. W kl. 1–3 bywa umowa: naturalne od 1 albo od 0.",
+   "Нуль = нічого / порожньо. У кл. 1–3 буває домовленість: натуральні від 1 або від 0.",
    klasa="klasy 1–3", media="diagram"),
  C("parzysta / nieparzysta","парне / непарне","0,2,4,6,8 / 1,3,5,7,9",
    "Parzysta dzieli się równo na 2. Nieparzysta — zostaje 1.",
@@ -664,7 +664,7 @@ P(41,"page41.html","F","DANE","ДАНІ","Kombinatoryka i prawdopodobieństwo","
 [C("kombinatoryka","комбінаторика","ile sposobów?","Liczenie sposobów wyboru i ułożenia.","Підрахунок способів вибору й упорядкування."),
  C("zasada mnożenia","правило множення","3·4 = 12 dróg","Gdy etapy niezależne — mnożymy.","Коли етапи незалежні — множимо."),
  C("zasada dodawania","правило додавання","albo… albo…","Gdy wykluczające się opcje — dodajemy.","Коли взаємовиключні варіанти — додаємо."),
- C("permutacje","перестановки","n! = n·(n−1)·…·1","Różne uporządkowania bez powtórzeń.","Різні впорядкування без повторень."),
+ C("drzewko możliwości","дерево можливостей","gałęzie wyborów","Rysunek etapów: każdy wybór to nowa gałąź.","Малюнок етапів: кожен вибір — нова гілка."),
  C("prawdopodobieństwo","ймовірність","P = korzystne / wszystkie","Szansa zdarzenia od 0 do 1.","Шанс події від 0 до 1."),
  C("przykład P","приклад P","kostka: P(6)=1/6","1 korzystny / 6 możliwych.","1 сприятливий / 6 можливих.")],
 [R("Mnożymy etapy niezależne.","Множимо незалежні етапи."),
@@ -693,7 +693,15 @@ from pages_new_61 import build_page_61
 
 PAGES.append(build_page_61())
 
+from pages_new_extra import build_extra_pages
+
+PAGES += build_extra_pages()
+
 from handbook_enrich import apply as _apply_handbook
 
 _apply_handbook(PAGES)
+
+from structure_apply import apply_phase_a
+
+PAGES[:] = apply_phase_a(PAGES)
 

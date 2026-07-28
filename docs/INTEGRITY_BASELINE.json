@@ -1,0 +1,1207 @@
+{
+  "root": "/Users/marinatarasenko/Downloads/MINI_SLOWNIK_MATEMATYKA_PL_UA",
+  "status": "BASELINE_ONLY — no rebuild applied",
+  "counts": {
+    "html_files": 80,
+    "page_html": 75,
+    "css_files": 2,
+    "js_files": 1,
+    "image_files_on_disk": 657,
+    "asset_images": 614,
+    "audio": 0,
+    "video": 0,
+    "docs": 55,
+    "wordwall_buttons": 34,
+    "wordwall_live": 0,
+    "wordwall_pending_hash": 34,
+    "internal_link_refs": 2351,
+    "external_link_refs": 355,
+    "doc_link_refs": 772,
+    "img_src_refs": 1310,
+    "inline_svg_tags": 0,
+    "html_ids": 301,
+    "unique_html_id_names": 152,
+    "onclick_inline": 0,
+    "js_event_bindings": 18,
+    "nav_page_links": 225
+  },
+  "wordwall": {
+    "total_buttons": 34,
+    "live": 0,
+    "pending": 34,
+    "unique_hrefs": [
+      "#"
+    ],
+    "by_file": {
+      "book.html": 17,
+      "pages/page09.html": 1,
+      "pages/page24.html": 1,
+      "pages/page61.html": 1,
+      "pages/page62.html": 1,
+      "pages/page63.html": 1,
+      "pages/page64.html": 1,
+      "pages/page65.html": 1,
+      "pages/page66.html": 1,
+      "pages/page67.html": 1,
+      "pages/page68.html": 1,
+      "pages/page69.html": 1,
+      "pages/page70.html": 1,
+      "pages/page71.html": 1,
+      "pages/page72.html": 1,
+      "pages/page73.html": 1,
+      "pages/page74.html": 1,
+      "pages/page75.html": 1
+    }
+  },
+  "integrity": {
+    "broken_file_links_count": 0,
+    "broken_file_links": [],
+    "broken_hash_links_count": 0,
+    "broken_hash_links_sample": [],
+    "missing_images_count": 0,
+    "missing_images": [],
+    "html_issues": [],
+    "duplicate_ids_within_file": [],
+    "orphan_asset_images_count": 108,
+    "orphan_asset_images_sample": [
+      "assets/logo-icon.png",
+      "assets/logo-owl-circle.png",
+      "assets/logo.svg",
+      "assets/images/img63_3.png",
+      "assets/images/img67_7.png",
+      "assets/images/img65_5.png",
+      "assets/images/img65_4.png",
+      "assets/images/img67_6.png",
+      "assets/images/img63_2.png",
+      "assets/images/img70_8.png",
+      "assets/images/img72_8.png",
+      "assets/images/img67_4.png",
+      "assets/images/img65_6.png",
+      "assets/images/img65_7.png",
+      "assets/images/img67_5.png",
+      "assets/images/img72_9.png",
+      "assets/images/img63_1.png",
+      "assets/images/img63_5.png",
+      "assets/images/img67_1.png",
+      "assets/images/img65_3.png",
+      "assets/images/img65_2.png",
+      "assets/images/img63_4.png",
+      "assets/images/img63_6.png",
+      "assets/images/img67_2.png",
+      "assets/images/img74_8.png",
+      "assets/images/img65_1.png",
+      "assets/images/img67_3.png",
+      "assets/images/img63_7.png",
+      "assets/images/img64_6.png",
+      "assets/images/img62_1.png",
+      "assets/images/img64_7.png",
+      "assets/images/img64_5.png",
+      "assets/images/img68_8.png",
+      "assets/images/img62_3.png",
+      "assets/images/img62_2.png",
+      "assets/images/img71_8.png",
+      "assets/images/img64_4.png",
+      "assets/images/img75_8.png",
+      "assets/images/img62_6.png",
+      "assets/images/img62_7.png"
+    ]
+  },
+  "js": {
+    "files": [
+      "script.js"
+    ],
+    "class_refs": [
+      "card-zoom-close",
+      "card-zoom-content",
+      "card-zoom-panel",
+      "cat-btn",
+      "toc-card"
+    ],
+    "id_refs": [
+      "toc-search"
+    ],
+    "classes_missing_from_html": [
+      "card-zoom-close",
+      "card-zoom-content",
+      "card-zoom-panel"
+    ],
+    "events": [
+      {
+        "file": "script.js",
+        "type": "querySelector",
+        "sel": "#toc-search"
+      },
+      {
+        "file": "script.js",
+        "type": "querySelector",
+        "sel": ".cat-btn"
+      },
+      {
+        "file": "script.js",
+        "type": "querySelector",
+        "sel": ".toc-card"
+      },
+      {
+        "file": "script.js",
+        "type": "querySelector",
+        "sel": "[data-print]"
+      },
+      {
+        "file": "script.js",
+        "type": "querySelector",
+        "sel": "article.card, section.life-strip"
+      },
+      {
+        "file": "script.js",
+        "type": "querySelector",
+        "sel": ".card-zoom-content"
+      },
+      {
+        "file": "script.js",
+        "type": "querySelector",
+        "sel": ".card-zoom-close"
+      },
+      {
+        "file": "script.js",
+        "type": "querySelector",
+        "sel": ".card-zoom-panel"
+      },
+      {
+        "file": "script.js",
+        "type": "addEventListener",
+        "event": "DOMContentLoaded"
+      },
+      {
+        "file": "script.js",
+        "type": "addEventListener",
+        "event": "click"
+      },
+      {
+        "file": "script.js",
+        "type": "addEventListener",
+        "event": "input"
+      },
+      {
+        "file": "script.js",
+        "type": "addEventListener",
+        "event": "click"
+      },
+      {
+        "file": "script.js",
+        "type": "addEventListener",
+        "event": "click"
+      },
+      {
+        "file": "script.js",
+        "type": "addEventListener",
+        "event": "keydown"
+      },
+      {
+        "file": "script.js",
+        "type": "addEventListener",
+        "event": "click"
+      },
+      {
+        "file": "script.js",
+        "type": "addEventListener",
+        "event": "click"
+      },
+      {
+        "file": "script.js",
+        "type": "addEventListener",
+        "event": "click"
+      },
+      {
+        "file": "script.js",
+        "type": "addEventListener",
+        "event": "keydown"
+      }
+    ],
+    "onclick_inline": []
+  },
+  "resource_map": {
+    "css": [
+      "media.css",
+      "style.css"
+    ],
+    "js": [
+      "script.js"
+    ],
+    "top_level_html": [
+      "book.html",
+      "index.html",
+      "regulamin.html",
+      "rodo.html"
+    ],
+    "pages": [
+      {
+        "file": "pages/page01.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s01"
+        ]
+      },
+      {
+        "file": "pages/page02.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 16,
+        "ids": [
+          "print-root",
+          "wordwall-s02"
+        ]
+      },
+      {
+        "file": "pages/page03.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 13,
+        "ids": [
+          "print-root",
+          "wordwall-s03"
+        ]
+      },
+      {
+        "file": "pages/page04.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 13,
+        "ids": [
+          "print-root",
+          "wordwall-s04"
+        ]
+      },
+      {
+        "file": "pages/page05.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 16,
+        "ids": [
+          "print-root",
+          "wordwall-s05"
+        ]
+      },
+      {
+        "file": "pages/page06.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 12,
+        "ids": [
+          "print-root",
+          "wordwall-s06"
+        ]
+      },
+      {
+        "file": "pages/page07.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 12,
+        "ids": [
+          "print-root",
+          "wordwall-s07"
+        ]
+      },
+      {
+        "file": "pages/page08.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s08"
+        ]
+      },
+      {
+        "file": "pages/page09.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s09"
+        ]
+      },
+      {
+        "file": "pages/page10.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s10"
+        ]
+      },
+      {
+        "file": "pages/page11.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 13,
+        "ids": [
+          "print-root",
+          "wordwall-s11"
+        ]
+      },
+      {
+        "file": "pages/page12.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s12"
+        ]
+      },
+      {
+        "file": "pages/page13.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s13"
+        ]
+      },
+      {
+        "file": "pages/page14.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s14"
+        ]
+      },
+      {
+        "file": "pages/page15.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s15"
+        ]
+      },
+      {
+        "file": "pages/page16.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s16"
+        ]
+      },
+      {
+        "file": "pages/page17.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s17"
+        ]
+      },
+      {
+        "file": "pages/page18.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s18"
+        ]
+      },
+      {
+        "file": "pages/page19.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s19"
+        ]
+      },
+      {
+        "file": "pages/page20.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s20"
+        ]
+      },
+      {
+        "file": "pages/page21.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s21"
+        ]
+      },
+      {
+        "file": "pages/page22.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s22"
+        ]
+      },
+      {
+        "file": "pages/page23.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s23"
+        ]
+      },
+      {
+        "file": "pages/page24.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s24"
+        ]
+      },
+      {
+        "file": "pages/page25.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s25"
+        ]
+      },
+      {
+        "file": "pages/page26.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s26"
+        ]
+      },
+      {
+        "file": "pages/page27.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s27"
+        ]
+      },
+      {
+        "file": "pages/page28.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s28"
+        ]
+      },
+      {
+        "file": "pages/page29.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s29"
+        ]
+      },
+      {
+        "file": "pages/page30.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 12,
+        "ids": [
+          "print-root",
+          "wordwall-s30"
+        ]
+      },
+      {
+        "file": "pages/page31.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 12,
+        "ids": [
+          "print-root",
+          "wordwall-s31"
+        ]
+      },
+      {
+        "file": "pages/page32.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s32"
+        ]
+      },
+      {
+        "file": "pages/page33.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s33"
+        ]
+      },
+      {
+        "file": "pages/page34.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s34"
+        ]
+      },
+      {
+        "file": "pages/page35.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s35"
+        ]
+      },
+      {
+        "file": "pages/page36.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s36"
+        ]
+      },
+      {
+        "file": "pages/page37.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s37"
+        ]
+      },
+      {
+        "file": "pages/page38.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s38"
+        ]
+      },
+      {
+        "file": "pages/page39.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s39"
+        ]
+      },
+      {
+        "file": "pages/page40.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s40"
+        ]
+      },
+      {
+        "file": "pages/page41.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s41"
+        ]
+      },
+      {
+        "file": "pages/page42.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s42"
+        ]
+      },
+      {
+        "file": "pages/page43.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s43"
+        ]
+      },
+      {
+        "file": "pages/page44.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s44"
+        ]
+      },
+      {
+        "file": "pages/page45.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s45"
+        ]
+      },
+      {
+        "file": "pages/page46.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s46"
+        ]
+      },
+      {
+        "file": "pages/page47.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s47"
+        ]
+      },
+      {
+        "file": "pages/page48.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s48"
+        ]
+      },
+      {
+        "file": "pages/page49.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s49"
+        ]
+      },
+      {
+        "file": "pages/page50.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s50"
+        ]
+      },
+      {
+        "file": "pages/page51.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s51"
+        ]
+      },
+      {
+        "file": "pages/page52.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 12,
+        "ids": [
+          "print-root",
+          "wordwall-s52"
+        ]
+      },
+      {
+        "file": "pages/page53.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 12,
+        "ids": [
+          "print-root",
+          "wordwall-s53"
+        ]
+      },
+      {
+        "file": "pages/page54.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s54"
+        ]
+      },
+      {
+        "file": "pages/page55.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 12,
+        "ids": [
+          "print-root",
+          "wordwall-s55"
+        ]
+      },
+      {
+        "file": "pages/page56.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s56"
+        ]
+      },
+      {
+        "file": "pages/page57.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s57"
+        ]
+      },
+      {
+        "file": "pages/page58.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s58"
+        ]
+      },
+      {
+        "file": "pages/page59.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s59"
+        ]
+      },
+      {
+        "file": "pages/page60.html",
+        "wordwall_buttons": 0,
+        "wordwall_live": 0,
+        "img_refs": 11,
+        "ids": [
+          "print-root",
+          "wordwall-s60"
+        ]
+      },
+      {
+        "file": "pages/page61.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 10,
+        "ids": [
+          "print-root",
+          "wordwall-s61"
+        ]
+      },
+      {
+        "file": "pages/page62.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 8,
+        "ids": [
+          "print-root",
+          "wordwall-s62"
+        ]
+      },
+      {
+        "file": "pages/page63.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 8,
+        "ids": [
+          "print-root",
+          "wordwall-s63"
+        ]
+      },
+      {
+        "file": "pages/page64.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 8,
+        "ids": [
+          "print-root",
+          "wordwall-s64"
+        ]
+      },
+      {
+        "file": "pages/page65.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 9,
+        "ids": [
+          "print-root",
+          "wordwall-s65"
+        ]
+      },
+      {
+        "file": "pages/page66.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 9,
+        "ids": [
+          "print-root",
+          "wordwall-s66"
+        ]
+      },
+      {
+        "file": "pages/page67.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 8,
+        "ids": [
+          "print-root",
+          "wordwall-s67"
+        ]
+      },
+      {
+        "file": "pages/page68.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 7,
+        "ids": [
+          "print-root",
+          "wordwall-s68"
+        ]
+      },
+      {
+        "file": "pages/page69.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 8,
+        "ids": [
+          "print-root",
+          "wordwall-s69"
+        ]
+      },
+      {
+        "file": "pages/page70.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 7,
+        "ids": [
+          "print-root",
+          "wordwall-s70"
+        ]
+      },
+      {
+        "file": "pages/page71.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 7,
+        "ids": [
+          "print-root",
+          "wordwall-s71"
+        ]
+      },
+      {
+        "file": "pages/page72.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 7,
+        "ids": [
+          "print-root",
+          "wordwall-s72"
+        ]
+      },
+      {
+        "file": "pages/page73.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 7,
+        "ids": [
+          "print-root",
+          "wordwall-s73"
+        ]
+      },
+      {
+        "file": "pages/page74.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 8,
+        "ids": [
+          "print-root",
+          "wordwall-s74"
+        ]
+      },
+      {
+        "file": "pages/page75.html",
+        "wordwall_buttons": 1,
+        "wordwall_live": 0,
+        "img_refs": 7,
+        "ids": [
+          "print-root",
+          "wordwall-s75"
+        ]
+      }
+    ],
+    "doc_links_sample": [
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "index.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "index.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "regulamin.html"
+      },
+      {
+        "file": "book.html",
+        "attr": "href",
+        "ref": "rodo.html"
+      }
+    ]
+  },
+  "baseline_for_rebuild": {
+    "pages_before": 75,
+    "wordwall_buttons_before": 34,
+    "wordwall_live_before": 0,
+    "images_on_disk_before": 657,
+    "img_refs_before": 1310,
+    "internal_links_before": 2351,
+    "external_links_before": 355,
+    "inline_svg_before": 0,
+    "audio_before": 0,
+    "video_before": 0
+  },
+  "gate": {
+    "rebuild_allowed": false,
+    "reason": "Stop for review: integrity baseline captured. Do not apply rebuild until user confirms AND broken/missing lists are accepted or fixed."
+  }
+}

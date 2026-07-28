@@ -57,12 +57,36 @@ def wordwall_stub(url: str = "#") -> str:
 
 
 def page_wordwall_block(page: dict) -> str:
-    """Miejsce na Wordwall po bloku „Częsty błąd” — zawsze widoczne na stronie."""
+    """Wordwall po „Częsty błąd”: live iframe gdy jest embed, inaczej przycisk."""
+    from wordwall_embeds import embed_for_page
+
+    n = int(page.get("n") or 0)
+    embed = embed_for_page(page)
     href = (page.get("wordwall") or page.get("wordwall_url") or "").strip() or "#"
+    if embed:
+        href = embed.split("?")[0].replace("/embed/", "/uk/play/").replace("/uk/uk/", "/uk/")
+        # keep play link optional; iframe uses embed URL
+        iframe = (
+            f'<iframe style="max-width:100%" src="{esc(embed)}" '
+            f'width="500" height="380" frameborder="0" allowfullscreen loading="lazy"></iframe>'
+        )
+        return (
+            f'\n    <section class="page-wordwall no-print" aria-label="Ćwiczenie Wordwall" '
+            f'id="wordwall-s{n:02d}">\n'
+            '      <div class="page-wordwall-inner page-wordwall-inner--embed">\n'
+            '        <div class="page-wordwall-text">\n'
+            '          <h3>Ćwiczenie · Wordwall <span class="ua">Вправа</span></h3>\n'
+            "          <p>Sprawdź hasła z tej strony w krótkim quizie.</p>\n"
+            '          <p class="ua">Перевір поняття з цієї сторінки в короткому квізі.</p>\n'
+            "        </div>\n"
+            f"        <div class=\"page-wordwall-embed\">{iframe}</div>\n"
+            "      </div>\n"
+            "    </section>"
+        )
+
     live = href != "#"
     link_cls = "wordwall-link" + ("" if live else " wordwall-link--pending")
     extra = ' target="_blank" rel="noopener noreferrer"' if live else ""
-    n = int(page.get("n") or 0)
     return (
         f'\n    <section class="page-wordwall no-print" aria-label="Ćwiczenie Wordwall" id="wordwall-s{n:02d}">\n'
         '      <div class="page-wordwall-inner">\n'
@@ -136,32 +160,17 @@ def ph(kind: str, emoji: str, label: str, prompt: str, extra_class: str = "") ->
 
 def card_html(i, c, page=None, asset_prefix="../"):
     from klasa_map import resolve_klasa
+    from card_ux import present_card
 
     page = page or {}
     cat = page.get("cat", "A")
-    page_n = int(page.get("n") or 1)
+    page_n = int(page.get("asset_n") or page.get("source_n") or page.get("n") or 1)
     meta = CAT_MEDIA.get(cat, CAT_MEDIA["A"])
-    visual = c.get("visual") or ""
-    explain = c.get("explain") or c.get("def_pl") or ""
-    explain_ua = c.get("explain_ua") or c.get("def_ua") or ""
-    rule = c.get("rule") or ""
-    rule_ua = c.get("rule_ua") or ""
-    example = c.get("example") or visual
-    example_pl = c.get("example_pl") or ""
-    example_ua = c.get("example_ua") or ""
     media_kind = c.get("media") or "cover"
     term = c.get("pl") or ""
-    klasa = resolve_klasa(page_n, term, c)
-
-    # Jeden Wordwall na całą kartę pojęcia
-    ww_url = (
-        c.get("wordwall")
-        or c.get("wordwall_def")
-        or c.get("wordwall_rule")
-        or c.get("wordwall_example")
-        or "#"
-    )
-    ww_url = (ww_url or "").strip() or "#"
+    klasa_n = int(page.get("source_n") or page.get("asset_n") or page.get("n") or page_n)
+    klasa = resolve_klasa(klasa_n, term, c)
+    ux = present_card(c)
 
     media_block_html = media_block(
         media_kind,
@@ -174,120 +183,91 @@ def card_html(i, c, page=None, asset_prefix="../"):
         asset_prefix=asset_prefix,
     )
 
-    if not rule and explain:
-        rule = explain
-        rule_ua = explain_ua
+    klasa_html = block_meta(klasa)
 
-    def_block = (
-        f'\n        <div class="learn-block learn-def">\n'
-        f'          <span class="learn-label">Co to jest? <span class="lab-ua">Що це?</span></span>\n'
-        f'          <p class="learn-pl">{esc(explain)}</p>\n'
-        f'          <p class="learn-ua">{esc(explain_ua)}</p>\n'
+    # ⚠ Nie pomyl
+    np_rows = []
+    for a, b in ux["nie_pomyl"]:
+        if not a:
+            continue
+        if b:
+            np_rows.append(
+                "<li>"
+                f'<span class="np-a">{esc(a)}</span>'
+                '<span class="np-vs" aria-hidden="true">≠</span>'
+                f'<span class="np-b">{esc(b)}</span>'
+                "</li>"
+            )
+        else:
+            np_rows.append(f'<li><span class="np-a">{esc(a)}</span></li>')
+    nie_pomyl_html = (
+        f'\n        <div class="ux-block ux-nie-pomyl">\n'
+        f'          <span class="ux-label">⚠ Nie pomyl <span class="lab-ua">Не плутай</span></span>\n'
+        f'          <ul class="np-list">\n            '
+        + "\n            ".join(np_rows)
+        + "\n          </ul>\n        </div>"
+    )
+
+    # ✅ Przykłady
+    ex_items = "\n".join(f"<li>{esc(x)}</li>" for x in ux["przyklady"])
+    przyklady_html = (
+        f'\n        <div class="ux-block ux-przyklady">\n'
+        f'          <span class="ux-label">✅ Przykłady <span class="lab-ua">Приклади</span></span>\n'
+        f'          <ul class="ex-list">\n            {ex_items}\n          </ul>\n'
         f"        </div>"
     )
 
-    rule_block = ""
-    if rule:
-        ua_line = f'\n          <p class="learn-ua">{esc(rule_ua)}</p>' if rule_ua else ""
-        rule_block = (
-            f'\n        <div class="learn-rule learn-block">\n'
-            f'          <span class="learn-label soft">Jak w szkole? <span class="lab-ua">Як у школі?</span></span>\n'
-            f'          <p class="learn-pl">{esc(rule)}</p>'
-            f"{ua_line}\n"
-            f"        </div>"
-        )
+    zap_ua = (
+        f'\n          <p class="ux-zap-ua">{esc(ux["zap_ua"])}</p>'
+        if ux.get("zap_ua")
+        else ""
+    )
+    co_ua = (
+        f'\n          <p class="learn-ua">{esc(ux["co_ua"])}</p>'
+        if ux.get("co_ua")
+        else ""
+    )
 
-    example_block = ""
-    if example_pl or example_ua or example:
-        story = ""
-        if example_pl:
-            story += f'\n          <p class="example-story learn-pl">{esc(example_pl)}</p>'
-        if example_ua:
-            story += f'\n          <p class="example-story learn-ua">{esc(example_ua)}</p>'
-        math = f'\n          <div class="visual example-math">{example}</div>' if example else ""
-        example_block = (
-            f'\n        <div class="learn-example learn-block">\n'
-            f'          <span class="learn-label soft">Przykład z życia <span class="lab-ua">Приклад з життя</span></span>'
-            f"{story}"
-            f"{math}\n"
-            f"        </div>"
-        )
-
-    klasa_html = block_meta(klasa)
-
-    # Bez ikon — zostaje tylko ilustracja karty (zdjęcie / cover / diagram)
     return (
-        f'\n      <article class="card {c.get("wide", "")}">\n'
-        f'        <div class="card-term-row card-term-row--no-icon">\n'
-        f"          <div>\n"
-        f'            <div class="card-num-row">\n'
-        f'              <div class="card-num">{i}</div>\n'
+        f'\n      <article class="card card--ux {c.get("wide", "")}">\n'
+        f'        <header class="card-head">\n'
+        f'          <div class="card-num-row">\n'
+        f'            <div class="card-num">{i}</div>\n'
         f"{klasa_html}\n"
-        f"            </div>\n"
-        f"            <h3>{esc(c['pl'])}</h3>\n"
-        f'            <p class="term-ua">{esc(c["ua"])}</p>\n'
         f"          </div>\n"
-        f"        </div>\n\n"
-        f"        {media_block_html}\n"
-        f"{def_block}"
-        f"{rule_block}"
-        f"{example_block}"
-        f"{wordwall_stub(ww_url)}\n"
+        f"          <h3>{esc(c['pl'])}</h3>\n"
+        f'          <p class="term-ua">{esc(c["ua"])}</p>\n'
+        f"        </header>\n\n"
+        f'        <div class="card-illu">\n'
+        f"{media_block_html}\n"
+        f"        </div>\n"
+        f'\n        <div class="ux-block ux-co">\n'
+        f'          <span class="ux-label">📘 Co to jest? <span class="lab-ua">Що це?</span></span>\n'
+        f'          <p class="learn-pl">{esc(ux["co_pl"])}</p>'
+        f"{co_ua}\n"
+        f"        </div>\n"
+        f'\n        <div class="ux-block ux-zap">\n'
+        f'          <span class="ux-label">⭐ Zapamiętaj <span class="lab-ua">Запам\'ятай</span></span>\n'
+        f'          <div class="ux-zap-core">{esc(ux["zap_pl"])}</div>'
+        f"{zap_ua}\n"
+        f"        </div>\n"
+        f"{nie_pomyl_html}\n"
+        f"{przyklady_html}\n"
         f"      </article>"
     )
 
 
 def chapter_body(p, asset_prefix="../"):
     """Treść jednej tematyki (bez <html>) — używane w pageXX i w book.html."""
+    from page_summary_ux import render_cheat_section, render_mistake_section
+
     meta = CAT_MEDIA.get(p["cat"], CAT_MEDIA["A"])
-    page_n = int(p["n"])
+    page_n = int(p.get("asset_n") or p.get("source_n") or p["n"])
     card_bits = [
         card_html(i + 1, c, p, asset_prefix=asset_prefix)
         for i, c in enumerate(p["cards"])
     ]
     cards = "\n".join(card_bits)
-    rem_bits = []
-    for ri, r in enumerate(p["remember"], 1):
-        formula = (r.get("formula") or "").strip()
-        pl = (r.get("pl") or "").strip()
-        ua = (r.get("ua") or "").strip()
-        # W ramce: czysty wzór/pojęcie; poniżej: rozszyfrowanie (nigdy kopia wzoru)
-        core = formula or pl
-        explain_pl = pl if formula else ""
-        explain_ua = ua
-        if formula and explain_pl and explain_pl.rstrip(".!…") == formula.rstrip(".!…"):
-            explain_pl = ""
-        if explain_ua and core and explain_ua.rstrip(".!…") == core.rstrip(".!…"):
-            explain_ua = ""
-        if not formula and ua:
-            # pojęcie w ramce (PL) → poniżej UA jako znaczenie / tłumaczenie
-            explain_pl = ""
-            explain_ua = ua
-
-        memorize = (
-            f'<div class="rules-memorize">'
-            f'<span class="rules-memorize-label">Zapamiętaj</span>'
-            f'<div class="rules-formula">{esc(core)}</div>'
-            f"</div>"
-        )
-        explain_parts = []
-        if explain_pl or explain_ua:
-            explain_parts.append('<div class="rules-explain">')
-            explain_parts.append('<span class="rules-explain-label">Znaczenie</span>')
-            if explain_pl:
-                explain_parts.append(f"<strong>{esc(explain_pl)}</strong>")
-            if explain_ua:
-                explain_parts.append(f'<span class="ua">{esc(explain_ua)}</span>')
-            explain_parts.append("</div>")
-        rem_bits.append(
-            f'<div class="remember-item rules-item">'
-            f'<span class="rules-num">{ri}</span>'
-            f'<div class="rules-text">'
-            f"{memorize}"
-            f'{"".join(explain_parts)}'
-            f"</div></div>"
-        )
-    rem = "\n".join(rem_bits)
 
     hero = media_block(
         "hero",
@@ -321,20 +301,9 @@ def chapter_body(p, asset_prefix="../"):
         if howto_ua:
             howto_html += f'<p class="howto-mini ua">{esc(howto_ua)}</p>\n'
 
-    mistake_pl = (p.get("mistake_pl") or "").strip()
-    mistake_ua = (p.get("mistake_ua") or "").strip()
-    mistake_html = ""
-    if mistake_pl or mistake_ua:
-        mistake_html = f'''
-    <section class="mistake-box" aria-label="Częsty błąd">
-      <div class="mistake-head">⚠ Częsty błąd! <span class="ua">Часта помилка!</span></div>
-      <div class="mistake-body">
-        {f'<p class="learn-pl">{esc(mistake_pl)}</p>' if mistake_pl else ""}
-        {f'<p class="learn-ua">{esc(mistake_ua)}</p>' if mistake_ua else ""}
-      </div>
-    </section>'''
-
+    mistake_html = render_mistake_section(p)
     wordwall_html = page_wordwall_block(p)
+    cheat_html = render_cheat_section(p)
 
     return f'''
     <header class="page-header">
@@ -380,19 +349,7 @@ def chapter_body(p, asset_prefix="../"):
 
     {wordwall_html}
 
-    <section class="remember rules-box" aria-label="Zasady do zapamiętania">
-      <div class="remember-head rules-head">
-        <span class="rules-badge">ZASADA</span>
-        <div class="rules-head-text">
-          <strong>Zasady do zapamiętania</strong>
-          <span class="ua">Правила для запам'ятовування</span>
-        </div>
-      </div>
-      <p class="rules-lead">To reguły matematyczne — ucz się ich jak tabliczki mnożenia. / Це математичні правила — вчи їх як таблицю множення.</p>
-      <div class="remember-body rules-body">
-        {rem}
-      </div>
-    </section>
+    {cheat_html}
 
     <footer class="page-footer">
       <div class="page-footer-bar">

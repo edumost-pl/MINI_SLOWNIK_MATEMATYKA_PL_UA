@@ -1,0 +1,71 @@
+# -*- coding: utf-8 -*-
+"""Wordwall embed URLs keyed by ORIGINAL page number (source_n, 1–61)."""
+
+# Extracted from pages before rebuild — do not drop any live URL.
+EMBEDS_BY_SOURCE_N = {
+    1: "https://wordwall.net/uk/embed/84a932acf5504860b450b7e80e715da5?themeId=65&templateId=5&fontStackId=0",
+    2: "https://wordwall.net/uk/embed/2e1966a82fdf4560b3b658b95215dad6?themeId=68&templateId=5&fontStackId=0",
+    3: "https://wordwall.net/uk/embed/61b74479343e4a7ea65459cd6497ba8e?themeId=46&templateId=5&fontStackId=0",
+    4: "https://wordwall.net/uk/embed/c47f49978bf140c8ae1b5cde57d73cd5?themeId=43&templateId=5&fontStackId=0",
+    5: "https://wordwall.net/uk/embed/98f538a6cfff42c3b543ccf7177f6663?themeId=49&templateId=5&fontStackId=0",
+    6: "https://wordwall.net/uk/embed/714477934f2f464087fd74a5636014cf?themeId=52&templateId=5&fontStackId=0",
+    7: "https://wordwall.net/uk/embed/53fa3ff6323e4b2f9f55ad9c160b1a56?themeId=50&templateId=5&fontStackId=0",
+    8: "https://wordwall.net/uk/embed/e00966f42c0d44fa84ab30c953dbca29?themeId=45&templateId=5&fontStackId=0",
+    9: "https://wordwall.net/uk/embed/f4db4c18d03f41dfa18d0fe016192a6e?themeId=27&templateId=5&fontStackId=0",
+    10: "https://wordwall.net/uk/embed/87715529e0864f38b46322e37453e4a8?themeId=55&templateId=5&fontStackId=0",
+    11: "https://wordwall.net/uk/embed/d36996a683964878a5ec5e46efddffa3?themeId=51&templateId=5&fontStackId=0",
+    12: "https://wordwall.net/uk/embed/83aec6ea2926464a9a1a3a0070c2a719?themeId=48&templateId=5&fontStackId=0",
+    13: "https://wordwall.net/uk/embed/767fcdb546d24cb99d8837328291ddbc?themeId=2&templateId=5&fontStackId=0",
+    14: "https://wordwall.net/uk/embed/01c5cb83c7fa4655b0a0566dbff33b5e?themeId=64&templateId=5&fontStackId=0",
+    15: "https://wordwall.net/uk/embed/8bd823a82d804d6194c39d38897625a2?themeId=23&templateId=5&fontStackId=0",
+    # 16: brak embedu
+    17: "https://wordwall.net/uk/embed/42357a04c74b459182f11160c7c4e8fe?themeId=65&templateId=5&fontStackId=0",
+    18: "https://wordwall.net/uk/embed/b5e87ea98dff49f7a723ee3778b6fe32?themeId=69&templateId=5&fontStackId=0",
+    19: "https://wordwall.net/uk/embed/30d27aab646b44d8b56d8876da8216db?themeId=62&templateId=5&fontStackId=0",
+    20: "https://wordwall.net/uk/embed/43f0e75ea4c0416f90e03da79e8605e1?themeId=68&templateId=5&fontStackId=0",
+    21: "https://wordwall.net/uk/embed/5905fafb4ee1445fa241c7fa24f0d13b?themeId=66&templateId=5&fontStackId=0",
+    22: "https://wordwall.net/uk/embed/76f83b5914ae421d9b5760b7043869cb?themeId=55&templateId=5&fontStackId=0",
+    23: "https://wordwall.net/uk/embed/b9df1acbf2b64a58a93b173a92374d3d?themeId=41&templateId=5&fontStackId=0",
+    24: "https://wordwall.net/uk/embed/29d97b0a3ff94b45a2ff3990724f71d8?themeId=49&templateId=5&fontStackId=0",
+    25: "https://wordwall.net/uk/embed/9b4f1a47e17847d8b74b984b4f7b1a0c?themeId=51&templateId=5&fontStackId=0",
+    26: "https://wordwall.net/uk/embed/2944a5c2a11248038274a895c4dfcfbe?themeId=65&templateId=5&fontStackId=0",
+    27: "https://wordwall.net/uk/embed/139da32e5a9141b99a8cbdedb0b90285?themeId=62&templateId=5&fontStackId=0",
+    28: "https://wordwall.net/uk/embed/5027d965ca9b49fcad814ada5b391eb1?themeId=66&templateId=5&fontStackId=0",
+    29: "https://wordwall.net/uk/embed/a39b9b2836a44fc79d27508647e81201?themeId=43&templateId=5&fontStackId=0",
+    30: "https://wordwall.net/uk/embed/7c4b63cb384f44ef9fe43125c8516d7e?themeId=50&templateId=5&fontStackId=0",
+    31: "https://wordwall.net/uk/embed/fd04d44562994c0aa494c8c9051d4eee?themeId=45&templateId=5&fontStackId=0",
+    32: "https://wordwall.net/uk/embed/07ebd642e0724ecabc76ecabb3978d6a?themeId=64&templateId=5&fontStackId=0",
+    33: "https://wordwall.net/uk/embed/13be7f4042264449becc801c927a5421?themeId=41&templateId=5&fontStackId=0",
+    34: "https://wordwall.net/uk/embed/cbcd63eb9d0045a39bf466027acd05ba?themeId=50&templateId=5&fontStackId=0",
+    35: "https://wordwall.net/uk/embed/74eb133e57f84eb8ba98067111277f92?themeId=68&templateId=5&fontStackId=0",
+    36: "https://wordwall.net/uk/embed/90f986616a8f4cc69c800160799b5dd8?themeId=46&templateId=5&fontStackId=0",
+    37: "https://wordwall.net/uk/embed/d8109abd6e1a44ce9130c29093ebe397?themeId=69&templateId=5&fontStackId=0",
+    38: "https://wordwall.net/uk/embed/1120210b76314a8b93986a47783564e3?themeId=43&templateId=5&fontStackId=0",
+    39: "https://wordwall.net/uk/embed/01a4451c46334bcdaf662d000bff45d3?themeId=49&templateId=5&fontStackId=0",
+    40: "https://wordwall.net/uk/embed/a490047930bb48d998e36df11dbf525c?themeId=45&templateId=5&fontStackId=0",
+    41: "https://wordwall.net/uk/embed/e9d8418925f144309623379ce9aa6a6d?themeId=48&templateId=5&fontStackId=0",
+    # 42, 43: brak
+    44: "https://wordwall.net/uk/embed/524d1d716b03474fafd254aaea643e44?themeId=2&templateId=5&fontStackId=0",
+    45: "https://wordwall.net/uk/embed/4e043be37a4748e9acef8d573553071e?themeId=64&templateId=5&fontStackId=0",
+    46: "https://wordwall.net/uk/embed/cab079bafea0457d8721d9af06022ef5?themeId=65&templateId=5&fontStackId=0",
+    47: "https://wordwall.net/uk/embed/84b5749711f54992ace8c6c3ff9f344d?themeId=62&templateId=5&fontStackId=0",
+    48: "https://wordwall.net/uk/embed/2b031926d50e4683986a5bb6ce9fa845?themeId=43&templateId=5&fontStackId=0",
+    49: "https://wordwall.net/uk/embed/7655dc1dc26f4c5e982a48ea8de33a18?themeId=49&templateId=5&fontStackId=0",
+    50: "https://wordwall.net/uk/embed/7fc5e9f729a64170a67aab0b9c20826b?themeId=50&templateId=5&fontStackId=0",
+    51: "https://wordwall.net/uk/embed/b2a8f4b538344145a8931e8d0b9a826c?themeId=64&templateId=5&fontStackId=0",
+    52: "https://wordwall.net/uk/embed/92bd859cbefe458db8fbbb9aca53e7f3?themeId=2&templateId=5&fontStackId=0",
+    53: "https://wordwall.net/uk/embed/0b4151d24f4a47f885d1a817f386e09d?themeId=68&templateId=5&fontStackId=0",
+    54: "https://wordwall.net/uk/embed/2bc7eb4c84444c43a77095b8236b6824?themeId=64&templateId=5&fontStackId=0",
+    55: "https://wordwall.net/uk/embed/b8a65ac5591b43e8b1be5d3639e178f0?themeId=2&templateId=5&fontStackId=0",
+    56: "https://wordwall.net/uk/embed/d550ceea1d6745afa14da9f7df4d9e2f?themeId=65&templateId=5&fontStackId=0",
+    57: "https://wordwall.net/uk/embed/dd988f75464e49478124627a86ddb69a?themeId=68&templateId=5&fontStackId=0",
+    58: "https://wordwall.net/uk/embed/66de0c31cc664f3baab8bfd2ecc059ee?themeId=62&templateId=5&fontStackId=0",
+    59: "https://wordwall.net/uk/embed/7ce9e8a7957a4eb4a3fab4b8bfb898aa?themeId=66&templateId=5&fontStackId=0",
+    60: "https://wordwall.net/uk/embed/f8e6d129d7854d62ac6fd68237e99052?themeId=43&templateId=5&fontStackId=0",
+    61: "https://wordwall.net/uk/embed/ad46a343e87644e5bfde5bfee0313886?themeId=49&templateId=5&fontStackId=0",
+}
+
+
+def embed_for_page(page: dict) -> str | None:
+    src = int(page.get("source_n") or page.get("asset_n") or page.get("n") or 0)
+    return EMBEDS_BY_SOURCE_N.get(src) or page.get("wordwall_embed")

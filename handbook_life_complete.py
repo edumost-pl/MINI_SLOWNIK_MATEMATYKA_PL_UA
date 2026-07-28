@@ -136,8 +136,8 @@ PAGE_LIFE = {
 
 # ——— Częsty błąd (jak na stronach-wzorcach) ———
 PAGE_MISTAKE = {
-    1: ("Cyfra to nie to samo co liczba: 3 to cyfra; 35 to liczba z dwóch cyfr. Zero = pusto — o naturalnych pytaj nauczyciela.",
-        "Цифра — не те саме, що число: 3 — цифра; 35 — число з двох цифр. Нуль = порожньо — про натуральні питай учителя."),
+    1: ("Cyfra to nie to samo co liczba: 3 to cyfra; 35 to liczba z dwóch cyfr. Zero = pusto; czy 0 ∈ ℕ — zależy od umowy w klasie.",
+        "Цифра — не те саме, що число: 3 — цифра; 35 — число з двох цифр. Нуль = порожньо; чи 0 ∈ ℕ — залежить від домовленості в класі."),
     2: ("IV to 4 (5−1), a VI to 6 (5+1). Kolejność znaków zmienia wynik!",
         "IV — це 4 (5−1), а VI — 6 (5+1). Порядок знаків змінює результат!"),
     3: ("−7 jest mniejsze niż −2 (leży bardziej w lewo), choć „7” wygląda na większe.",
