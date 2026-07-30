@@ -869,7 +869,7 @@ MORE_LIFE = {
     ),
     (40, "przykład mediany"): E(
         "Przy parzystej liczbie: środkowe 5 i 5 → mediana 5.",
-        "При парній кількості: середні 5 і 5 → медіана 5.",
+        "При парній кількості: серединні 5 і 5 → медіана 5.",
     ),
     (40, "przykład mody"): E(
         "W 2,5,5,8 najczęściej pada 5 — to moda (wartość modalna).",

@@ -63,36 +63,52 @@ def _expand_pair(pl: str, ua: str, term_pl: str) -> tuple[str, str]:
     return pl.strip(), ua.strip()
 
 
+_TEMPLATE_MARKERS = (
+    "Porównaj z definicją",
+    "powiedz własnymi słowami",
+    "Najpierw zrozum zapis, potem licz",
+    "Sprawdzaj na przykładzie:",
+    "W zeszycie zapisujemy:",
+    "Zapisz w zeszycie i",
+    "Zapisz definicję w zeszycie",
+    "Порівняй з означенням",
+    "скажи своїми словами",
+    "Спочатку зрозумій запис, потім рахуй",
+    "Перевір на прикладі:",
+    "У зошиті записуємо:",
+    "Запиши в зошит",
+    "Запиши означення в зошит",
+)
+
+
+def _is_template_rule(text: str) -> bool:
+    t = text or ""
+    return any(m in t for m in _TEMPLATE_MARKERS)
+
+
 def _school_rule(card: dict) -> tuple[str, str]:
-    """Buduje wskazówkę szkolną, gdy brak rule=."""
+    """Krótka kotwica Zapamiętaj (v1.0) — bez szablonów „porównaj / powiedz swoimi słowami”."""
     visual = _plain(card.get("visual") or "")
     def_pl = (card.get("def_pl") or card.get("explain") or "").strip()
     def_ua = (card.get("def_ua") or card.get("explain_ua") or "").strip()
 
-    if visual and _looks_formula(visual):
-        return (
-            f"W zeszycie zapisujemy: {visual}. Najpierw zrozum zapis, potem licz krok po kroku.",
-            f"У зошиті записуємо: {visual}. Спочатку зрозумій запис, потім рахуй крок за кроком.",
-        )
-
-    if visual:
-        return (
-            f"Sprawdzaj na przykładzie: {visual}. Porównaj z definicją i powiedz własnymi słowami.",
-            f"Перевір на прикладі: {visual}. Порівняй з означенням і скажи своїми словами.",
-        )
+    if visual and len(visual) <= 70:
+        # UA: krótko wyjaśnij rdzeń; bez kalki szablonu
+        ua = def_ua.split(".")[0].strip() if def_ua else visual
+        if len(ua) > 90:
+            ua = ua[:87].rsplit(" ", 1)[0] + "…"
+        return visual, ua
 
     if def_pl:
-        tip_pl = def_pl if def_pl.endswith((".", "!", "…", "?")) else def_pl + "."
-        tip_ua = def_ua if def_ua.endswith((".", "!", "…", "?")) else (def_ua + "." if def_ua else "")
-        return (
-            f"W szkole: {tip_pl} Zapisz w zeszycie i podaj własny przykład.",
-            f"У школі: {tip_ua} Запиши в зошит і наведи власний приклад." if tip_ua else tip_pl,
-        )
+        tip_pl = def_pl.split(".")[0].strip()
+        tip_ua = def_ua.split(".")[0].strip() if def_ua else tip_pl
+        if len(tip_pl) > 100:
+            tip_pl = tip_pl[:97].rsplit(" ", 1)[0] + "…"
+        if len(tip_ua) > 100:
+            tip_ua = tip_ua[:97].rsplit(" ", 1)[0] + "…"
+        return tip_pl, tip_ua
 
-    return (
-        "Zapisz definicję w zeszycie i wymyśl własny przykład z życia.",
-        "Запиши означення в зошит і вигадай власний приклад з життя.",
-    )
+    return ("Zapamiętaj definicję z karty.", "Запам'ятай означення з картки.")
 
 
 def _same_rule_text(a: str, b: str) -> bool:
@@ -400,7 +416,7 @@ PAGE_RULES = {
     ],
     40: [
         {"pl": "Średnia = suma wartości / ich liczba.", "ua": "Середнє = сума значень / їх кількість.", "formula": "średnia = suma / n"},
-        {"pl": "Mediana = wartość środkowa po uporządkowaniu.", "ua": "Медіана = середнє значення після впорядкування."},
+        {"pl": "Mediana = wartość środkowa po uporządkowaniu.", "ua": "Медіана = значення посередині після впорядкування."},
         {"pl": "Moda = wartość najczęstsza.", "ua": "Мода = найчастіше значення."},
     ],
     41: [
@@ -1005,6 +1021,10 @@ from handbook_clear import CLEAR_FIXES
 
 CARD_OVERRIDES.update(CLEAR_FIXES)
 
+from editorial_v1_overrides import EDITORIAL_V1
+
+CARD_OVERRIDES.update(EDITORIAL_V1)
+
 EARLY_PAGES = {1, 2, 4, 5, 6, 20, 21, 23, 24, 26, 28, 29, 61}
 ALL_DEEP_PAGES = set(range(1, 62))
 
@@ -1027,11 +1047,13 @@ def enrich_card(card: dict, page_n: int) -> None:
     card["def_pl"] = def_pl
     card["def_ua"] = def_ua
 
-    if not card.get("rule"):
+    rule = card.get("rule") or ""
+    rule_ua = card.get("rule_ua") or ""
+    if (not rule) or _is_template_rule(rule) or _is_template_rule(rule_ua):
         rule, rule_ua = _school_rule(card)
         card["rule"] = rule
         card["rule_ua"] = rule_ua
-    elif not card.get("rule_ua") and card.get("def_ua"):
+    elif not rule_ua and card.get("def_ua"):
         card["rule_ua"] = card["def_ua"]
 
     attach_examples(card, page_n)
@@ -1063,5 +1085,9 @@ def apply(pages: list) -> list:
         if n not in (4, 12):
             apply_page_meta(p)
         for c in p.get("cards") or []:
+            # Standard v1.0: redakcja pilota ma pierwszeństwo także po apply_pilot
+            ov = EDITORIAL_V1.get((n, c.get("pl") or ""))
+            if ov:
+                c.update(ov)
             c["klasa"] = resolve_klasa(n, c.get("pl") or "", c)
     return pages

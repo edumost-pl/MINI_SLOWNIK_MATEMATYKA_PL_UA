@@ -97,9 +97,11 @@ def zapamietaj(card: dict) -> tuple[str, str]:
 
 # Porównania „Nie pomyl” — treść merytoryczna zgodna ze szkołą, forma skrócona
 NIE_POMYL: dict[str, list[tuple[str, str]]] = {
+    "prawo / lewo": [("na sobie (moja prawa)", "naprzeciwko mnie (jej prawa)")],
+    "przed / za / obok": [("przed", "za"), ("obok", "przed / za")],
     "cyfra": [("3 → cyfra", "35 → liczba"), ("0–9 = cyfry", "347 = liczba")],
     "liczba": [("cyfra = klocek", "liczba = ile"), ("9 = cyfra i liczba", "29 = liczba")],
-    "liczba naturalna": [("1, 2, 3…", "≠ ułamki"), ("do liczenia", "≠ liczby ujemne")],
+    "liczba naturalna": [("1, 2, 3…", "½, 0,25"), ("1, 2, 3…", "−1, −2…")],
     "wartość pozycyjna": [("3 w 35 = 3 dziesiątki", "3 w 3 = 3 jednostki"), ("miejsce = wartość", "ta sama cyfra ≠ to samo")],
     "liczba porządkowa": [("1. = pierwszy", "1 = jeden"), ("kolejność (który?)", "≠ ile?")],
     "zero": [("0 = nic", "nie „pusty znak”"), ("0 w naturalnych: zależnie od umowy", "0 zawsze jest cyfrą")],
@@ -110,7 +112,7 @@ NIE_POMYL: dict[str, list[tuple[str, str]]] = {
     "kolejność liczb": [("rosnąco: małe → duże", "malejąco: duże → małe"), ("kolejność liczb", "≠ liczba porządkowa")],
     "oś liczbowa": [("w lewo → mniejsze", "w prawo → większe"), ("oś liczbowa", "linia czasu")],
     "dodatnie, ujemne, zero": [("ujemne < 0", "zero = 0"), ("dodatnie > 0", "znak „−” przy dodatniej")],
-    "wartość bezwzględna": [("|−5| = 5", "≠ −5"), ("odległość od 0", "≠ liczba przeciwna")],
+    "wartość bezwzględna": [("|−5| = 5", "wynik −5"), ("odległość od 0", "liczba przeciwna")],
     "porównywanie": [("−7 < −2", "nie „−7 większe bo 7”"), ("im bardziej w lewo, tym mniejsza", "≠ porównuj same cyfry")],
     "liczba przeciwna": [("przeciwna do 3 = −3", "|3| = 3"), ("3+(−3)=0", "≠ wartość bezwzględna")],
     "zastosowania": [("−8°C = zimno", "„minus” ≠ zawsze źle"), ("piętro −1 · dług −20 zł", "≠ tylko w ćwiczeniach")],
@@ -124,7 +126,7 @@ NIE_POMYL: dict[str, list[tuple[str, str]]] = {
     "gdzie spotykamy?": [("zegar: IV, IX, XII", "rozdział II"), ("data na pomniku", "≠ tylko w podręczniku")],
     "zamiana na arabskie": [("LXIV → 50+10+4", "wynik 64"), ("odejmij gdy trzeba, potem dodaj", "≠ czytaj litery jak litery")],
     "dodawanie": [("suma = wynik +", "składniki = to, co dodajesz"), ("kolejność nie zmienia sumy", "odejmowanie (kolejność ważna)")],
-    "suma": [("suma = wynik dodawania", "znak „+” sam"), ("2+3=5 → suma 5", "składniki 2 i 3")],
+    "suma": [("suma (wynik)", "składniki (to, co dodajemy)")],
     "odejmowanie": [("różnica = wynik −", "odjemna / odjemnik = części"), ("kolejność ważna", "dodawanie (można zamienić)")],
     "różnica": [("różnica = wynik odejmowania", "odjemna albo odjemnik"), ("sprawdź: różnica + odjemnik", "nie myl z samym znakiem −")],
     "dodawanie na palcach / osi": [("najpierw na palcach / osi", "od razu „w pamięci” bez sensu"), ("skok w prawo = +", "skok w lewo = −")],
@@ -133,7 +135,6 @@ NIE_POMYL: dict[str, list[tuple[str, str]]] = {
     "odjemna i odjemnik": [("odjemna − odjemnik", "składnik + składnik"), ("kolejność ważna", "nie zamieniaj miejscami")],
     "właściwości +": [("przemienność +", "przemienność − (nie działa)"), ("łączność pomaga liczyć", "mieszaj kolejność przy −")],
     "właściwości −": [("a−0=a", "a−a=0"), ("9−4 ≠ 4−9", "jak przy dodawaniu")],
-    "przykłady": [("sprawdź: różnica + odjemnik", "zgaduj bez sprawdzenia"), ("najpierw sens, potem wynik", "tylko wynik „z głowy”")],
     "mnożenie": [("× = dodawanie tej samej", "zwykłe + różnych liczb"), ("iloczyn = wynik ×", "≠ dzielenie")],
     "mnożenie = dodawanie tej samej": [("4×3 = 4+4+4", "4+3 = 7"), ("razy po tyle samo", "dodawanie różnych składników")],
     "iloczyn": [("iloczyn = wynik ×", "czynniki = to, co mnożysz"), ("2·5=10 → iloczyn 10", "≠ suma")],
@@ -145,7 +146,7 @@ NIE_POMYL: dict[str, list[tuple[str, str]]] = {
     "sprawiedliwe rozdawanie": [("każdemu tyle samo", "jednemu więcej „na oko”"), ("12:3 → po 4", "reszta bez zapisu")],
     "iloraz": [("iloraz = wynik dzielenia", "≠ reszta"), ("12:3=4 → iloraz 4", "≠ dzielna / dzielnik")],
     "dzielna i dzielnik": [("dzielna : dzielnik", "czynnik × czynnik"), ("dzielnik ≠ 0", "kolejność ważna")],
-    "z resztą": [("14:3 = 4 r.2", "nie „zawsze równo”"), ("reszta < dzielnik", "≠ ułamek")],
+    "z resztą": [("17:5 = 3 r. 2", "17:5 = 3 (bez reszty)")],
     "związek z ×": [("12:3=4 ↔ 4×3=12", "bez sprawdzania"), ("dzielenie sprawdza ×", "≠ obce działania")],
     ":1 i : siebie": [("a:1=a", "a:a=1"), ("a:0 zabronione", "≠ a×0")],
     "nawiasy": [("najpierw ( )", "od lewej „na siłę”"), ("(2+3)×4 = 20", "2+3×4 = 14")],
@@ -154,7 +155,6 @@ NIE_POMYL: dict[str, list[tuple[str, str]]] = {
     "× i :": [("× i : przed + i −", "od lewej zawsze najpierw +"), ("2+3×4 = 14", "(2+3)×4 = 20")],
     "+ i −": [("+ i − na końcu", "przed ×"), ("od lewej do prawej", "od prawej")],
     "ten sam poziom": [("× i : od lewej", "najpierw × potem :"), ("24:6×2 = 8", "24:(6×2) = 2")],
-    "przykład": [("warstwami: ( ) → aⁿ → ×: → +−", "wszystko naraz od lewej"), ("zapisuj kroki", "tylko wynik końcowy")],
     "działanie pisemne": [("cyfra pod cyfrą (słupek)", "pisz w jednej linii"), ("od prawej do lewej", "od lewej jak czytanie")],
     "dodawanie pisemne": [("jedności pod jednościami", "cyfry „jak leci”"), ("pamiętaj o przeniesieniu", "zapomnij o przeniesieniu")],
     "odejmowanie pisemne": [("pożycz, gdy za mało", "odejmuj na siłę"), ("sprawdź dodawaniem", "bez sprawdzenia")],
@@ -166,22 +166,22 @@ NIE_POMYL: dict[str, list[tuple[str, str]]] = {
     "odwrotnie: wyłączanie": [("4·7+4·3 = 4·(7+3)", "tylko rozdzielaj"), ("wspólny czynnik przed ( )", "różne czynniki na siłę")],
     "w geometrii": [("(a+b)·c = a·c + b·c", "pole ≠ suma pól"), ("prostokąt z dwóch części", "≠ pole koła")],
     "z literami": [("x(x+2)=x²+2x", "x(x+2)=x+2"), ("otwierasz nawias ×", "dodajesz na ślepo")],
-    "ułamek zwykły": [("licznik / mianownik", "3/4 ≠ 4/3"), ("część całości", "≠ liczba mieszana")],
-    "licznik": [("góra ułamka", "ile części bierzemy"), ("3/5 → licznik 3", "≠ mianownik")],
-    "mianownik": [("dół ułamka", "na ile części dzielimy"), ("3/5 → mianownik 5", "≠ licznik")],
+    "ułamek zwykły": [("3/4", "4/3")],
+    "licznik": [("licznik (góra)", "mianownik (dół)")],
+    "mianownik": [("mianownik (dół)", "licznik (góra)")],
     "liczba mieszana": [("1 ½ = 3/2", "całość + ułamek"), ("≠ ułamek właściwy", "można zamienić")],
     "skracanie": [("dzielimy licznik i mianownik", "wartość ta sama"), ("2/4 = 1/2", "≠ rozszerzanie")],
     "rozszerzanie": [("mnożymy licznik i mianownik", "wartość ta sama"), ("1/2 = 2/4", "≠ skracanie")],
     "ułamek dziesiętny": [("przecinek", "0,5 = 1/2"), ("miejsce po przecinku = wartość", "≠ ułamek zwykły zapisem")],
     "odwrotność": [("odwrotność 2/3 = 3/2", "iloczyn = 1"), ("do dzielenia ułamków", "≠ liczba przeciwna")],
-    "procent": [("1% = 1/100", "50% = połowa"), ("% z liczby", "nie myl z „punktami procentowymi”")],
+    "procent": [("% z liczby (np. 20% z 200)", "zwiększenie o % (np. +20% do 200)")],
     "proporcja": [("a:b = c:d", "iloczyny krzyżowe"), ("≠ procent", "stosunek dwóch par")],
     "stosunek": [("a:b", "porównanie dwóch wielkości"), ("≠ ułamek „części całości” zawsze", "blisko proporcji")],
     "potęga": [("2³ = 2·2·2", "podstawa i wykładnik"), ("≠ mnożenie zwykłe 2×3", "wykładnik = ile razy")],
     "pierwiastek kwadratowy": [("√9 = 3", "bo 3² = 9"), ("≠ dzielenie przez 2", "odwrotność kwadratu")],
-    "równanie": [("ma =", "szukamy niewiadomej"), ("≠ nierówność < >", "sprawdź podstawieniem")],
-    "niewiadoma": [("x — niewiadoma", "szukamy jej wartości"), ("≠ zmienna „dowolna” w wyrażeniu", "w równaniu: do znalezienia")],
-    "nierówność": [("< > ≤ ≥", "zakres rozwiązań"), ("≠ równanie =", "na osi: często promień")],
+    "równanie": [("równanie (=)", "nierówność (< > ≤ ≥)")],
+    "niewiadoma": [("x w równaniu (do znalezienia)", "x w wyrażeniu 2x+3 (dowolna wartość)")],
+    "nierówność": [("nierówność (< > ≤ ≥)", "równanie (=)")],
     "wyrażenie algebraiczne": [("ma litery", "2a+3"), ("≠ równanie (brak =)", "można obliczyć wartość")],
     "jednomian": [("jeden wyraz", "3x²"), ("≠ suma algebraiczna", "suma = kilka wyrazów")],
     "suma algebraiczna": [("wyrazy + / −", "redukcja podobnych"), ("≠ równanie", "to wyrażenie")],
@@ -193,9 +193,9 @@ NIE_POMYL: dict[str, list[tuple[str, str]]] = {
     "kąt prosty": [("90°", "jak róg kartki"), ("≠ ostry (<90°)", "≠ rozwarty (>90°)")],
     "kąt ostry": [("< 90°", "≠ prosty"), ("≠ rozwarty", "spiczasty")],
     "kąt rozwarty": [("> 90° i < 180°", "≠ prosty"), ("≠ półpełny 180°", "")],
-    "okrąg": [("linia — brzeg", "≠ koło"), ("punkty w odległości r", "koło = wnętrze + brzeg")],
-    "koło": [("pełne wnętrze", "≠ okrąg"), ("pole koła", "długość = okręgu")],
-    "promień": [("środek → okrąg", "r"), ("≠ średnica", "średnica = 2r")],
+    "okrąg": [("okrąg = linia (brzeg)", "koło = linia + wnętrze")],
+    "koło": [("koło = linia + wnętrze", "okrąg = sama linia")],
+    "promień": [("promień r (środek → okrąg)", "średnica d = 2r")],
     "średnica": [("przez środek", "d = 2r"), ("≠ promień", "≠ cięciwa (nie musi przez środek)")],
     "cięciwa": [("łączy 2 punkty okręgu", "nie musi przez środek"), ("≠ średnica", "średnica = najdłuższa cięciwa")],
     "obwód": [("długość dookoła", "cm, m"), ("≠ pole", "pole = powierzchnia")],
@@ -210,16 +210,16 @@ NIE_POMYL: dict[str, list[tuple[str, str]]] = {
     "proste równoległe": [("∥ nigdy się nie zetkną", "≠ prostopadłe ⊥"), ("sieczna tworzy kąty", "")],
     "proste prostopadłe": [("⊥ = kąt 90°", "≠ równoległe"), ("odległość: najkrótsza do prostej", "")],
     "symetria": [("odbicie / środek", "kształt „pasuje”"), ("≠ przystawanie zawsze tematycznie osobno", "oś ≠ środek")],
-    "przystawanie": [("ten sam kształt i rozmiar", "≅"), ("≠ podobieństwo (~)", "podobieństwo może mieć inną skalę")],
-    "podobieństwo": [("ten sam kształt, inna skala", "~"), ("≠ przystawanie", "k = 1 → przystawanie")],
-    "twierdzenie pitagorasa": [("a²+b²=c²", "tylko prostokątny"), ("c = przeciwprostokątna", "≠ dowolny trójkąt")],
+    "przystawanie": [("przystawanie (ten sam rozmiar)", "podobieństwo (może inna skala)")],
+    "podobieństwo": [("podobieństwo (inna skala OK)", "przystawanie (ta sama skala)")],
+    "twierdzenie pitagorasa": [("działa w Δ prostokątnym", "w dowolnym trójkącie")],
     "przyprostokątne i przeciwprostokątna": [("przyprostokątne przy 90°", "przeciwprostokątna naprzeciw 90°"), ("c najdłuższy bok", "nie myl nazw")],
     "sześcian": [("6 kwadratów", "wszystkie krawędzie równe"), ("≠ prostopadłościan", "prostopadłościan może mieć różne krawędzie")],
     "prostopadłościan": [("6 prostokątów", "≠ sześcian zawsze"), ("sześcian = szczególny przypadek", "")],
-    "walec": [("2 koła + płaszcz", "≠ stożek"), ("≠ kula", "puszka ≈ walec")],
-    "stożek": [("koło + wierzchołek", "≠ walec"), ("≠ ostrosłup (podstawa wielokąt)", "")],
-    "kula": [("pełna piłka", "≠ sfera"), ("sfera = powierzchnia", "")],
-    "sfera": [("tylko powierzchnia", "≠ kula"), ("jak skórka piłki", "")],
+    "walec": [("walec (2 koła)", "stożek (1 koło + wierzchołek)")],
+    "stożek": [("stożek (1 koło + wierzchołek)", "walec (2 koła)")],
+    "kula": [("kula = pełna bryła", "sfera = tylko powierzchnia")],
+    "sfera": [("sfera = powierzchnia", "kula = pełna bryła")],
     "ostrosłup": [("podstawa + wierzchołek", "≠ graniastosłup"), ("V = ⅓·P·H", "≠ walec")],
     "graniastosłup": [("dwie podstawy ∥", "ściany boczne"), ("≠ ostrosłup", "prosty: krawędzie ⊥ podstawie")],
     "średnia arytmetyczna": [("suma / liczba danych", "≠ mediana"), ("≠ moda", "")],
@@ -232,7 +232,7 @@ NIE_POMYL: dict[str, list[tuple[str, str]]] = {
     "prędkość": [("v = s/t", "km/h, m/s"), ("≠ skala mapy", "droga / czas")],
     "skala mapy": [("1 : n", "mapa → teren"), ("≠ prędkość", "mnożysz przez n")],
     "złoty i grosz": [("1 zł = 100 gr", "≠ procent"), ("reszta przy zakupie", "")],
-    "liczba wymierna": [("a/b, b≠0", "całkowite ∈ ℚ"), ("skończony / okresowy dziesiętny", "≠ „tylko ułamek zwykły”")],
+    "liczba wymierna": [("½, −3, 0,75 ∈ ℚ", "√2 (rozszerzenie: niewymierna)")],
     "przesunięcie": [("w bok o tyle samo", "≠ obrót"), ("kształt zostaje", "inne miejsce")],
     "obrót": [("wokół punktu + kąt", "≠ przesunięcie"), ("jak wskazówka zegara", "")],
     "środkowa": [("do środka boku", "≠ wysokość"), ("≠ dwusieczna", "")],
@@ -243,92 +243,133 @@ NIE_POMYL: dict[str, list[tuple[str, str]]] = {
 }
 
 
+def _clean_np_pair(a: str, b: str) -> tuple[str, str] | None:
+    """Standard v1.0: jedna jasna para; bez pustych pól i podwójnego ≠."""
+    a = re.sub(r"^≠\s*", "", (a or "").strip())
+    b = re.sub(r"^≠\s*", "", (b or "").strip())
+    a = re.sub(r"\s+", " ", a).strip(" ·;,")
+    b = re.sub(r"\s+", " ", b).strip(" ·;,")
+    if not a or not b:
+        return None
+    if a.lower() == b.lower():
+        return None
+    if "coś innego" in a.lower() or "coś innego" in b.lower():
+        return None
+    if a.lower().startswith("mylę ") or b.lower().startswith("sprawdź definicję"):
+        return None
+    return (a[:48], b[:48])
+
+
 def _fallback_nie_pomyl(card: dict) -> list[tuple[str, str]]:
-    term = (card.get("pl") or "").strip()
+    """Tylko gdy visual daje realny kontrast słowny. Formuł nie tnij na kawałki."""
     vis = _split_bits(card.get("visual") or "")
-    pairs: list[tuple[str, str]] = []
-    if len(vis) >= 2:
-        pairs.append((vis[0][:40], vis[1][:40]))
-    if len(vis) >= 4:
-        pairs.append((vis[2][:40], vis[3][:40]))
-    def_pl = (card.get("def_pl") or "").strip()
-    if term and def_pl:
-        short = def_pl.split(".")[0][:48]
-        pairs.append((f"{term} = coś innego", short or term))
-    while len(pairs) < 2:
-        if term:
-            pairs.append((f"Mylę {term}", f"Sprawdź definicję: {term}"))
-        else:
-            pairs.append(("Zła nazwa pojęcia", "Sprawdź kartę hasła"))
-    return pairs[:4]
+    if len(vis) < 2:
+        return []
+
+    def _wordy(s: str) -> bool:
+        return bool(re.search(r"[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźżА-Яа-яЇїІіЄєҐґ']{3,}", s or ""))
+
+    # obie strony muszą mieć słowa — nie „1” ≠ „4” z listy kwadratów
+    if not (_wordy(vis[0]) and _wordy(vis[1])):
+        return []
+    if any(len(v) > 28 for v in vis[:2]):
+        return []
+    cleaned = _clean_np_pair(vis[0], vis[1])
+    return [cleaned] if cleaned else []
 
 
 def nie_pomyl(card: dict) -> list[tuple[str, str]]:
-    if card.get("nie_pomyl"):
-        # optional explicit in data: list of "a|b" or tuples
+    # Explicit empty / False → hide block (standard v1.0: często brak w 1–3)
+    if "nie_pomyl" in card:
         raw = card["nie_pomyl"]
+        if raw in (None, False, [], ()):
+            return []
         out = []
         for item in raw:
             if isinstance(item, (list, tuple)) and len(item) >= 2:
-                out.append((str(item[0]), str(item[1])))
+                cleaned = _clean_np_pair(str(item[0]), str(item[1]))
             elif isinstance(item, str) and "|" in item:
                 a, b = item.split("|", 1)
-                out.append((a.strip(), b.strip()))
-        if out:
-            return out[:4]
+                cleaned = _clean_np_pair(a, b)
+            else:
+                cleaned = None
+            if cleaned:
+                out.append(cleaned)
+        return out[:4]
     key = (card.get("pl") or "").strip()
     key_l = key.lower()
+
+    def _from_pairs(pairs: list[tuple[str, str]]) -> list[tuple[str, str]]:
+        out = []
+        for a, b in pairs:
+            cleaned = _clean_np_pair(a, b)
+            if cleaned:
+                out.append(cleaned)
+        return out[:4]
+
     if key_l in NIE_POMYL:
-        pairs = [(a, b) for a, b in NIE_POMYL[key_l] if a]
-        return pairs[:4]
-    # dopasowanie po najdłuższym kluczu (prefiks / cały wyraz) — bez „liczba”⊂„liczba wymierna”
+        return _from_pairs(NIE_POMYL[key_l])
+    # Meta-hasła i bardzo krótkie klucze: tylko dokładne dopasowanie (nigdy „przykład”→kolejność)
+    if key_l in {"przykład", "przykłady", "w życiu", "zapis", "sprawdzenie"} or len(key_l) <= 4:
+        return _fallback_nie_pomyl(card)
+    # dopasowanie po najdłuższym kluczu (prefiks / cały wyraz)
     candidates: list[tuple[int, list]] = []
     for k, pairs in NIE_POMYL.items():
         if key_l == k:
-            return [(a, b) for a, b in pairs if a][:4]
+            return _from_pairs(pairs)
         if key_l.startswith(k + " ") or key_l.endswith(" " + k) or f" {k} " in f" {key_l} ":
-            # tylko gdy k ma ≥ 5 znaków (unikaj „suma”, „pole” w dłuższych frazach przypadkiem OK jeśli całe słowo)
-            if len(k) >= 5:
+            if len(k) >= 6:  # unikaj krótkich kluczy jak „suma”, „pole”
                 candidates.append((len(k), pairs))
     if candidates:
         candidates.sort(key=lambda x: -x[0])
-        return [(a, b) for a, b in candidates[0][1] if a][:4]
+        return _from_pairs(candidates[0][1])
     return _fallback_nie_pomyl(card)
 
 
 def przyklady(card: dict) -> list[str]:
-    """4–6 przykładów ZASTOSOWANIA (nie powtórka definicji)."""
+    """2–4 przykłady zastosowania (v1.0). Lista na karcie ma pierwszeństwo przed bankiem."""
     from examples_bank import examples_for
 
     term = (card.get("pl") or "").strip()
-    bank = examples_for(term)
-    if bank:
-        clean = []
-        seen = set()
-        for b in bank:
+
+    def _clean_list(items: list[str]) -> list[str]:
+        clean: list[str] = []
+        seen: set[str] = set()
+        for b in items:
             b = _strip_html(str(b))
             if len(b) > 48:
                 b = b[:45] + "…"
             key = b.lower()
             if not b or key in seen or b in {"…", "—", "..."}:
                 continue
-            # odrzuć gołe liczby
             if re.fullmatch(r"\d+[.,]?\d*", b):
+                continue
+            if key.startswith("wymyśl") or "podaj własny" in key or key.startswith("rozpoznaj:"):
                 continue
             seen.add(key)
             clean.append(b)
-        if len(clean) >= 4:
-            return clean[:6]
+        return clean
 
-    # jawna lista na karcie (jeśli autor podał)
+    # 1) jawna lista na karcie
     bits: list[str] = []
     for src in (card.get("przykłady"), card.get("examples")):
         if isinstance(src, list):
             bits.extend(str(x).strip() for x in src if str(x).strip())
         elif src:
             bits.extend(_split_bits(str(src)))
+    clean = _clean_list(bits)
+    if len(clean) >= 2:
+        return clean[:6]
 
-    # visual tylko jeśli wygląda na zastosowanie (ma kontekst: strzałka, ✔, słowo, wzór)
+    # 2) bank
+    bank = examples_for(term)
+    if bank:
+        clean = _clean_list(list(bank))
+        if len(clean) >= 2:
+            return clean[:6]
+
+    # 3) visual jako ostatnia deska
+    bits = []
     vis = _strip_html(card.get("visual") or "")
     for b in _split_bits(vis):
         if re.fullmatch(r"\d+[.,]?\d*", b):
@@ -339,39 +380,7 @@ def przyklady(card: dict) -> list[str]:
             flags=re.I,
         ):
             bits.append(b)
-
-    clean = []
-    seen = set()
-    for b in bits:
-        b = _strip_html(b)
-        if len(b) > 48:
-            b = b[:45] + "…"
-        key = b.lower()
-        if not b or key in seen or b in {"…", "—", "..."}:
-            continue
-        if re.fullmatch(r"\d+[.,]?\d*", b):
-            continue
-        seen.add(key)
-        clean.append(b)
-
-    # ostatnia deska: mini-zadania z nazwy hasła (bez losowych liczb)
-    if len(clean) < 4 and term:
-        for extra in (
-            f"rozpoznaj: {term}",
-            f"zadanie: użyj „{term}”",
-            f"porównaj z podobnym pojęciem",
-            f"podaj własny przykład",
-        ):
-            if extra.lower() not in seen:
-                clean.append(extra[:48])
-                seen.add(extra.lower())
-            if len(clean) >= 4:
-                break
-
-    while len(clean) < 4:
-        clean.append("zadanie z podręcznika")
-
-    return clean[:6]
+    return _clean_list(bits)[:6]
 
 
 def present_card(card: dict) -> dict:

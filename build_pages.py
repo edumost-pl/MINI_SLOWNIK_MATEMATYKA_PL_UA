@@ -200,13 +200,16 @@ def card_html(i, c, page=None, asset_prefix="../"):
             )
         else:
             np_rows.append(f'<li><span class="np-a">{esc(a)}</span></li>')
-    nie_pomyl_html = (
-        f'\n        <div class="ux-block ux-nie-pomyl">\n'
-        f'          <span class="ux-label">⚠ Nie pomyl <span class="lab-ua">Не плутай</span></span>\n'
-        f'          <ul class="np-list">\n            '
-        + "\n            ".join(np_rows)
-        + "\n          </ul>\n        </div>"
-    )
+    if np_rows:
+        nie_pomyl_html = (
+            f'\n        <div class="ux-block ux-nie-pomyl">\n'
+            f'          <span class="ux-label">⚠ Nie pomyl <span class="lab-ua">Не плутай</span></span>\n'
+            f'          <ul class="np-list">\n            '
+            + "\n            ".join(np_rows)
+            + "\n          </ul>\n        </div>"
+        )
+    else:
+        nie_pomyl_html = ""
 
     # ✅ Przykłady
     ex_items = "\n".join(f"<li>{esc(x)}</li>" for x in ux["przyklady"])

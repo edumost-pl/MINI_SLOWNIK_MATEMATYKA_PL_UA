@@ -3,53 +3,39 @@
 
 PRZYKLADY: dict[str, list[str]] = {
     "prawo / lewo": [
-        "wskaż prawą rękę",
-        "strzałka → = prawo",
-        "lewo od drzwi",
-        "skręć w lewo",
-        "prawy róg strony",
+        'wskaż prawą rękę',
+        'skręć w lewo',
+        'prawy róg kartki',
     ],
     "góra / dół": [
-        "piętro wyżej = góra",
-        "strzałka ↓ = dół",
-        "góra mapy",
-        "schodź na dół",
-        "górny rząd",
+        'piętro wyżej',
+        'schodź na dół',
+        'górny rząd w zeszycie',
     ],
     "przed / za / obok": [
-        "A przed B w kolejce",
-        "C stoi za D",
-        "E obok F",
-        "7 przed 8",
-        "5 za 4",
+        'A przed B w kolejce',
+        'C stoi za D',
+        'E obok F',
     ],
     "dłuższy / krótszy": [
-        "linijka A dłuższa",
-        "odcinek B krótszy",
-        "12 cm > 9 cm",
-        "który ołówek dłuższy?",
-        "najkrótsza ścieżka",
+        'który ołówek dłuższy?',
+        '12 cm > 9 cm',
+        'najkrótsza ścieżka',
     ],
     "cięższy / lżejszy": [
-        "worek cięższy o 2 kg",
-        "piórko lżejsze od książki",
-        "3 kg > 1 kg",
-        "co jest lżejsze?",
-        "waż na szali",
+        'książka cięższa od piórnika',
+        'waż na szali',
+        '3 kg > 1 kg',
     ],
     "więcej / mniej / tyle samo": [
-        "8 > 5: więcej",
-        "3 < 7: mniej",
-        "4 = 4: tyle samo",
-        "kto ma więcej cukierków?",
-        "po równo — tyle samo",
+        '8 > 5: więcej',
+        '3 < 7: mniej',
+        '4 = 4: tyle samo',
     ],
     "liczba naturalna": [
-        "1, 2, 3, …",
-        "5 jabłek w koszyku",
-        "47 uczniów w szkole",
-        "100 metrów biegu",
-        "licz od 1 w górę",
+        '1, 2, 3, …',
+        '5 jabłek w koszyku',
+        '47 uczniów w szkole',
     ],
     "podstawowe znaki": [
         "I = 1 na zegarze",
@@ -108,11 +94,9 @@ PRZYKLADY: dict[str, list[str]] = {
         "CM → 900",
     ],
     "cyfra": [
-        "0–9: cyfry",
-        "347 ma 3 cyfry",
-        "cyfra 5 w 258",
-        "zapisz cyfrą: siedem → 7",
-        "9 to jedna cyfra",
+        '0–9 to cyfry',
+        'Liczba 347 ma trzy cyfry',
+        'Zapisz cyfrą: siedem → 7',
     ],
     "liczba": [
         "12 to liczba",
@@ -183,13 +167,6 @@ PRZYKLADY: dict[str, list[str]] = {
         "X = 10",
         "L = 50",
         "C = 100",
-    ],
-    "przykłady": [
-        "2+3=5",
-        "7+8=15",
-        "8−3=5",
-        "15−6=9 · sprawdź 9+6",
-        "wymyśl z cukierków",
     ],
     "dodawanie znaków": [
         "VI = V+I",
@@ -290,11 +267,9 @@ PRZYKLADY: dict[str, list[str]] = {
         "wynik meczu +3",
     ],
     "suma": [
-        "suma 4 i 6 = 10",
-        "S = a + b",
-        "suma: 15 + 23",
-        "oblicz sumę",
-        "suma składników",
+        '4+6=10 → suma 10',
+        'suma punktów w grze',
+        'oblicz sumę 15+23',
     ],
     "różnica": [
         "różnica 10 i 3 = 7",
@@ -330,13 +305,6 @@ PRZYKLADY: dict[str, list[str]] = {
         "a−a = 0",
         "nie przemienne",
         "odejmij od większej",
-    ],
-    "przykład": [
-        "12 + 8 = 20",
-        "P = a·b w zadaniu",
-        "½ + ¼ = ?",
-        "oblicz krok po kroku",
-        "sprawdź wynik",
     ],
     "dodawanie na palcach / osi": [
         "3+2 na palcach",
@@ -430,11 +398,9 @@ PRZYKLADY: dict[str, list[str]] = {
         "dzielnik ≠ 0",
     ],
     "z resztą": [
-        "17 : 5 = 3 r. 2",
-        "23 : 4 = 5 r. 3",
-        "reszta < dzielnik",
-        "13 : 4 = ? r. ?",
-        "podziel z resztą",
+        '17:5 = 3 r. 2',
+        '23 cukierki : 4 dzieci',
+        'reszta < dzielnik',
     ],
     "związek z ×": [
         "3×4 = 12 ↔ 12:4",
@@ -737,13 +703,6 @@ PRZYKLADY: dict[str, list[str]] = {
         "bok kwadratu √P",
         "√36 = 6",
     ],
-    "zapis": [
-        "√49 = 7",
-        "√(a·a) = a",
-        "√64 = 8",
-        "symbol √ przed liczbą",
-        "√100 = 10",
-    ],
     "związek z potęgą": [
         "√25 = 25^½",
         "√(a²) = |a|",
@@ -794,25 +753,19 @@ PRZYKLADY: dict[str, list[str]] = {
         "√3·√3 = 3",
     ],
     "ułamek zwykły": [
-        "½ — połowa",
-        "¾ — trzy czwarte",
-        "2/5 z tortu",
-        "zaznacz 1/4",
-        "3/8 na osi",
+        '½ — połowa',
+        '¾ — trzy czwarte',
+        'zaznacz 1/4',
     ],
     "licznik": [
-        "3/5: licznik 3",
-        "ile części bierzesz",
-        "7/8 — licznik 7",
-        "licznik < mianownik?",
-        "2/9 — góra ułamka",
+        'W 3/5 licznik to 3',
+        'Bierzesz 3 części z 5',
+        'Zaznacz licznik w 7/8',
     ],
     "mianownik": [
-        "3/5: mianownik 5",
-        "na ile części dzielisz",
-        "1/4 — mianownik 4",
-        "mianownik ≠ 0",
-        "dół ułamka",
+        'W 3/5 mianownik to 5',
+        'Całość podzielono na 5 części',
+        'Mianownik ≠ 0',
     ],
     "właściwy / niewłaściwy": [
         "3/5 ✔ właściwy",
@@ -962,11 +915,9 @@ PRZYKLADY: dict[str, list[str]] = {
         "nowa wartość mniejsza",
     ],
     "procent": [
-        "50% = ½",
-        "25% = ¼",
-        "100% = całość",
-        "1% = 1/100",
-        "20% z 200 = 40",
+        '50% = ½',
+        '20% z 200 = 40',
+        '100% = całość',
     ],
     "procent z liczby": [
         "20% z 150 = 30",
@@ -1199,26 +1150,15 @@ PRZYKLADY: dict[str, list[str]] = {
         "minus przed ( )",
         "zmień znaki w nawiasie",
     ],
-    "sprawdzenie": [
-        "podstaw x=3 do równania",
-        "L = P?",
-        "czy 7=7 ✔",
-        "sprawdź w zeszyt",
-        "wstaw do wzoru",
-    ],
     "równanie": [
-        "x + 5 = 12",
-        "2x = 14",
-        "3x − 7 = 8",
-        "znajdź x",
-        "L = P",
+        'x+5=12',
+        '2x=14 → x=7',
+        'Sprawdź: 7+5=12',
     ],
     "niewiadoma": [
-        "x — szukana liczba",
-        "? w równaniu",
-        "n w zadaniu",
-        "jedna niewiadoma",
-        "oznacz literą",
+        'W x+5=12 niewiadoma to x',
+        'Znajdź x',
+        'Oznacz niewiadomą literą',
     ],
     "rozwiązanie": [
         "x = 7 ✔",
@@ -1359,13 +1299,6 @@ PRZYKLADY: dict[str, list[str]] = {
         "narysuj wysokość",
         "h w trapezie",
         "odległość boków ||",
-    ],
-    "w życiu": [
-        "sklep: reszta z 20 zł",
-        "boisko: obwód",
-        "przepis: ½ szklanki",
-        "mapa: skala 1:50000",
-        "temperatura −3°C",
     ],
     "kąt": [
         "∠ABC — wierzchołek B",
@@ -1529,18 +1462,14 @@ PRZYKLADY: dict[str, list[str]] = {
         "2+5 > 6 ✔",
     ],
     "okrąg": [
-        "kreska — obwód",
-        "O = środek",
-        "r — promień",
-        "narysuj cyrklem",
-        "okrąg na rysunku",
+        'narysuj okrąg cyrklem',
+        'O = środek, r = promień',
+        'obwódka talerza',
     ],
     "koło": [
-        "okrąg + wnętrze",
-        "pole koła πr²",
-        "talerz — koło",
-        "wypełniony dysk",
-        "r = 3 cm",
+        'talerz — koło',
+        'pole koła πr²',
+        'okrąg + wnętrze',
     ],
     "środek": [
         "O — środek koła",
@@ -1585,11 +1514,9 @@ PRZYKLADY: dict[str, list[str]] = {
         "koło r=3 cm",
     ],
     "pole koła": [
-        "P = πr²",
-        "r=2 → P≈12,56",
-        "P = π(d/2)²",
-        "pole dysku",
-        "r=10 → P=100π",
+        'P = πr²',
+        'r = 3 → P = 9π',
+        'tarcza / talerz',
     ],
     "przykład c": [
         "r=7 → C=14π",
@@ -1843,12 +1770,10 @@ PRZYKLADY: dict[str, list[str]] = {
         "Δ ≅ → kąty =",
         "użyj cechy",
     ],
-    "twierdzenie pitagorasa": [
-        "a²+b²=c²",
-        "c — przeciwprost.",
+    "twierdzenie Pitagorasa": [
         "3²+4²=5²",
-        "oblicz brakujący bok",
-        "tylko Δ prostokątny",
+        "c naprzeciw kąta 90°",
+        "oblicz bok c",
     ],
     "przyprostokątne i przeciwprostokątna": [
         "a, b — przyprost.",
@@ -2418,39 +2343,29 @@ PRZYKLADY: dict[str, list[str]] = {
         "∠ABC, a∥b",
     ],
     "walec": [
-        "puszka — walec",
-        "2 podstawy koła",
-        "V = πr²h",
-        "h — wysokość",
-        "siatka: 2○ + prost.",
+        'puszka — walec',
+        'V = πr²h',
+        'siatka: 2 koła + prostokąt',
     ],
     "podstawa walca": [
-        "koło promienia r",
-        "2 podstawy =",
-        "P_p = πr²",
-        "r podstawy",
-        "obracaj trójkąt",
+        'góra i dół — koła',
+        'ten sam promień r',
+        '2 podstawy',
     ],
     "wysokość walca": [
-        "h między podstawami",
-        "h prostopadle",
-        "V = πr²h",
-        "h = 10 cm",
-        "obrót wokół osi",
+        'h między podstawami',
+        'prostopadle do podstaw',
+        'V = πr²h',
     ],
     "stożek": [
-        "czapka — stożek",
-        "rożek lodów — stożek",
-        "1 podstawa: koło",
-        "stożek ≠ walec",
-        "wskaż wierzchołek",
+        'rożek lodów',
+        '1 koło + wierzchołek',
+        'stożek ≠ walec',
     ],
     "podstawa stożka": [
-        "koło r",
-        "1 podstawa",
-        "P_p = πr²",
-        "r stożka",
-        "leży płasko",
+        'spód = koło',
+        'nie wielokąt',
+        'promień r',
     ],
     "wierzchołek stożka": [
         "W — czubek",
@@ -2460,18 +2375,14 @@ PRZYKLADY: dict[str, list[str]] = {
         "W w prawidłowym",
     ],
     "kula": [
-        "piłka — to kula",
-        "globus ≈ kula",
-        "środek O, promień r",
-        "kula ≠ sfera",
-        "która bryła to kula?",
+        'piłka — kula',
+        'środek wewnątrz',
+        'kula ≠ sfera',
     ],
     "sfera": [
-        "skórka piłki = sfera",
-        "sfera = powierzchnia",
-        "kula = pełna w środku",
-        "sfera ≠ kula",
-        "punkty w odległości r",
+        'skórka piłki',
+        'tylko powierzchnia',
+        'sfera ≠ kula',
     ],
     "środek i promień": [
         "O — środek",
@@ -2502,11 +2413,9 @@ PRZYKLADY: dict[str, list[str]] = {
         "nie smuka!",
     ],
     "nierówność": [
-        "x + 3 > 7",
-        "2x ≤ 10",
-        "x > 4",
-        "zapis z >, <, ≥",
-        "rozwiązanie na osi",
+        'x+3>7',
+        '2x≤10',
+        'zaznacz na osi',
     ],
     "rozwiązanie nierówności": [
         "x > 4: x=5 ✔",
@@ -2628,11 +2537,9 @@ PRZYKLADY: dict[str, list[str]] = {
         "litera F — nie",
     ],
     "liczba wymierna": [
-        "½, −3, 0,75",
-        "p/q, q≠0",
-        "0,5 ✔ wymierna",
-        "√2 ✖ (SP: niewym.)",
-        "−7/4 wymierna",
+        '½, −3, 0,75 ∈ ℚ',
+        'p/q, q≠0',
+        '√2 ✖ niewymierna (rozszerzenie)',
     ],
     "środkowa": [
         "od wierzchołka do środka boku",
@@ -2710,15 +2617,17 @@ PRZYKLADY: dict[str, list[str]] = {
 
 def examples_for(term: str) -> list[str] | None:
     key = (term or "").strip().lower()
-    if key in PRZYKLADY:
-        return list(PRZYKLADY[key])
+    # dokładne dopasowanie bez względu na wielkość liter
+    for k, vals in PRZYKLADY.items():
+        if k.lower() == key:
+            return list(vals)
     padded = f" {key} "
     matches = [
         k
         for k in PRZYKLADY
-        if key == k or key.startswith(k + " ") or f" {k} " in padded
+        if key.startswith(k.lower() + " ") or f" {k.lower()} " in padded
     ]
     if not matches:
         return None
-    best = max(matches, key=len)
+    best = max(matches, key=lambda k: len(k))
     return list(PRZYKLADY[best])

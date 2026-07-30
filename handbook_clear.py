@@ -292,7 +292,7 @@ CLEAR_FIXES = {
     ),
     (30, "koło"): T(
         "Koło to okrąg razem z całym wnętrzem — jak tarcza albo talerz.",
-        "Круг — коло разом із усім нутром: як диск або тарілка.",
+        "Круг — коло разом із усім серединам: як диск або тарілка.",
         "Nie myl: okrąg = tylko linia (brzeg); koło = linia + wszystko w środku.",
         "Не плутай: коло = лише лінія (край); круг = лінія + все всередині.",
     ),
@@ -310,7 +310,7 @@ CLEAR_FIXES = {
     ),
     (31, "pole koła"): T(
         "Pole koła to miara powierzchni „tarczy” — ile miejsca zajmuje wnętrze.",
-        "Площа круга — міра поверхні «диска»: скільки місця займає нутро.",
+        "Площа круга — міра поверхні «диска»: скільки місця займає середина.",
         "Wzór: P = π·r². Najpierw podnieś r do kwadratu, potem pomnóż przez π.",
         "Формула: P = π·r². Спочатку піднеси r до квадрата, потім помнож на π.",
     ),
@@ -462,7 +462,7 @@ CLEAR_FIXES = {
         "Mediana to wartość środkowa po uporządkowaniu liczb od najmniejszej do największej.",
         "Медіана — середнє за порядком значення після впорядкування від найменшого до найбільшого.",
         "Dla 2,5,5,8 (parzysta liczba): bierzemy średnią z dwóch środkowych → (5+5)/2 = 5.",
-        "Для 2,5,5,8 (парна кількість): беремо середнє двох середніх → (5+5)/2 = 5.",
+        "Для 2,5,5,8 (парна кількість): беремо середнє двох серединних → (5+5)/2 = 5.",
     ),
     (40, "przykład mody"): T(
         "Moda: szukasz liczby, która powtarza się najczęściej.",
@@ -612,9 +612,9 @@ CLEAR_FIXES = {
     ),
     (30, "okrąg"): T(
         "Okrąg to sama linia — brzeg koła, bez wnętrza. Jak obwódka talerza, nie cały talerz.",
-        "Коло — сама лінія: край круга, без нутра. Як обідок тарілки, не вся тарілка.",
+        "Коло — сама лінія: край круга, без нутра. Як край тарілки, не вся тарілка.",
         "Zapamiętaj: okrąg = brzeg; koło = brzeg + wnętrze.",
-        "Запам'ятай: коло = край; круг = край + нутро.",
+        "Запам'ятай: коло = край; круг = край + середина.",
     ),
     (32, "ramiona / strony"): T(
         "Ramiona kąta to dwie półproste wychodzące ze wspólnego wierzchołka — „boki” kąta.",

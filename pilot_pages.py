@@ -37,13 +37,13 @@ PILOT = {
             {
                 "pl": "suma",
                 "klasa": "klasy 1–3",
-                "def_pl": "Suma to wynik dodawania — liczba, którą dostajesz po znaku =. Odpowiada na pytanie: ile razem?",
+                "def_pl": "Suma to wynik dodawania — liczba, którą dostajesz po znaku =. Odpowiada: ile razem?",
                 "def_ua": "Сума — результат додавання — число після знака =. Відповідає: скільки разом?",
-                "rule": "Zapis: składnik + składnik = suma. W 2+6=8 liczba 8 to właśnie suma.",
-                "rule_ua": "Запис: доданок + доданок = сума. У 2+6=8 число 8 — саме сума.",
+                "rule": "składnik + składnik = suma",
+                "rule_ua": "У 2+6=8 число 8 — саме сума.",
                 "example_pl": "W jednym pudełku 2 ołówki, w drugim 6. Suma = 8 ołówków.",
                 "example_ua": "В одній коробці 2 олівці, в другій 6. Сума = 8 олівців.",
-                "visual": "2 + 6 = 8",
+                "visual": "składnik + składnik = suma",
             },
             {
                 "pl": "odejmowanie",
@@ -229,7 +229,16 @@ def apply_pilot(page: dict) -> None:
         if key in data:
             page[key] = data[key]
 
-    for card, upd in zip(page.get("cards") or [], data.get("cards") or []):
+    by_pl = {
+        (c.get("pl") or "").strip(): c
+        for c in (data.get("cards") or [])
+        if (c.get("pl") or "").strip()
+    }
+    for card in page.get("cards") or []:
+        key = (card.get("pl") or "").strip()
+        upd = by_pl.get(key)
+        if not upd:
+            continue
         card.update(upd)
         # Pilot: nie doklejaj generycznych „zobacz poniżej”
         card.pop("_generic_example", None)

@@ -1059,9 +1059,9 @@ MORE_OVERRIDES = {
     # ——— 40 Statystyka (2) ———
     (40, "mediana"): T(
         "Mediana to wartość środkowa po ustawieniu danych w kolejności.",
-        "Медіана — середнє значення після впорядкування даних.",
+        "Медіана — значення посередині після впорядкування даних.",
         "Przy parzystej liczbie danych: średnia dwóch środkowych.",
-        "При парній кількості даних: середнє двох середніх.",
+        "При парній кількості даних: середнє двох серединних.",
     ),
     (40, "moda"): T(
         "Moda to wartość, która pojawia się najczęściej.",
@@ -1079,7 +1079,7 @@ MORE_OVERRIDES = {
         "Mediana: uporządkuj, weź środek.",
         "Медіана: упорядкуй, візьми середину.",
         "2,5,5,8 → środkowe 5 i 5 → mediana 5.",
-        "2,5,5,8 → середні 5 і 5 → медіана 5.",
+        "2,5,5,8 → серединні 5 і 5 → медіана 5.",
     ),
     (40, "przykład mody"): T(
         "Moda: szukaj najczęstszej wartości.",
