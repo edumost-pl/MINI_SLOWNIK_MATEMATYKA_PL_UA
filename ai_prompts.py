@@ -253,6 +253,18 @@ PAGE_PROMPTS = {
         "hero": "Odcinek z symetralną oraz kąt z dwusieczną; łuki równości.",
         "life": "Składanie kartki na pół — intuicja dwusiecznej / symetrii.",
     },
+    61: {
+        "hero": "Klasa: dziecko pokazuje lewo/prawo, strzałki góra/dół przy drabinie, dłuższy i krótszy szalik, dwie miseczki z różną liczbą cukierków.",
+        "life": "Boisko szkolne: dzieci porównują prawo/lewo, dłuższy kij, więcej piłek w koszu.",
+        "cards": {
+            "prawo / lewo": "Dziecko od tyłu, ramiona w bok: LEWO po lewej, PRAWO po prawej (ta sama orientacja co czytelnik).",
+            "góra / dół": "Dom z ptakiem u góry (↑) i piłką na dole (↓).",
+            "przed / za / obok": "Trzy sceny: dziecko przed biurkiem, za krzesłem, obok tornistra.",
+            "dłuższy / krótszy": "Długi i krótki ołówek / szalik obok siebie.",
+            "cięższy / lżejszy": "Waga szalkowa: książka cięższa, piórko lżejsze.",
+            "więcej / mniej / tyle samo": "Miseczki z jabłkami: 5 vs 2, 2 vs 5, 3 = 3.",
+        },
+    },
 }
 
 

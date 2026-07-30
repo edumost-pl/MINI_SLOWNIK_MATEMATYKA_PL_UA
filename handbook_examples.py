@@ -222,6 +222,10 @@ LIFE = {
         "Na starym zegarze zamiast 4 widzisz IV — to znak rzymski.",
         "На старому годиннику замість 4 бачиш IV — це римський знак.",
     ),
+    (2, "Składanie liczb"): E(
+        "14 = XIV: X (10) i IV (4) składamy jak klocki.",
+        "14 = XIV: X (10) і IV (4) складаємо як кубики.",
+    ),
     (2, 'Dodawanie znaków'): E(
         "VI na zegarze to 5+1=6. Mniejszy znak po prawej — dodajesz.",
         "VI на годиннику — 5+1=6. Менший знак праворуч — додаєш.",

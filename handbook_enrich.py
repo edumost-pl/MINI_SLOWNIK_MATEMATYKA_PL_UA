@@ -499,6 +499,12 @@ CARD_OVERRIDES = {
         "rule": "Przykłady: 1=I, 4=IV, 9=IX, 14=XIV, 50=L, 100=C.",
         "rule_ua": "Приклади: 1=I, 4=IV, 9=IX, 14=XIV, 50=L, 100=C.",
     },
+    (2, "Składanie liczb"): {
+        "def_pl": "Liczbę rzymską składamy ze znaków obok siebie — jak klocki.",
+        "def_ua": "Римське число складаємо зі знаків поруч — як кубики.",
+        "rule": "1=I, 4=IV, 9=IX, 14=XIV, 50=L, 100=C.",
+        "rule_ua": "1=I, 4=IV, 9=IX, 14=XIV, 50=L, 100=C.",
+    },
     (2, "Dodawanie znaków"): {
         "def_pl": "Gdy mniejszy znak stoi po prawej — dodajemy wartości (jak dokładanie klocków).",
         "def_ua": "Коли менший знак стоїть праворуч — додаємо значення (як докладання кубиків).",
